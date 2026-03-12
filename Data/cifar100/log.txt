@@ -1,0 +1,1464 @@
+[2026-03-10 21:52:32,414 INFO] Use GPU: 0 for training
+[2026-03-10 21:55:35,130 INFO] Use GPU: 0 for training
+[2026-03-10 21:56:03,356 INFO] unlabeled data number: 50000, labeled data number 200
+[2026-03-10 21:56:03,356 INFO] Create train and test data loaders
+[2026-03-10 21:56:03,357 INFO] [!] data loader keys: dict_keys(['train_lb', 'train_ulb', 'eval'])
+[2026-03-10 21:56:04,056 INFO] Create optimizer and scheduler
+[2026-03-10 21:56:04,061 INFO] Number of Trainable Params: 21633892
+[2026-03-10 21:56:04,100 INFO] Arguments: Namespace(T=0.5, algorithm='textmatch', amp=False, apply_mixup=False, batch_size=32, c='config/usb_cv/clipfreematch/textmatch_cifar100_200_0_labelname_mlp.yaml', clip=0.0, clip_grad=0, clip_thresh=False, contras_tempeture=0.07, crop_ratio=0.875, data_dir='./data', dataset='cifar100', dist_backend='nccl', dist_url='tcp://127.0.0.1:28037', distributed=False, ema_m=0.0, ema_p=0.999, ent_loss_ratio=0.001, epoch=200, eval_batch_size=32, gamma=0.5, gpu=0, hard_label=True, imb_algorithm=None, img_size=32, include_lb_to_ulb=True, lambda_c=1.0, lambda_ortho=0.01, layer_decay=0.5, lb_dest_len=200, lb_imb_ratio=1, load_path='./saved_models/usb_cv//textmatch_cifar100_200_0_labelname_mlp/latest_model.pth', long_text=False, lr=0.0005, max_length=512, max_length_seconds=4.0, momentum=0.9, multiprocessing_distributed=False, net='vit_small_patch2_32', net_from_name=False, num_classes=100, num_eval_iter=2048, num_labels=200, num_log_iter=256, num_train_iter=204800, num_warmup_iter=5120, num_workers=4, optim='AdamW', overwrite=True, pretrain_path='https://github.com/microsoft/Semi-supervised-learning/releases/download/v.0.0.0/vit_small_patch2_32_mlp_im_1k_32.pth', rank=0, resume=True, sample_rate=16000, save_dir='./saved_models/usb_cv/', save_name='textmatch_cifar100_200_0_labelname_mlp', save_text_embs=False, seed=0, text_model='clip', train_sampler='RandomSampler', ulb_dest_len=50000, ulb_imb_ratio=1, ulb_loss_ratio=1.0, ulb_num_labels=None, uratio=1, use_aim=False, use_cat=True, use_class_maskoncontrastive=True, use_pretrain=True, use_quantile=False, use_tensorboard=True, use_wandb=False, vt_proj='mlp_text', weight_decay=0.0005, world_size=1)
+[2026-03-10 21:56:04,100 INFO] Resume load path ./saved_models/usb_cv//textmatch_cifar100_200_0_labelname_mlp/latest_model.pth does not exist
+[2026-03-10 21:56:04,100 INFO] Model training
+[2026-03-10 21:56:55,553 INFO] 256 iteration USE_EMA: False, train/sup_loss: 5.8132, train/unsup_loss: 0.0000, train/contrastive_loss: 3.3235, train/ortho_loss: 0.7712, train/total_loss: 9.1444, train/util_ratio: 0.0000, train/run_time: 0.1719, lr: 0.0000, train/prefetch_time: 0.0062 
+[2026-03-10 21:57:45,206 INFO] 512 iteration USE_EMA: False, train/sup_loss: 3.9613, train/unsup_loss: 0.0000, train/contrastive_loss: 2.1699, train/ortho_loss: 0.1253, train/total_loss: 6.1325, train/util_ratio: 0.0000, train/run_time: 0.1642, lr: 0.0001, train/prefetch_time: 0.0048 
+[2026-03-10 21:58:34,444 INFO] 768 iteration USE_EMA: False, train/sup_loss: 2.6009, train/unsup_loss: 0.0000, train/contrastive_loss: 0.9196, train/ortho_loss: 0.0940, train/total_loss: 3.5215, train/util_ratio: 0.0000, train/run_time: 0.1653, lr: 0.0001, train/prefetch_time: 0.0053 
+[2026-03-10 21:59:24,574 INFO] 1024 iteration USE_EMA: False, train/sup_loss: 0.8681, train/unsup_loss: 0.4224, train/contrastive_loss: 0.5664, train/ortho_loss: 0.0793, train/total_loss: 1.8318, train/util_ratio: 0.2500, train/run_time: 0.1701, lr: 0.0001, train/prefetch_time: 0.0064 
+[2026-03-10 22:01:17,846 INFO] Use GPU: 0 for training
+[2026-03-10 22:01:31,236 INFO] unlabeled data number: 50000, labeled data number 200
+[2026-03-10 22:01:31,237 INFO] Create train and test data loaders
+[2026-03-10 22:01:31,238 INFO] [!] data loader keys: dict_keys(['train_lb', 'train_ulb', 'eval'])
+[2026-03-10 22:01:32,225 INFO] Create optimizer and scheduler
+[2026-03-10 22:01:32,232 INFO] Number of Trainable Params: 21633892
+[2026-03-10 22:01:32,277 INFO] Arguments: Namespace(T=0.5, algorithm='textmatch', amp=False, apply_mixup=False, batch_size=32, c='config/usb_cv/clipfreematch/textmatch_cifar100_200_0_labelname_mlp.yaml', clip=0.0, clip_grad=0, clip_thresh=False, contras_tempeture=0.07, crop_ratio=0.875, data_dir='./data', dataset='cifar100', dist_backend='nccl', dist_url='tcp://127.0.0.1:22346', distributed=False, ema_m=0.0, ema_p=0.999, ent_loss_ratio=0.001, epoch=200, eval_batch_size=32, gamma=0.5, gpu=0, hard_label=True, imb_algorithm=None, img_size=32, include_lb_to_ulb=True, lambda_c=1.0, lambda_ortho=0.01, layer_decay=0.5, lb_dest_len=200, lb_imb_ratio=1, load_path='./saved_models/usb_cv//textmatch_cifar100_200_0_labelname_mlp/latest_model.pth', long_text=False, lr=0.0005, max_length=512, max_length_seconds=4.0, momentum=0.9, multiprocessing_distributed=False, net='vit_small_patch2_32', net_from_name=False, num_classes=100, num_eval_iter=1024, num_labels=200, num_log_iter=256, num_train_iter=102400, num_warmup_iter=5120, num_workers=4, optim='AdamW', overwrite=True, pretrain_path='https://github.com/microsoft/Semi-supervised-learning/releases/download/v.0.0.0/vit_small_patch2_32_mlp_im_1k_32.pth', rank=0, resume=True, sample_rate=16000, save_dir='./saved_models/usb_cv/', save_name='textmatch_cifar100_200_0_labelname_mlp', save_text_embs=False, seed=0, text_model='clip', train_sampler='RandomSampler', ulb_dest_len=50000, ulb_imb_ratio=1, ulb_loss_ratio=1.0, ulb_num_labels=None, uratio=1, use_aim=False, use_cat=True, use_class_maskoncontrastive=True, use_pretrain=True, use_quantile=False, use_tensorboard=True, use_wandb=False, vt_proj='mlp_text', weight_decay=0.0005, world_size=1)
+[2026-03-10 22:01:32,278 INFO] Resume load path ./saved_models/usb_cv//textmatch_cifar100_200_0_labelname_mlp/latest_model.pth does not exist
+[2026-03-10 22:01:32,278 INFO] Model training
+[2026-03-10 22:02:22,889 INFO] 256 iteration USE_EMA: False, train/sup_loss: 5.8132, train/unsup_loss: 0.0000, train/contrastive_loss: 3.3235, train/ortho_loss: 0.7712, train/total_loss: 9.1444, train/util_ratio: 0.0000, train/run_time: 0.1650, lr: 0.0000, train/prefetch_time: 0.0050 
+[2026-03-10 22:03:12,477 INFO] 512 iteration USE_EMA: False, train/sup_loss: 3.9613, train/unsup_loss: 0.0000, train/contrastive_loss: 2.1699, train/ortho_loss: 0.1253, train/total_loss: 6.1325, train/util_ratio: 0.0000, train/run_time: 0.1644, lr: 0.0001, train/prefetch_time: 0.0043 
+[2026-03-10 22:04:02,117 INFO] 768 iteration USE_EMA: False, train/sup_loss: 2.5711, train/unsup_loss: 0.0000, train/contrastive_loss: 0.7929, train/ortho_loss: 0.0939, train/total_loss: 3.3650, train/util_ratio: 0.0000, train/run_time: 0.1684, lr: 0.0001, train/prefetch_time: 0.0047 
+[2026-03-11 00:00:01,914 INFO] Use GPU: 0 for training
+[2026-03-11 00:00:11,477 INFO] unlabeled data number: 50000, labeled data number 200
+[2026-03-11 00:00:11,477 INFO] Create train and test data loaders
+[2026-03-11 00:00:11,478 INFO] [!] data loader keys: dict_keys(['train_lb', 'train_ulb', 'eval'])
+[2026-03-11 00:00:12,199 INFO] Create optimizer and scheduler
+[2026-03-11 00:00:12,203 INFO] Number of Trainable Params: 21633892
+[2026-03-11 00:00:12,241 INFO] Arguments: Namespace(T=0.5, algorithm='textmatch', amp=False, apply_mixup=False, batch_size=32, c='config/usb_cv/clipfreematch/textmatch_cifar100_200_0_labelname_mlp.yaml', clip=0.0, clip_grad=0, clip_thresh=False, contras_tempeture=0.07, crop_ratio=0.875, data_dir='./data', dataset='cifar100', dist_backend='nccl', dist_url='tcp://127.0.0.1:16059', distributed=False, ema_m=0.0, ema_p=0.999, ent_loss_ratio=0.001, epoch=200, eval_batch_size=32, gamma=0.5, gpu=0, hard_label=True, imb_algorithm=None, img_size=32, include_lb_to_ulb=True, lambda_c=1.0, lambda_ortho=0.01, layer_decay=0.5, lb_dest_len=200, lb_imb_ratio=1, load_path='./saved_models/usb_cv//textmatch_cifar100_200_0_labelname_mlp/latest_model.pth', long_text=False, lr=0.0005, max_length=512, max_length_seconds=4.0, momentum=0.9, multiprocessing_distributed=False, net='vit_small_patch2_32', net_from_name=False, num_classes=100, num_eval_iter=1024, num_labels=200, num_log_iter=256, num_train_iter=102400, num_warmup_iter=5120, num_workers=4, optim='AdamW', overwrite=True, pretrain_path='https://github.com/microsoft/Semi-supervised-learning/releases/download/v.0.0.0/vit_small_patch2_32_mlp_im_1k_32.pth', rank=0, resume=True, sample_rate=16000, save_dir='./saved_models/usb_cv/', save_name='textmatch_cifar100_200_0_labelname_mlp', save_text_embs=False, seed=0, text_model='clip', train_sampler='RandomSampler', ulb_dest_len=50000, ulb_imb_ratio=1, ulb_loss_ratio=1.0, ulb_num_labels=None, uratio=1, use_aim=False, use_cat=True, use_class_maskoncontrastive=True, use_pretrain=True, use_quantile=False, use_tensorboard=True, use_wandb=False, vt_proj='mlp_text', weight_decay=0.0005, world_size=1)
+[2026-03-11 00:00:12,241 INFO] Resume load path ./saved_models/usb_cv//textmatch_cifar100_200_0_labelname_mlp/latest_model.pth does not exist
+[2026-03-11 00:00:12,241 INFO] Model training
+[2026-03-11 00:01:03,359 INFO] 256 iteration USE_EMA: False, train/sup_loss: 5.8132, train/unsup_loss: 0.0000, train/contrastive_loss: 3.3235, train/ortho_loss: 0.7712, train/total_loss: 9.1444, train/util_ratio: 0.0000, train/run_time: 0.1655, lr: 0.0000, train/prefetch_time: 0.0049 
+[2026-03-11 00:01:52,710 INFO] 512 iteration USE_EMA: False, train/sup_loss: 3.9613, train/unsup_loss: 0.0000, train/contrastive_loss: 2.1699, train/ortho_loss: 0.1253, train/total_loss: 6.1325, train/util_ratio: 0.0000, train/run_time: 0.1655, lr: 0.0001, train/prefetch_time: 0.0037 
+[2026-03-11 00:02:43,608 INFO] 768 iteration USE_EMA: False, train/sup_loss: 2.5711, train/unsup_loss: 0.0000, train/contrastive_loss: 0.7929, train/ortho_loss: 0.0939, train/total_loss: 3.3650, train/util_ratio: 0.0000, train/run_time: 0.1634, lr: 0.0001, train/prefetch_time: 0.0050 
+[2026-03-11 00:03:33,933 INFO] validating...
+[2026-03-11 00:03:41,278 INFO] confusion matrix:
+[[0.66 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.74 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.64 ... 0.   0.04 0.  ]
+ ...
+ [0.   0.   0.   ... 0.93 0.   0.  ]
+ [0.   0.   0.02 ... 0.   0.13 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.92]]
+[2026-03-11 00:03:42,280 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 00:03:43,238 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/model_best.pth
+[2026-03-11 00:03:43,239 INFO] 1024 iteration, USE_EMA: False, train/sup_loss: 0.741364, train/unsup_loss: 0.159970, train/contrastive_loss: 0.490672, train/ortho_loss: 0.079391, train/total_loss: 1.366040, train/util_ratio: 0.093750, train/run_time: 0.171277, eval/loss: 2.134154, eval/top-1-acc: 0.584500, eval/balanced_acc: 0.584500, eval/precision: 0.571069, eval/recall: 0.584500, eval/F1: 0.556906, lr: 0.000100, train/prefetch_time: 0.006432 BEST_EVAL_ACC: 0.5845, at 1024 iters
+[2026-03-11 00:04:35,202 INFO] 1280 iteration USE_EMA: False, train/sup_loss: 0.3343, train/unsup_loss: 0.9355, train/contrastive_loss: 0.6752, train/ortho_loss: 0.0741, train/total_loss: 1.9208, train/util_ratio: 0.4062, train/run_time: 0.1755, lr: 0.0001, train/prefetch_time: 0.0093 
+[2026-03-11 00:05:26,178 INFO] 1536 iteration USE_EMA: False, train/sup_loss: 0.3410, train/unsup_loss: 0.8954, train/contrastive_loss: 0.6068, train/ortho_loss: 0.0728, train/total_loss: 1.8198, train/util_ratio: 0.5938, train/run_time: 0.1709, lr: 0.0001, train/prefetch_time: 0.0033 
+[2026-03-11 00:06:18,269 INFO] 1792 iteration USE_EMA: False, train/sup_loss: 0.1367, train/unsup_loss: 0.7072, train/contrastive_loss: 0.3626, train/ortho_loss: 0.0712, train/total_loss: 1.1827, train/util_ratio: 0.5625, train/run_time: 0.1672, lr: 0.0002, train/prefetch_time: 0.0047 
+[2026-03-11 00:07:09,651 INFO] validating...
+[2026-03-11 00:07:16,809 INFO] confusion matrix:
+[[0.76 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.83 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.67 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.94 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.01 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.95]]
+[2026-03-11 00:07:18,060 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 00:07:19,196 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/model_best.pth
+[2026-03-11 00:07:19,198 INFO] 2048 iteration, USE_EMA: False, train/sup_loss: 0.096134, train/unsup_loss: 0.653467, train/contrastive_loss: 0.338286, train/ortho_loss: 0.071489, train/total_loss: 1.063720, train/util_ratio: 0.656250, train/run_time: 0.171497, eval/loss: 1.618376, eval/top-1-acc: 0.642800, eval/balanced_acc: 0.642800, eval/precision: 0.651862, eval/recall: 0.642800, eval/F1: 0.596829, lr: 0.000200, train/prefetch_time: 0.005396 BEST_EVAL_ACC: 0.6428, at 2048 iters
+[2026-03-11 00:08:10,992 INFO] 2304 iteration USE_EMA: False, train/sup_loss: 0.0787, train/unsup_loss: 1.1651, train/contrastive_loss: 0.4178, train/ortho_loss: 0.0711, train/total_loss: 1.6379, train/util_ratio: 0.6875, train/run_time: 0.1647, lr: 0.0002, train/prefetch_time: 0.0037 
+[2026-03-11 00:09:02,047 INFO] 2560 iteration USE_EMA: False, train/sup_loss: 0.1077, train/unsup_loss: 0.8977, train/contrastive_loss: 0.3354, train/ortho_loss: 0.0708, train/total_loss: 1.3165, train/util_ratio: 0.6875, train/run_time: 0.1697, lr: 0.0003, train/prefetch_time: 0.0039 
+[2026-03-11 00:09:53,944 INFO] 2816 iteration USE_EMA: False, train/sup_loss: 0.0546, train/unsup_loss: 0.7468, train/contrastive_loss: 0.3086, train/ortho_loss: 0.0703, train/total_loss: 1.0861, train/util_ratio: 0.8750, train/run_time: 0.1677, lr: 0.0003, train/prefetch_time: 0.0043 
+[2026-03-11 00:10:44,880 INFO] validating...
+[2026-03-11 00:10:52,043 INFO] confusion matrix:
+[[0.75 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.89 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.72 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.92 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.01 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.95]]
+[2026-03-11 00:10:53,708 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 00:10:54,698 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/model_best.pth
+[2026-03-11 00:10:54,699 INFO] 3072 iteration, USE_EMA: False, train/sup_loss: 0.069754, train/unsup_loss: 0.837702, train/contrastive_loss: 0.453190, train/ortho_loss: 0.070823, train/total_loss: 1.336595, train/util_ratio: 0.812500, train/run_time: 0.169562, eval/loss: 1.639488, eval/top-1-acc: 0.665500, eval/balanced_acc: 0.665500, eval/precision: 0.684142, eval/recall: 0.665500, eval/F1: 0.620930, lr: 0.000300, train/prefetch_time: 0.004249 BEST_EVAL_ACC: 0.6655, at 3072 iters
+[2026-03-11 00:11:46,659 INFO] 3328 iteration USE_EMA: False, train/sup_loss: 0.0279, train/unsup_loss: 0.4735, train/contrastive_loss: 0.1158, train/ortho_loss: 0.0703, train/total_loss: 0.5934, train/util_ratio: 0.8438, train/run_time: 0.1701, lr: 0.0003, train/prefetch_time: 0.0074 
+[2026-03-11 00:12:37,425 INFO] 3584 iteration USE_EMA: False, train/sup_loss: 0.0227, train/unsup_loss: 0.4389, train/contrastive_loss: 0.1912, train/ortho_loss: 0.0711, train/total_loss: 0.6287, train/util_ratio: 0.8438, train/run_time: 0.1718, lr: 0.0003, train/prefetch_time: 0.0050 
+[2026-03-11 00:13:29,488 INFO] 3840 iteration USE_EMA: False, train/sup_loss: 0.1037, train/unsup_loss: 0.6456, train/contrastive_loss: 0.3066, train/ortho_loss: 0.0712, train/total_loss: 1.0314, train/util_ratio: 0.7188, train/run_time: 0.1693, lr: 0.0004, train/prefetch_time: 0.0042 
+[2026-03-11 00:14:20,553 INFO] validating...
+[2026-03-11 00:14:27,831 INFO] confusion matrix:
+[[0.95 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.96 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.36 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.94 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.   0.  ]
+ [0.   0.   0.   ... 0.   0.   0.95]]
+[2026-03-11 00:14:28,853 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 00:14:29,823 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/model_best.pth
+[2026-03-11 00:14:29,824 INFO] 4096 iteration, USE_EMA: False, train/sup_loss: 0.010657, train/unsup_loss: 0.894415, train/contrastive_loss: 0.374293, train/ortho_loss: 0.070615, train/total_loss: 1.255258, train/util_ratio: 0.875000, train/run_time: 0.167631, eval/loss: 1.740466, eval/top-1-acc: 0.683600, eval/balanced_acc: 0.683600, eval/precision: 0.688107, eval/recall: 0.683600, eval/F1: 0.644333, lr: 0.000400, train/prefetch_time: 0.004443 BEST_EVAL_ACC: 0.6836, at 4096 iters
+[2026-03-11 00:15:21,589 INFO] 4352 iteration USE_EMA: False, train/sup_loss: 0.0564, train/unsup_loss: 0.8360, train/contrastive_loss: 0.3572, train/ortho_loss: 0.0714, train/total_loss: 1.2258, train/util_ratio: 0.8438, train/run_time: 0.1692, lr: 0.0004, train/prefetch_time: 0.0042 
+[2026-03-11 00:16:11,568 INFO] 4608 iteration USE_EMA: False, train/sup_loss: 0.1182, train/unsup_loss: 1.6059, train/contrastive_loss: 0.4311, train/ortho_loss: 0.0731, train/total_loss: 2.1310, train/util_ratio: 0.9062, train/run_time: 0.1698, lr: 0.0005, train/prefetch_time: 0.0042 
+[2026-03-11 00:17:02,323 INFO] 4864 iteration USE_EMA: False, train/sup_loss: 0.0070, train/unsup_loss: 0.4263, train/contrastive_loss: 0.2194, train/ortho_loss: 0.0741, train/total_loss: 0.6288, train/util_ratio: 0.7500, train/run_time: 0.1689, lr: 0.0005, train/prefetch_time: 0.0040 
+[2026-03-11 00:17:52,521 INFO] validating...
+[2026-03-11 00:17:59,508 INFO] confusion matrix:
+[[0.85 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.19 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.96 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.   0.  ]
+ [0.   0.   0.   ... 0.   0.   0.95]]
+[2026-03-11 00:18:00,489 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 00:18:01,463 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/model_best.pth
+[2026-03-11 00:18:01,464 INFO] 5120 iteration, USE_EMA: False, train/sup_loss: 0.064601, train/unsup_loss: 0.486758, train/contrastive_loss: 0.231364, train/ortho_loss: 0.072365, train/total_loss: 0.759197, train/util_ratio: 0.875000, train/run_time: 0.168908, eval/loss: 1.670118, eval/top-1-acc: 0.693700, eval/balanced_acc: 0.693700, eval/precision: 0.702630, eval/recall: 0.693700, eval/F1: 0.654600, lr: 0.000500, train/prefetch_time: 0.003706 BEST_EVAL_ACC: 0.6937, at 5120 iters
+[2026-03-11 00:18:53,032 INFO] 5376 iteration USE_EMA: False, train/sup_loss: 0.0072, train/unsup_loss: 1.3321, train/contrastive_loss: 0.3812, train/ortho_loss: 0.0723, train/total_loss: 1.6975, train/util_ratio: 0.8438, train/run_time: 0.1697, lr: 0.0005, train/prefetch_time: 0.0047 
+[2026-03-11 00:19:43,560 INFO] 5632 iteration USE_EMA: False, train/sup_loss: 0.0146, train/unsup_loss: 0.4238, train/contrastive_loss: 0.1490, train/ortho_loss: 0.0741, train/total_loss: 0.5646, train/util_ratio: 0.8438, train/run_time: 0.1696, lr: 0.0005, train/prefetch_time: 0.0078 
+[2026-03-11 00:20:35,864 INFO] 5888 iteration USE_EMA: False, train/sup_loss: 0.0065, train/unsup_loss: 1.1800, train/contrastive_loss: 0.3672, train/ortho_loss: 0.0729, train/total_loss: 1.5312, train/util_ratio: 0.9062, train/run_time: 0.1702, lr: 0.0005, train/prefetch_time: 0.0051 
+[2026-03-11 00:21:26,235 INFO] validating...
+[2026-03-11 00:21:33,312 INFO] confusion matrix:
+[[0.87 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.94 0.   ... 0.   0.   0.  ]
+ [0.01 0.   0.59 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.92 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.   0.  ]
+ [0.   0.   0.   ... 0.   0.   0.94]]
+[2026-03-11 00:21:34,353 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 00:21:35,318 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/model_best.pth
+[2026-03-11 00:21:35,320 INFO] 6144 iteration, USE_EMA: False, train/sup_loss: 0.004216, train/unsup_loss: 1.122180, train/contrastive_loss: 0.305460, train/ortho_loss: 0.072876, train/total_loss: 1.410004, train/util_ratio: 0.968750, train/run_time: 0.165977, eval/loss: 1.440554, eval/top-1-acc: 0.714800, eval/balanced_acc: 0.714800, eval/precision: 0.733767, eval/recall: 0.714800, eval/F1: 0.684208, lr: 0.000500, train/prefetch_time: 0.003873 BEST_EVAL_ACC: 0.7148, at 6144 iters
+[2026-03-11 00:22:26,844 INFO] 6400 iteration USE_EMA: False, train/sup_loss: 0.0043, train/unsup_loss: 0.5984, train/contrastive_loss: 0.1708, train/ortho_loss: 0.0720, train/total_loss: 0.7511, train/util_ratio: 0.9375, train/run_time: 0.1724, lr: 0.0005, train/prefetch_time: 0.0089 
+[2026-03-11 00:23:17,595 INFO] 6656 iteration USE_EMA: False, train/sup_loss: 0.0026, train/unsup_loss: 0.7801, train/contrastive_loss: 0.2226, train/ortho_loss: 0.0734, train/total_loss: 0.9839, train/util_ratio: 0.9375, train/run_time: 0.1704, lr: 0.0005, train/prefetch_time: 0.0044 
+[2026-03-11 00:24:08,883 INFO] 6912 iteration USE_EMA: False, train/sup_loss: 0.0129, train/unsup_loss: 0.7378, train/contrastive_loss: 0.2367, train/ortho_loss: 0.0726, train/total_loss: 0.9655, train/util_ratio: 0.9375, train/run_time: 0.1698, lr: 0.0005, train/prefetch_time: 0.0044 
+[2026-03-11 00:24:59,436 INFO] validating...
+[2026-03-11 00:25:06,575 INFO] confusion matrix:
+[[0.81 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.98 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.15 ... 0.   0.72 0.  ]
+ ...
+ [0.   0.   0.   ... 0.95 0.01 0.  ]
+ [0.   0.   0.01 ... 0.   0.88 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.96]]
+[2026-03-11 00:25:07,636 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 00:25:08,642 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/model_best.pth
+[2026-03-11 00:25:08,643 INFO] 7168 iteration, USE_EMA: False, train/sup_loss: 0.022011, train/unsup_loss: 0.808365, train/contrastive_loss: 0.219050, train/ortho_loss: 0.073161, train/total_loss: 1.027808, train/util_ratio: 0.906250, train/run_time: 0.170035, eval/loss: 1.482688, eval/top-1-acc: 0.715600, eval/balanced_acc: 0.715600, eval/precision: 0.730467, eval/recall: 0.715600, eval/F1: 0.689270, lr: 0.000500, train/prefetch_time: 0.005074 BEST_EVAL_ACC: 0.7156, at 7168 iters
+[2026-03-11 00:26:00,296 INFO] 7424 iteration USE_EMA: False, train/sup_loss: 0.0207, train/unsup_loss: 0.6214, train/contrastive_loss: 0.1862, train/ortho_loss: 0.0709, train/total_loss: 0.8076, train/util_ratio: 0.9062, train/run_time: 0.1689, lr: 0.0005, train/prefetch_time: 0.0045 
+[2026-03-11 00:26:51,077 INFO] 7680 iteration USE_EMA: False, train/sup_loss: 0.0161, train/unsup_loss: 0.5598, train/contrastive_loss: 0.1448, train/ortho_loss: 0.0729, train/total_loss: 0.7001, train/util_ratio: 0.8750, train/run_time: 0.1703, lr: 0.0005, train/prefetch_time: 0.0043 
+[2026-03-11 00:27:42,525 INFO] 7936 iteration USE_EMA: False, train/sup_loss: 0.0375, train/unsup_loss: 0.2199, train/contrastive_loss: 0.1118, train/ortho_loss: 0.0722, train/total_loss: 0.3476, train/util_ratio: 0.8750, train/run_time: 0.1691, lr: 0.0005, train/prefetch_time: 0.0043 
+[2026-03-11 00:28:33,248 INFO] validating...
+[2026-03-11 00:28:40,274 INFO] confusion matrix:
+[[0.9  0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.55 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.96 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.   0.  ]
+ [0.   0.   0.   ... 0.   0.   0.96]]
+[2026-03-11 00:28:41,352 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 00:28:42,443 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/model_best.pth
+[2026-03-11 00:28:42,444 INFO] 8192 iteration, USE_EMA: False, train/sup_loss: 0.010874, train/unsup_loss: 1.011978, train/contrastive_loss: 0.261960, train/ortho_loss: 0.071429, train/total_loss: 1.263310, train/util_ratio: 0.781250, train/run_time: 0.169727, eval/loss: 1.543098, eval/top-1-acc: 0.715700, eval/balanced_acc: 0.715700, eval/precision: 0.730218, eval/recall: 0.715700, eval/F1: 0.688180, lr: 0.000500, train/prefetch_time: 0.004192 BEST_EVAL_ACC: 0.7157, at 8192 iters
+[2026-03-11 00:29:34,330 INFO] 8448 iteration USE_EMA: False, train/sup_loss: 0.0051, train/unsup_loss: 0.6581, train/contrastive_loss: 0.2122, train/ortho_loss: 0.0724, train/total_loss: 0.8541, train/util_ratio: 0.8438, train/run_time: 0.1668, lr: 0.0005, train/prefetch_time: 0.0044 
+[2026-03-11 00:30:24,814 INFO] 8704 iteration USE_EMA: False, train/sup_loss: 0.0068, train/unsup_loss: 0.6010, train/contrastive_loss: 0.1429, train/ortho_loss: 0.0708, train/total_loss: 0.7291, train/util_ratio: 0.8125, train/run_time: 0.1696, lr: 0.0005, train/prefetch_time: 0.0067 
+[2026-03-11 00:31:16,452 INFO] 8960 iteration USE_EMA: False, train/sup_loss: 0.0026, train/unsup_loss: 0.4302, train/contrastive_loss: 0.1086, train/ortho_loss: 0.0720, train/total_loss: 0.5198, train/util_ratio: 0.8750, train/run_time: 0.1681, lr: 0.0005, train/prefetch_time: 0.0039 
+[2026-03-11 00:32:07,189 INFO] validating...
+[2026-03-11 00:32:14,175 INFO] confusion matrix:
+[[0.81 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.36 ... 0.   0.58 0.  ]
+ ...
+ [0.   0.   0.   ... 0.99 0.01 0.  ]
+ [0.   0.   0.01 ... 0.   0.88 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.98]]
+[2026-03-11 00:32:15,194 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 00:32:16,176 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/model_best.pth
+[2026-03-11 00:32:16,177 INFO] 9216 iteration, USE_EMA: False, train/sup_loss: 0.003559, train/unsup_loss: 0.489419, train/contrastive_loss: 0.218907, train/ortho_loss: 0.072068, train/total_loss: 0.690873, train/util_ratio: 0.937500, train/run_time: 0.169817, eval/loss: 1.673627, eval/top-1-acc: 0.719700, eval/balanced_acc: 0.719700, eval/precision: 0.733818, eval/recall: 0.719700, eval/F1: 0.688575, lr: 0.000499, train/prefetch_time: 0.003710 BEST_EVAL_ACC: 0.7197, at 9216 iters
+[2026-03-11 00:33:07,857 INFO] 9472 iteration USE_EMA: False, train/sup_loss: 0.0033, train/unsup_loss: 0.4703, train/contrastive_loss: 0.1241, train/ortho_loss: 0.0738, train/total_loss: 0.5764, train/util_ratio: 0.8438, train/run_time: 0.1702, lr: 0.0005, train/prefetch_time: 0.0046 
+[2026-03-11 00:33:58,710 INFO] 9728 iteration USE_EMA: False, train/sup_loss: 0.0402, train/unsup_loss: 0.9642, train/contrastive_loss: 0.2835, train/ortho_loss: 0.0727, train/total_loss: 1.2666, train/util_ratio: 0.9688, train/run_time: 0.1697, lr: 0.0005, train/prefetch_time: 0.0061 
+[2026-03-11 00:34:50,895 INFO] 9984 iteration USE_EMA: False, train/sup_loss: 0.0032, train/unsup_loss: 0.5371, train/contrastive_loss: 0.1245, train/ortho_loss: 0.0715, train/total_loss: 0.6428, train/util_ratio: 0.8750, train/run_time: 0.1748, lr: 0.0005, train/prefetch_time: 0.0069 
+[2026-03-11 00:35:42,334 INFO] validating...
+[2026-03-11 00:35:49,450 INFO] confusion matrix:
+[[0.89 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.71 ... 0.   0.01 0.  ]
+ ...
+ [0.   0.   0.   ... 0.92 0.   0.  ]
+ [0.   0.   0.04 ... 0.   0.   0.  ]
+ [0.   0.   0.   ... 0.   0.   0.91]]
+[2026-03-11 00:35:50,518 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 00:35:51,437 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/model_best.pth
+[2026-03-11 00:35:51,440 INFO] 10240 iteration, USE_EMA: False, train/sup_loss: 0.003180, train/unsup_loss: 0.357362, train/contrastive_loss: 0.103739, train/ortho_loss: 0.072070, train/total_loss: 0.442916, train/util_ratio: 0.906250, train/run_time: 0.171587, eval/loss: 1.460260, eval/top-1-acc: 0.736700, eval/balanced_acc: 0.736700, eval/precision: 0.741624, eval/recall: 0.736700, eval/F1: 0.713776, lr: 0.000499, train/prefetch_time: 0.005937 BEST_EVAL_ACC: 0.7367, at 10240 iters
+[2026-03-11 00:36:43,330 INFO] 10496 iteration USE_EMA: False, train/sup_loss: 0.0063, train/unsup_loss: 0.8257, train/contrastive_loss: 0.2369, train/ortho_loss: 0.0721, train/total_loss: 1.0478, train/util_ratio: 0.9375, train/run_time: 0.1713, lr: 0.0005, train/prefetch_time: 0.0064 
+[2026-03-11 00:37:35,052 INFO] 10752 iteration USE_EMA: False, train/sup_loss: 0.0086, train/unsup_loss: 0.6107, train/contrastive_loss: 0.1481, train/ortho_loss: 0.0728, train/total_loss: 0.7466, train/util_ratio: 0.9688, train/run_time: 0.1717, lr: 0.0005, train/prefetch_time: 0.0043 
+[2026-03-11 00:38:26,679 INFO] 11008 iteration USE_EMA: False, train/sup_loss: 0.0008, train/unsup_loss: 0.9513, train/contrastive_loss: 0.2800, train/ortho_loss: 0.0719, train/total_loss: 1.2109, train/util_ratio: 0.8750, train/run_time: 0.1704, lr: 0.0005, train/prefetch_time: 0.0046 
+[2026-03-11 00:39:17,431 INFO] validating...
+[2026-03-11 00:39:24,478 INFO] confusion matrix:
+[[0.97 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.98 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.52 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.97 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.   0.  ]
+ [0.   0.   0.   ... 0.   0.   0.97]]
+[2026-03-11 00:39:25,516 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 00:39:25,518 INFO] 11264 iteration, USE_EMA: False, train/sup_loss: 0.002250, train/unsup_loss: 0.457698, train/contrastive_loss: 0.103627, train/ortho_loss: 0.072615, train/total_loss: 0.542151, train/util_ratio: 0.937500, train/run_time: 0.169726, eval/loss: 1.555533, eval/top-1-acc: 0.736100, eval/balanced_acc: 0.736100, eval/precision: 0.740763, eval/recall: 0.736100, eval/F1: 0.711417, lr: 0.000498, train/prefetch_time: 0.004191 BEST_EVAL_ACC: 0.7367, at 10240 iters
+[2026-03-11 00:40:17,035 INFO] 11520 iteration USE_EMA: False, train/sup_loss: 0.0016, train/unsup_loss: 0.5159, train/contrastive_loss: 0.1706, train/ortho_loss: 0.0734, train/total_loss: 0.6666, train/util_ratio: 0.8750, train/run_time: 0.1705, lr: 0.0005, train/prefetch_time: 0.0048 
+[2026-03-11 00:41:07,687 INFO] 11776 iteration USE_EMA: False, train/sup_loss: 0.0024, train/unsup_loss: 0.9173, train/contrastive_loss: 0.3130, train/ortho_loss: 0.0720, train/total_loss: 1.2118, train/util_ratio: 0.8438, train/run_time: 0.1697, lr: 0.0005, train/prefetch_time: 0.0037 
+[2026-03-11 00:41:59,036 INFO] 12032 iteration USE_EMA: False, train/sup_loss: 0.0033, train/unsup_loss: 0.1339, train/contrastive_loss: 0.0872, train/ortho_loss: 0.0715, train/total_loss: 0.2026, train/util_ratio: 0.7500, train/run_time: 0.1682, lr: 0.0005, train/prefetch_time: 0.0044 
+[2026-03-11 00:42:49,393 INFO] validating...
+[2026-03-11 00:42:56,435 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.98 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.79 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.97 0.   0.  ]
+ [0.   0.   0.08 ... 0.   0.   0.  ]
+ [0.   0.   0.   ... 0.   0.   0.93]]
+[2026-03-11 00:42:57,495 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 00:42:58,572 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/model_best.pth
+[2026-03-11 00:42:58,573 INFO] 12288 iteration, USE_EMA: False, train/sup_loss: 0.032674, train/unsup_loss: 0.727449, train/contrastive_loss: 0.314873, train/ortho_loss: 0.070576, train/total_loss: 1.053816, train/util_ratio: 0.906250, train/run_time: 0.168701, eval/loss: 1.430829, eval/top-1-acc: 0.746700, eval/balanced_acc: 0.746700, eval/precision: 0.736486, eval/recall: 0.746700, eval/F1: 0.723490, lr: 0.000497, train/prefetch_time: 0.004484 BEST_EVAL_ACC: 0.7467, at 12288 iters
+[2026-03-11 00:43:50,196 INFO] 12544 iteration USE_EMA: False, train/sup_loss: 0.0014, train/unsup_loss: 0.4104, train/contrastive_loss: 0.1385, train/ortho_loss: 0.0717, train/total_loss: 0.5296, train/util_ratio: 0.9688, train/run_time: 0.1721, lr: 0.0005, train/prefetch_time: 0.0040 
+[2026-03-11 00:44:40,989 INFO] 12800 iteration USE_EMA: False, train/sup_loss: 0.0018, train/unsup_loss: 0.5251, train/contrastive_loss: 0.1839, train/ortho_loss: 0.0704, train/total_loss: 0.6901, train/util_ratio: 0.9375, train/run_time: 0.1673, lr: 0.0005, train/prefetch_time: 0.0038 
+[2026-03-11 00:45:32,736 INFO] 13056 iteration USE_EMA: False, train/sup_loss: 0.0014, train/unsup_loss: 0.5114, train/contrastive_loss: 0.1306, train/ortho_loss: 0.0707, train/total_loss: 0.6227, train/util_ratio: 0.9375, train/run_time: 0.1723, lr: 0.0005, train/prefetch_time: 0.0041 
+[2026-03-11 00:46:23,277 INFO] validating...
+[2026-03-11 00:46:30,302 INFO] confusion matrix:
+[[0.97 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.59 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.95 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.   0.  ]
+ [0.   0.   0.   ... 0.   0.   0.96]]
+[2026-03-11 00:46:31,288 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 00:46:31,289 INFO] 13312 iteration, USE_EMA: False, train/sup_loss: 0.002954, train/unsup_loss: 0.102172, train/contrastive_loss: 0.042839, train/ortho_loss: 0.071943, train/total_loss: 0.126816, train/util_ratio: 0.875000, train/run_time: 0.172553, eval/loss: 1.579127, eval/top-1-acc: 0.742800, eval/balanced_acc: 0.742800, eval/precision: 0.750444, eval/recall: 0.742800, eval/F1: 0.721474, lr: 0.000497, train/prefetch_time: 0.004167 BEST_EVAL_ACC: 0.7467, at 12288 iters
+[2026-03-11 00:47:22,776 INFO] 13568 iteration USE_EMA: False, train/sup_loss: 0.0481, train/unsup_loss: 0.7424, train/contrastive_loss: 0.2222, train/ortho_loss: 0.0710, train/total_loss: 0.9923, train/util_ratio: 0.9688, train/run_time: 0.1709, lr: 0.0005, train/prefetch_time: 0.0047 
+[2026-03-11 00:48:12,982 INFO] 13824 iteration USE_EMA: False, train/sup_loss: 0.0024, train/unsup_loss: 0.5343, train/contrastive_loss: 0.1704, train/ortho_loss: 0.0711, train/total_loss: 0.6860, train/util_ratio: 0.8438, train/run_time: 0.1708, lr: 0.0005, train/prefetch_time: 0.0042 
+[2026-03-11 00:49:04,740 INFO] 14080 iteration USE_EMA: False, train/sup_loss: 0.0037, train/unsup_loss: 0.3548, train/contrastive_loss: 0.1143, train/ortho_loss: 0.0712, train/total_loss: 0.4514, train/util_ratio: 0.8750, train/run_time: 0.1703, lr: 0.0005, train/prefetch_time: 0.0044 
+[2026-03-11 00:49:55,007 INFO] validating...
+[2026-03-11 00:50:02,139 INFO] confusion matrix:
+[[0.89 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.54 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.92 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.   0.  ]
+ [0.   0.   0.   ... 0.   0.   0.96]]
+[2026-03-11 00:50:03,137 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 00:50:04,101 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/model_best.pth
+[2026-03-11 00:50:04,102 INFO] 14336 iteration, USE_EMA: False, train/sup_loss: 0.003149, train/unsup_loss: 0.239811, train/contrastive_loss: 0.074366, train/ortho_loss: 0.071370, train/total_loss: 0.295479, train/util_ratio: 0.875000, train/run_time: 0.170071, eval/loss: 1.607517, eval/top-1-acc: 0.747900, eval/balanced_acc: 0.747900, eval/precision: 0.741380, eval/recall: 0.747900, eval/F1: 0.721388, lr: 0.000496, train/prefetch_time: 0.003595 BEST_EVAL_ACC: 0.7479, at 14336 iters
+[2026-03-11 00:50:56,065 INFO] 14592 iteration USE_EMA: False, train/sup_loss: 0.0012, train/unsup_loss: 0.6234, train/contrastive_loss: 0.1666, train/ortho_loss: 0.0720, train/total_loss: 0.7706, train/util_ratio: 0.9688, train/run_time: 0.1716, lr: 0.0005, train/prefetch_time: 0.0050 
+[2026-03-11 00:51:47,032 INFO] 14848 iteration USE_EMA: False, train/sup_loss: 0.0015, train/unsup_loss: 0.3000, train/contrastive_loss: 0.0412, train/ortho_loss: 0.0717, train/total_loss: 0.3223, train/util_ratio: 0.9375, train/run_time: 0.1703, lr: 0.0005, train/prefetch_time: 0.0036 
+[2026-03-11 00:52:38,951 INFO] 15104 iteration USE_EMA: False, train/sup_loss: 0.0040, train/unsup_loss: 0.5375, train/contrastive_loss: 0.1442, train/ortho_loss: 0.0708, train/total_loss: 0.6645, train/util_ratio: 0.9688, train/run_time: 0.1708, lr: 0.0005, train/prefetch_time: 0.0048 
+[2026-03-11 00:53:30,030 INFO] validating...
+[2026-03-11 00:53:37,284 INFO] confusion matrix:
+[[0.94 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.98 0.   ... 0.   0.   0.  ]
+ [0.01 0.   0.71 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.94 0.   0.  ]
+ [0.   0.   0.03 ... 0.   0.   0.  ]
+ [0.   0.   0.   ... 0.   0.   0.96]]
+[2026-03-11 00:53:38,315 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 00:53:38,316 INFO] 15360 iteration, USE_EMA: False, train/sup_loss: 0.041438, train/unsup_loss: 0.381997, train/contrastive_loss: 0.124797, train/ortho_loss: 0.070906, train/total_loss: 0.527095, train/util_ratio: 0.843750, train/run_time: 0.170238, eval/loss: 1.480545, eval/top-1-acc: 0.742400, eval/balanced_acc: 0.742400, eval/precision: 0.741625, eval/recall: 0.742400, eval/F1: 0.718395, lr: 0.000495, train/prefetch_time: 0.004816 BEST_EVAL_ACC: 0.7479, at 14336 iters
+[2026-03-11 00:54:29,794 INFO] 15616 iteration USE_EMA: False, train/sup_loss: 0.0013, train/unsup_loss: 0.6720, train/contrastive_loss: 0.2541, train/ortho_loss: 0.0695, train/total_loss: 0.9069, train/util_ratio: 0.9375, train/run_time: 0.1701, lr: 0.0005, train/prefetch_time: 0.0042 
+[2026-03-11 00:55:20,190 INFO] 15872 iteration USE_EMA: False, train/sup_loss: 0.0012, train/unsup_loss: 0.2539, train/contrastive_loss: 0.1110, train/ortho_loss: 0.0695, train/total_loss: 0.3440, train/util_ratio: 0.8438, train/run_time: 0.1698, lr: 0.0005, train/prefetch_time: 0.0042 
+[2026-03-11 00:56:12,365 INFO] 16128 iteration USE_EMA: False, train/sup_loss: 0.0009, train/unsup_loss: 0.3235, train/contrastive_loss: 0.1237, train/ortho_loss: 0.0705, train/total_loss: 0.4269, train/util_ratio: 0.8750, train/run_time: 0.1745, lr: 0.0005, train/prefetch_time: 0.0109 
+[2026-03-11 00:57:03,262 INFO] validating...
+[2026-03-11 00:57:10,154 INFO] confusion matrix:
+[[0.86 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.98 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.53 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.97 0.   0.  ]
+ [0.   0.   0.   ... 0.   0.   0.  ]
+ [0.   0.   0.   ... 0.   0.   0.86]]
+[2026-03-11 00:57:11,214 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 00:57:11,215 INFO] 16384 iteration, USE_EMA: False, train/sup_loss: 0.005320, train/unsup_loss: 0.493616, train/contrastive_loss: 0.146118, train/ortho_loss: 0.070829, train/total_loss: 0.623686, train/util_ratio: 0.843750, train/run_time: 0.170694, eval/loss: 1.539161, eval/top-1-acc: 0.744700, eval/balanced_acc: 0.744700, eval/precision: 0.748823, eval/recall: 0.744700, eval/F1: 0.725446, lr: 0.000494, train/prefetch_time: 0.003922 BEST_EVAL_ACC: 0.7479, at 14336 iters
+[2026-03-11 00:58:03,012 INFO] 16640 iteration USE_EMA: False, train/sup_loss: 0.0069, train/unsup_loss: 0.5456, train/contrastive_loss: 0.1380, train/ortho_loss: 0.0682, train/total_loss: 0.6700, train/util_ratio: 0.9375, train/run_time: 0.1700, lr: 0.0005, train/prefetch_time: 0.0079 
+[2026-03-11 00:58:53,994 INFO] 16896 iteration USE_EMA: False, train/sup_loss: 0.0058, train/unsup_loss: 1.0215, train/contrastive_loss: 0.2879, train/ortho_loss: 0.0689, train/total_loss: 1.2947, train/util_ratio: 0.9375, train/run_time: 0.1708, lr: 0.0005, train/prefetch_time: 0.0044 
+[2026-03-11 00:59:45,863 INFO] 17152 iteration USE_EMA: False, train/sup_loss: 0.0014, train/unsup_loss: 0.4908, train/contrastive_loss: 0.1627, train/ortho_loss: 0.0715, train/total_loss: 0.6342, train/util_ratio: 0.9375, train/run_time: 0.1692, lr: 0.0005, train/prefetch_time: 0.0034 
+[2026-03-11 01:00:37,295 INFO] validating...
+[2026-03-11 01:00:44,259 INFO] confusion matrix:
+[[0.88 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.98 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.82 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.99 0.   0.  ]
+ [0.   0.   0.4  ... 0.   0.05 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.79]]
+[2026-03-11 01:00:45,357 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 01:00:46,317 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/model_best.pth
+[2026-03-11 01:00:46,318 INFO] 17408 iteration, USE_EMA: False, train/sup_loss: 0.000562, train/unsup_loss: 0.288879, train/contrastive_loss: 0.077827, train/ortho_loss: 0.070306, train/total_loss: 0.346790, train/util_ratio: 0.968750, train/run_time: 0.170878, eval/loss: 1.443028, eval/top-1-acc: 0.755800, eval/balanced_acc: 0.755800, eval/precision: 0.762858, eval/recall: 0.755800, eval/F1: 0.734886, lr: 0.000492, train/prefetch_time: 0.003616 BEST_EVAL_ACC: 0.7558, at 17408 iters
+[2026-03-11 01:01:38,260 INFO] 17664 iteration USE_EMA: False, train/sup_loss: 0.0015, train/unsup_loss: 0.2695, train/contrastive_loss: 0.0949, train/ortho_loss: 0.0704, train/total_loss: 0.3446, train/util_ratio: 0.9062, train/run_time: 0.1665, lr: 0.0005, train/prefetch_time: 0.0058 
+[2026-03-11 01:02:29,107 INFO] 17920 iteration USE_EMA: False, train/sup_loss: 0.0022, train/unsup_loss: 0.6102, train/contrastive_loss: 0.1742, train/ortho_loss: 0.0708, train/total_loss: 0.7659, train/util_ratio: 0.9375, train/run_time: 0.1707, lr: 0.0005, train/prefetch_time: 0.0043 
+[2026-03-11 01:03:21,162 INFO] 18176 iteration USE_EMA: False, train/sup_loss: 0.0005, train/unsup_loss: 0.6740, train/contrastive_loss: 0.1456, train/ortho_loss: 0.0697, train/total_loss: 0.7989, train/util_ratio: 0.9062, train/run_time: 0.1698, lr: 0.0005, train/prefetch_time: 0.0044 
+[2026-03-11 01:04:11,953 INFO] validating...
+[2026-03-11 01:04:18,805 INFO] confusion matrix:
+[[0.94 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.98 0.   ... 0.   0.   0.  ]
+ [0.01 0.   0.64 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.95 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.   0.  ]
+ [0.   0.   0.   ... 0.   0.   0.78]]
+[2026-03-11 01:04:19,621 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 01:04:20,432 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/model_best.pth
+[2026-03-11 01:04:20,433 INFO] 18432 iteration, USE_EMA: False, train/sup_loss: 0.002513, train/unsup_loss: 0.502442, train/contrastive_loss: 0.130873, train/ortho_loss: 0.068667, train/total_loss: 0.615166, train/util_ratio: 0.937500, train/run_time: 0.169996, eval/loss: 1.397665, eval/top-1-acc: 0.761800, eval/balanced_acc: 0.761800, eval/precision: 0.765194, eval/recall: 0.761800, eval/F1: 0.746213, lr: 0.000491, train/prefetch_time: 0.004349 BEST_EVAL_ACC: 0.7618, at 18432 iters
+[2026-03-11 01:05:12,198 INFO] 18688 iteration USE_EMA: False, train/sup_loss: 0.0004, train/unsup_loss: 0.5393, train/contrastive_loss: 0.1457, train/ortho_loss: 0.0697, train/total_loss: 0.6640, train/util_ratio: 0.9375, train/run_time: 0.1745, lr: 0.0005, train/prefetch_time: 0.0057 
+[2026-03-11 01:06:02,731 INFO] 18944 iteration USE_EMA: False, train/sup_loss: 0.0006, train/unsup_loss: 0.7243, train/contrastive_loss: 0.1840, train/ortho_loss: 0.0693, train/total_loss: 0.8879, train/util_ratio: 0.9375, train/run_time: 0.1702, lr: 0.0005, train/prefetch_time: 0.0041 
+[2026-03-11 01:06:53,958 INFO] 19200 iteration USE_EMA: False, train/sup_loss: 0.0007, train/unsup_loss: 0.4699, train/contrastive_loss: 0.1262, train/ortho_loss: 0.0688, train/total_loss: 0.5762, train/util_ratio: 0.9688, train/run_time: 0.1698, lr: 0.0005, train/prefetch_time: 0.0041 
+[2026-03-11 01:07:44,496 INFO] validating...
+[2026-03-11 01:07:51,491 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.98 0.   ... 0.   0.   0.  ]
+ [0.01 0.   0.66 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.94 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.   0.  ]
+ [0.   0.   0.   ... 0.   0.   0.98]]
+[2026-03-11 01:07:52,445 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 01:07:52,446 INFO] 19456 iteration, USE_EMA: False, train/sup_loss: 0.000940, train/unsup_loss: 0.404765, train/contrastive_loss: 0.144735, train/ortho_loss: 0.068312, train/total_loss: 0.530183, train/util_ratio: 0.906250, train/run_time: 0.169630, eval/loss: 1.563196, eval/top-1-acc: 0.756500, eval/balanced_acc: 0.756500, eval/precision: 0.759205, eval/recall: 0.756500, eval/F1: 0.736052, lr: 0.000490, train/prefetch_time: 0.003295 BEST_EVAL_ACC: 0.7618, at 18432 iters
+[2026-03-11 01:08:43,536 INFO] 19712 iteration USE_EMA: False, train/sup_loss: 0.0028, train/unsup_loss: 0.1618, train/contrastive_loss: 0.0472, train/ortho_loss: 0.0690, train/total_loss: 0.1913, train/util_ratio: 0.9375, train/run_time: 0.1697, lr: 0.0005, train/prefetch_time: 0.0046 
+[2026-03-11 01:09:33,975 INFO] 19968 iteration USE_EMA: False, train/sup_loss: 0.0016, train/unsup_loss: 0.4124, train/contrastive_loss: 0.0982, train/ortho_loss: 0.0688, train/total_loss: 0.4904, train/util_ratio: 0.9062, train/run_time: 0.1697, lr: 0.0005, train/prefetch_time: 0.0039 
+[2026-03-11 01:10:25,280 INFO] 20224 iteration USE_EMA: False, train/sup_loss: 0.0053, train/unsup_loss: 0.7409, train/contrastive_loss: 0.2026, train/ortho_loss: 0.0687, train/total_loss: 0.9272, train/util_ratio: 0.9062, train/run_time: 0.1706, lr: 0.0005, train/prefetch_time: 0.0044 
+[2026-03-11 01:11:16,007 INFO] validating...
+[2026-03-11 01:11:23,079 INFO] confusion matrix:
+[[0.97 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.98 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.72 ... 0.   0.15 0.  ]
+ ...
+ [0.   0.   0.   ... 0.97 0.   0.  ]
+ [0.   0.   0.02 ... 0.   0.46 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.87]]
+[2026-03-11 01:11:24,142 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 01:11:24,143 INFO] 20480 iteration, USE_EMA: False, train/sup_loss: 0.001857, train/unsup_loss: 0.537031, train/contrastive_loss: 0.101679, train/ortho_loss: 0.068441, train/total_loss: 0.619659, train/util_ratio: 0.906250, train/run_time: 0.169862, eval/loss: 1.476476, eval/top-1-acc: 0.759300, eval/balanced_acc: 0.759300, eval/precision: 0.760902, eval/recall: 0.759300, eval/F1: 0.742404, lr: 0.000488, train/prefetch_time: 0.003711 BEST_EVAL_ACC: 0.7618, at 18432 iters
+[2026-03-11 01:12:15,688 INFO] 20736 iteration USE_EMA: False, train/sup_loss: 0.0038, train/unsup_loss: 0.4248, train/contrastive_loss: 0.1471, train/ortho_loss: 0.0678, train/total_loss: 0.5546, train/util_ratio: 0.8750, train/run_time: 0.1700, lr: 0.0005, train/prefetch_time: 0.0043 
+[2026-03-11 01:13:06,415 INFO] 20992 iteration USE_EMA: False, train/sup_loss: 0.0018, train/unsup_loss: 0.4509, train/contrastive_loss: 0.1170, train/ortho_loss: 0.0698, train/total_loss: 0.5483, train/util_ratio: 0.9062, train/run_time: 0.1697, lr: 0.0005, train/prefetch_time: 0.0036 
+[2026-03-11 01:13:57,672 INFO] 21248 iteration USE_EMA: False, train/sup_loss: 0.0059, train/unsup_loss: 0.7501, train/contrastive_loss: 0.2379, train/ortho_loss: 0.0684, train/total_loss: 0.9729, train/util_ratio: 0.9688, train/run_time: 0.1697, lr: 0.0005, train/prefetch_time: 0.0045 
+[2026-03-11 01:14:47,841 INFO] validating...
+[2026-03-11 01:14:55,106 INFO] confusion matrix:
+[[0.98 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.99 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.65 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.97 0.   0.  ]
+ [0.   0.   0.02 ... 0.   0.   0.  ]
+ [0.   0.   0.   ... 0.   0.   0.83]]
+[2026-03-11 01:14:56,110 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 01:14:57,063 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/model_best.pth
+[2026-03-11 01:14:57,064 INFO] 21504 iteration, USE_EMA: False, train/sup_loss: 0.001333, train/unsup_loss: 0.135965, train/contrastive_loss: 0.067533, train/ortho_loss: 0.068408, train/total_loss: 0.183910, train/util_ratio: 0.812500, train/run_time: 0.170240, eval/loss: 1.423877, eval/top-1-acc: 0.771000, eval/balanced_acc: 0.771000, eval/precision: 0.763684, eval/recall: 0.771000, eval/F1: 0.752492, lr: 0.000487, train/prefetch_time: 0.004778 BEST_EVAL_ACC: 0.7710, at 21504 iters
+[2026-03-11 01:15:48,509 INFO] 21760 iteration USE_EMA: False, train/sup_loss: 0.0005, train/unsup_loss: 0.4538, train/contrastive_loss: 0.1207, train/ortho_loss: 0.0683, train/total_loss: 0.5548, train/util_ratio: 0.9688, train/run_time: 0.1690, lr: 0.0005, train/prefetch_time: 0.0039 
+[2026-03-11 01:16:38,883 INFO] 22016 iteration USE_EMA: False, train/sup_loss: 0.0008, train/unsup_loss: 0.5413, train/contrastive_loss: 0.1357, train/ortho_loss: 0.0696, train/total_loss: 0.6572, train/util_ratio: 0.9688, train/run_time: 0.1702, lr: 0.0005, train/prefetch_time: 0.0040 
+[2026-03-11 01:17:30,682 INFO] 22272 iteration USE_EMA: False, train/sup_loss: 0.0036, train/unsup_loss: 0.4772, train/contrastive_loss: 0.1589, train/ortho_loss: 0.0693, train/total_loss: 0.6191, train/util_ratio: 0.9062, train/run_time: 0.1698, lr: 0.0005, train/prefetch_time: 0.0045 
+[2026-03-11 01:18:21,298 INFO] validating...
+[2026-03-11 01:18:28,383 INFO] confusion matrix:
+[[0.98 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.98 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.58 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.95 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.   0.  ]
+ [0.   0.   0.   ... 0.   0.   0.84]]
+[2026-03-11 01:18:29,398 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 01:18:29,399 INFO] 22528 iteration, USE_EMA: False, train/sup_loss: 0.000300, train/unsup_loss: 0.375830, train/contrastive_loss: 0.100524, train/ortho_loss: 0.068546, train/total_loss: 0.455518, train/util_ratio: 0.906250, train/run_time: 0.170036, eval/loss: 1.437957, eval/top-1-acc: 0.764700, eval/balanced_acc: 0.764700, eval/precision: 0.763274, eval/recall: 0.764700, eval/F1: 0.750117, lr: 0.000485, train/prefetch_time: 0.004138 BEST_EVAL_ACC: 0.7710, at 21504 iters
+[2026-03-11 01:19:20,745 INFO] 22784 iteration USE_EMA: False, train/sup_loss: 0.0011, train/unsup_loss: 0.5266, train/contrastive_loss: 0.1735, train/ortho_loss: 0.0695, train/total_loss: 0.6801, train/util_ratio: 0.9688, train/run_time: 0.1712, lr: 0.0005, train/prefetch_time: 0.0070 
+[2026-03-11 01:20:11,036 INFO] 23040 iteration USE_EMA: False, train/sup_loss: 0.0019, train/unsup_loss: 0.7126, train/contrastive_loss: 0.1276, train/ortho_loss: 0.0680, train/total_loss: 0.8212, train/util_ratio: 0.8438, train/run_time: 0.1687, lr: 0.0005, train/prefetch_time: 0.0039 
+[2026-03-11 01:21:02,356 INFO] 23296 iteration USE_EMA: False, train/sup_loss: 0.0018, train/unsup_loss: 0.3972, train/contrastive_loss: 0.1185, train/ortho_loss: 0.0685, train/total_loss: 0.4969, train/util_ratio: 0.9688, train/run_time: 0.1705, lr: 0.0005, train/prefetch_time: 0.0046 
+[2026-03-11 01:21:52,619 INFO] validating...
+[2026-03-11 01:21:59,993 INFO] confusion matrix:
+[[0.82 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.8  ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.96 0.   0.  ]
+ [0.   0.   0.04 ... 0.   0.   0.  ]
+ [0.   0.   0.   ... 0.   0.   0.96]]
+[2026-03-11 01:22:01,333 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 01:22:01,335 INFO] 23552 iteration, USE_EMA: False, train/sup_loss: 0.063555, train/unsup_loss: 0.341312, train/contrastive_loss: 0.148344, train/ortho_loss: 0.068626, train/total_loss: 0.532077, train/util_ratio: 0.906250, train/run_time: 0.166975, eval/loss: 1.485183, eval/top-1-acc: 0.767600, eval/balanced_acc: 0.767600, eval/precision: 0.761757, eval/recall: 0.767600, eval/F1: 0.751498, lr: 0.000483, train/prefetch_time: 0.003929 BEST_EVAL_ACC: 0.7710, at 21504 iters
+[2026-03-11 01:22:52,584 INFO] 23808 iteration USE_EMA: False, train/sup_loss: 0.0026, train/unsup_loss: 0.5981, train/contrastive_loss: 0.1613, train/ortho_loss: 0.0687, train/total_loss: 0.7418, train/util_ratio: 0.9688, train/run_time: 0.1668, lr: 0.0005, train/prefetch_time: 0.0046 
+[2026-03-11 01:23:42,749 INFO] 24064 iteration USE_EMA: False, train/sup_loss: 0.0004, train/unsup_loss: 0.4690, train/contrastive_loss: 0.1461, train/ortho_loss: 0.0688, train/total_loss: 0.5949, train/util_ratio: 0.9688, train/run_time: 0.1673, lr: 0.0005, train/prefetch_time: 0.0041 
+[2026-03-11 01:24:34,542 INFO] 24320 iteration USE_EMA: False, train/sup_loss: 0.0004, train/unsup_loss: 0.2373, train/contrastive_loss: 0.0550, train/ortho_loss: 0.0683, train/total_loss: 0.2722, train/util_ratio: 0.9062, train/run_time: 0.1699, lr: 0.0005, train/prefetch_time: 0.0050 
+[2026-03-11 01:25:24,804 INFO] validating...
+[2026-03-11 01:25:31,691 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.96 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.64 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.99 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.   0.  ]
+ [0.   0.   0.   ... 0.   0.   0.98]]
+[2026-03-11 01:25:32,480 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 01:25:32,481 INFO] 24576 iteration, USE_EMA: False, train/sup_loss: 0.000325, train/unsup_loss: 0.436660, train/contrastive_loss: 0.128998, train/ortho_loss: 0.067567, train/total_loss: 0.545302, train/util_ratio: 0.968750, train/run_time: 0.169924, eval/loss: 1.500351, eval/top-1-acc: 0.768200, eval/balanced_acc: 0.768200, eval/precision: 0.765160, eval/recall: 0.768200, eval/F1: 0.753917, lr: 0.000481, train/prefetch_time: 0.003767 BEST_EVAL_ACC: 0.7710, at 21504 iters
+[2026-03-11 01:26:24,106 INFO] 24832 iteration USE_EMA: False, train/sup_loss: 0.0022, train/unsup_loss: 0.2655, train/contrastive_loss: 0.0762, train/ortho_loss: 0.0693, train/total_loss: 0.3230, train/util_ratio: 0.9062, train/run_time: 0.1710, lr: 0.0005, train/prefetch_time: 0.0043 
+[2026-03-11 01:27:15,015 INFO] 25088 iteration USE_EMA: False, train/sup_loss: 0.0137, train/unsup_loss: 0.5562, train/contrastive_loss: 0.1126, train/ortho_loss: 0.0692, train/total_loss: 0.6622, train/util_ratio: 0.9375, train/run_time: 0.1695, lr: 0.0005, train/prefetch_time: 0.0040 
+[2026-03-11 01:28:06,608 INFO] 25344 iteration USE_EMA: False, train/sup_loss: 0.0005, train/unsup_loss: 0.3249, train/contrastive_loss: 0.0991, train/ortho_loss: 0.0683, train/total_loss: 0.4042, train/util_ratio: 0.9375, train/run_time: 0.1701, lr: 0.0005, train/prefetch_time: 0.0043 
+[2026-03-11 01:28:57,112 INFO] validating...
+[2026-03-11 01:29:04,154 INFO] confusion matrix:
+[[0.97 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.98 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.75 ... 0.   0.15 0.  ]
+ ...
+ [0.   0.   0.   ... 0.93 0.   0.  ]
+ [0.   0.   0.03 ... 0.   0.53 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.97]]
+[2026-03-11 01:29:05,160 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 01:29:05,162 INFO] 25600 iteration, USE_EMA: False, train/sup_loss: 0.000255, train/unsup_loss: 0.446942, train/contrastive_loss: 0.121999, train/ortho_loss: 0.069030, train/total_loss: 0.548751, train/util_ratio: 1.000000, train/run_time: 0.170305, eval/loss: 1.535247, eval/top-1-acc: 0.765800, eval/balanced_acc: 0.765800, eval/precision: 0.766119, eval/recall: 0.765800, eval/F1: 0.749386, lr: 0.000479, train/prefetch_time: 0.003820 BEST_EVAL_ACC: 0.7710, at 21504 iters
+[2026-03-11 01:29:56,540 INFO] 25856 iteration USE_EMA: False, train/sup_loss: 0.0032, train/unsup_loss: 0.2847, train/contrastive_loss: 0.0618, train/ortho_loss: 0.0700, train/total_loss: 0.3286, train/util_ratio: 0.8750, train/run_time: 0.1661, lr: 0.0005, train/prefetch_time: 0.0050 
+[2026-03-11 01:30:47,019 INFO] 26112 iteration USE_EMA: False, train/sup_loss: 0.0036, train/unsup_loss: 0.2446, train/contrastive_loss: 0.0817, train/ortho_loss: 0.0687, train/total_loss: 0.3090, train/util_ratio: 0.9062, train/run_time: 0.1692, lr: 0.0005, train/prefetch_time: 0.0041 
+[2026-03-11 01:31:37,993 INFO] 26368 iteration USE_EMA: False, train/sup_loss: 0.0095, train/unsup_loss: 0.4711, train/contrastive_loss: 0.1289, train/ortho_loss: 0.0687, train/total_loss: 0.5886, train/util_ratio: 0.8750, train/run_time: 0.1693, lr: 0.0005, train/prefetch_time: 0.0043 
+[2026-03-11 01:32:28,259 INFO] validating...
+[2026-03-11 01:32:35,210 INFO] confusion matrix:
+[[0.97 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.98 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.8  ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.99 0.   0.  ]
+ [0.   0.   0.05 ... 0.   0.   0.  ]
+ [0.   0.   0.   ... 0.   0.   0.96]]
+[2026-03-11 01:32:36,210 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 01:32:36,211 INFO] 26624 iteration, USE_EMA: False, train/sup_loss: 0.008140, train/unsup_loss: 0.626229, train/contrastive_loss: 0.091690, train/ortho_loss: 0.068945, train/total_loss: 0.706335, train/util_ratio: 1.000000, train/run_time: 0.169803, eval/loss: 1.559688, eval/top-1-acc: 0.766200, eval/balanced_acc: 0.766200, eval/precision: 0.770524, eval/recall: 0.766200, eval/F1: 0.751729, lr: 0.000477, train/prefetch_time: 0.004201 BEST_EVAL_ACC: 0.7710, at 21504 iters
+[2026-03-11 01:33:28,180 INFO] 26880 iteration USE_EMA: False, train/sup_loss: 0.0006, train/unsup_loss: 0.2787, train/contrastive_loss: 0.1086, train/ortho_loss: 0.0683, train/total_loss: 0.3672, train/util_ratio: 0.8750, train/run_time: 0.1775, lr: 0.0005, train/prefetch_time: 0.0054 
+[2026-03-11 01:34:18,677 INFO] 27136 iteration USE_EMA: False, train/sup_loss: 0.0040, train/unsup_loss: 0.2299, train/contrastive_loss: 0.1341, train/ortho_loss: 0.0681, train/total_loss: 0.3470, train/util_ratio: 0.9375, train/run_time: 0.1663, lr: 0.0005, train/prefetch_time: 0.0040 
+[2026-03-11 01:35:10,003 INFO] 27392 iteration USE_EMA: False, train/sup_loss: 0.0063, train/unsup_loss: 0.1802, train/contrastive_loss: 0.0675, train/ortho_loss: 0.0680, train/total_loss: 0.2334, train/util_ratio: 0.9062, train/run_time: 0.1694, lr: 0.0005, train/prefetch_time: 0.0043 
+[2026-03-11 01:36:00,362 INFO] validating...
+[2026-03-11 01:36:07,326 INFO] confusion matrix:
+[[0.9  0.   0.   ... 0.   0.   0.  ]
+ [0.   0.98 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.49 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.96 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.   0.  ]
+ [0.   0.   0.   ... 0.   0.   0.73]]
+[2026-03-11 01:36:08,368 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 01:36:08,369 INFO] 27648 iteration, USE_EMA: False, train/sup_loss: 0.024432, train/unsup_loss: 0.479077, train/contrastive_loss: 0.131000, train/ortho_loss: 0.067533, train/total_loss: 0.613636, train/util_ratio: 0.937500, train/run_time: 0.171600, eval/loss: 1.536812, eval/top-1-acc: 0.768400, eval/balanced_acc: 0.768400, eval/precision: 0.771281, eval/recall: 0.768400, eval/F1: 0.752202, lr: 0.000475, train/prefetch_time: 0.004320 BEST_EVAL_ACC: 0.7710, at 21504 iters
+[2026-03-11 01:36:59,738 INFO] 27904 iteration USE_EMA: False, train/sup_loss: 0.0003, train/unsup_loss: 0.2681, train/contrastive_loss: 0.0438, train/ortho_loss: 0.0677, train/total_loss: 0.2909, train/util_ratio: 0.8438, train/run_time: 0.1699, lr: 0.0005, train/prefetch_time: 0.0045 
+[2026-03-11 01:37:50,095 INFO] 28160 iteration USE_EMA: False, train/sup_loss: 0.0006, train/unsup_loss: 0.3872, train/contrastive_loss: 0.1048, train/ortho_loss: 0.0675, train/total_loss: 0.4719, train/util_ratio: 0.9375, train/run_time: 0.1695, lr: 0.0005, train/prefetch_time: 0.0042 
+[2026-03-11 01:38:41,422 INFO] 28416 iteration USE_EMA: False, train/sup_loss: 0.0011, train/unsup_loss: 0.6348, train/contrastive_loss: 0.1536, train/ortho_loss: 0.0687, train/total_loss: 0.7690, train/util_ratio: 0.9062, train/run_time: 0.1706, lr: 0.0005, train/prefetch_time: 0.0044 
+[2026-03-11 01:39:31,714 INFO] validating...
+[2026-03-11 01:39:38,794 INFO] confusion matrix:
+[[0.97 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.96 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.87 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.97 0.   0.  ]
+ [0.   0.   0.05 ... 0.   0.   0.  ]
+ [0.   0.   0.   ... 0.   0.   0.96]]
+[2026-03-11 01:39:39,767 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 01:39:39,768 INFO] 28672 iteration, USE_EMA: False, train/sup_loss: 0.001156, train/unsup_loss: 0.694259, train/contrastive_loss: 0.219001, train/ortho_loss: 0.067601, train/total_loss: 0.893533, train/util_ratio: 0.937500, train/run_time: 0.169439, eval/loss: 1.535983, eval/top-1-acc: 0.766400, eval/balanced_acc: 0.766400, eval/precision: 0.762562, eval/recall: 0.766400, eval/F1: 0.748961, lr: 0.000473, train/prefetch_time: 0.004133 BEST_EVAL_ACC: 0.7710, at 21504 iters
+[2026-03-11 01:40:31,204 INFO] 28928 iteration USE_EMA: False, train/sup_loss: 0.0006, train/unsup_loss: 0.5406, train/contrastive_loss: 0.1533, train/ortho_loss: 0.0682, train/total_loss: 0.6734, train/util_ratio: 0.8438, train/run_time: 0.1704, lr: 0.0005, train/prefetch_time: 0.0046 
+[2026-03-11 01:41:21,555 INFO] 29184 iteration USE_EMA: False, train/sup_loss: 0.0005, train/unsup_loss: 0.4006, train/contrastive_loss: 0.0782, train/ortho_loss: 0.0689, train/total_loss: 0.4582, train/util_ratio: 0.8750, train/run_time: 0.1696, lr: 0.0005, train/prefetch_time: 0.0041 
+[2026-03-11 01:42:13,324 INFO] 29440 iteration USE_EMA: False, train/sup_loss: 0.0002, train/unsup_loss: 0.4575, train/contrastive_loss: 0.1382, train/ortho_loss: 0.0675, train/total_loss: 0.5754, train/util_ratio: 0.9062, train/run_time: 0.1703, lr: 0.0005, train/prefetch_time: 0.0058 
+[2026-03-11 01:43:04,459 INFO] validating...
+[2026-03-11 01:43:11,265 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.98 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.88 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.98 0.   0.  ]
+ [0.   0.   0.06 ... 0.   0.   0.  ]
+ [0.   0.   0.   ... 0.   0.   0.81]]
+[2026-03-11 01:43:12,066 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 01:43:12,067 INFO] 29696 iteration, USE_EMA: False, train/sup_loss: 0.004544, train/unsup_loss: 0.620552, train/contrastive_loss: 0.157664, train/ortho_loss: 0.068384, train/total_loss: 0.762539, train/util_ratio: 1.000000, train/run_time: 0.170032, eval/loss: 1.525699, eval/top-1-acc: 0.770400, eval/balanced_acc: 0.770400, eval/precision: 0.778830, eval/recall: 0.770400, eval/F1: 0.754966, lr: 0.000470, train/prefetch_time: 0.003587 BEST_EVAL_ACC: 0.7710, at 21504 iters
+[2026-03-11 01:44:03,680 INFO] 29952 iteration USE_EMA: False, train/sup_loss: 0.0257, train/unsup_loss: 0.3564, train/contrastive_loss: 0.1404, train/ortho_loss: 0.0682, train/total_loss: 0.5014, train/util_ratio: 0.8750, train/run_time: 0.1673, lr: 0.0005, train/prefetch_time: 0.0047 
+[2026-03-11 01:44:54,290 INFO] 30208 iteration USE_EMA: False, train/sup_loss: 0.0085, train/unsup_loss: 0.5458, train/contrastive_loss: 0.1228, train/ortho_loss: 0.0675, train/total_loss: 0.6558, train/util_ratio: 0.8750, train/run_time: 0.1694, lr: 0.0005, train/prefetch_time: 0.0040 
+[2026-03-11 01:45:44,954 INFO] 30464 iteration USE_EMA: False, train/sup_loss: 0.0242, train/unsup_loss: 0.5160, train/contrastive_loss: 0.1002, train/ortho_loss: 0.0677, train/total_loss: 0.6200, train/util_ratio: 1.0000, train/run_time: 0.1701, lr: 0.0005, train/prefetch_time: 0.0040 
+[2026-03-11 01:46:35,140 INFO] validating...
+[2026-03-11 01:46:42,109 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.99 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.26 ... 0.   0.65 0.  ]
+ ...
+ [0.   0.   0.   ... 0.92 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.65 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.92]]
+[2026-03-11 01:46:43,077 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 01:46:43,078 INFO] 30720 iteration, USE_EMA: False, train/sup_loss: 0.041185, train/unsup_loss: 0.697822, train/contrastive_loss: 0.201507, train/ortho_loss: 0.066636, train/total_loss: 0.920272, train/util_ratio: 0.968750, train/run_time: 0.169558, eval/loss: 1.619625, eval/top-1-acc: 0.764100, eval/balanced_acc: 0.764100, eval/precision: 0.765557, eval/recall: 0.764100, eval/F1: 0.749343, lr: 0.000468, train/prefetch_time: 0.004133 BEST_EVAL_ACC: 0.7710, at 21504 iters
+[2026-03-11 01:47:34,520 INFO] 30976 iteration USE_EMA: False, train/sup_loss: 0.0027, train/unsup_loss: 0.2293, train/contrastive_loss: 0.0786, train/ortho_loss: 0.0674, train/total_loss: 0.2898, train/util_ratio: 0.9062, train/run_time: 0.1686, lr: 0.0005, train/prefetch_time: 0.0071 
+[2026-03-11 01:48:25,666 INFO] 31232 iteration USE_EMA: False, train/sup_loss: 0.0004, train/unsup_loss: 0.2728, train/contrastive_loss: 0.0999, train/ortho_loss: 0.0681, train/total_loss: 0.3519, train/util_ratio: 0.8750, train/run_time: 0.1702, lr: 0.0005, train/prefetch_time: 0.0117 
+[2026-03-11 01:49:17,260 INFO] 31488 iteration USE_EMA: False, train/sup_loss: 0.0025, train/unsup_loss: 0.3379, train/contrastive_loss: 0.0850, train/ortho_loss: 0.0672, train/total_loss: 0.4043, train/util_ratio: 0.9375, train/run_time: 0.1709, lr: 0.0005, train/prefetch_time: 0.0055 
+[2026-03-11 01:50:08,129 INFO] validating...
+[2026-03-11 01:50:15,265 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.98 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.79 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.99 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.   0.  ]
+ [0.   0.   0.   ... 0.   0.   0.8 ]]
+[2026-03-11 01:50:16,048 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 01:50:16,049 INFO] 31744 iteration, USE_EMA: False, train/sup_loss: 0.003959, train/unsup_loss: 0.594855, train/contrastive_loss: 0.130448, train/ortho_loss: 0.067927, train/total_loss: 0.708648, train/util_ratio: 1.000000, train/run_time: 0.170343, eval/loss: 1.492139, eval/top-1-acc: 0.767200, eval/balanced_acc: 0.767200, eval/precision: 0.770964, eval/recall: 0.767200, eval/F1: 0.751174, lr: 0.000465, train/prefetch_time: 0.005233 BEST_EVAL_ACC: 0.7710, at 21504 iters
+[2026-03-11 01:51:08,158 INFO] 32000 iteration USE_EMA: False, train/sup_loss: 0.0066, train/unsup_loss: 0.2815, train/contrastive_loss: 0.0747, train/ortho_loss: 0.0674, train/total_loss: 0.3419, train/util_ratio: 0.9375, train/run_time: 0.1705, lr: 0.0005, train/prefetch_time: 0.0057 
+[2026-03-11 01:51:58,728 INFO] 32256 iteration USE_EMA: False, train/sup_loss: 0.0002, train/unsup_loss: 0.5325, train/contrastive_loss: 0.1365, train/ortho_loss: 0.0677, train/total_loss: 0.6474, train/util_ratio: 0.9062, train/run_time: 0.1703, lr: 0.0005, train/prefetch_time: 0.0042 
+[2026-03-11 01:52:50,487 INFO] 32512 iteration USE_EMA: False, train/sup_loss: 0.0013, train/unsup_loss: 0.3424, train/contrastive_loss: 0.0802, train/ortho_loss: 0.0671, train/total_loss: 0.4036, train/util_ratio: 0.9375, train/run_time: 0.1712, lr: 0.0005, train/prefetch_time: 0.0048 
+[2026-03-11 01:53:41,167 INFO] validating...
+[2026-03-11 01:53:48,053 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.98 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.38 ... 0.   0.39 0.  ]
+ ...
+ [0.   0.   0.   ... 0.96 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.33 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.91]]
+[2026-03-11 01:53:49,022 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 01:53:50,019 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/model_best.pth
+[2026-03-11 01:53:50,020 INFO] 32768 iteration, USE_EMA: False, train/sup_loss: 0.073028, train/unsup_loss: 0.354222, train/contrastive_loss: 0.114192, train/ortho_loss: 0.066332, train/total_loss: 0.521249, train/util_ratio: 0.937500, train/run_time: 0.169904, eval/loss: 1.469871, eval/top-1-acc: 0.772900, eval/balanced_acc: 0.772900, eval/precision: 0.778011, eval/recall: 0.772900, eval/F1: 0.760832, lr: 0.000462, train/prefetch_time: 0.004076 BEST_EVAL_ACC: 0.7729, at 32768 iters
+[2026-03-11 01:54:41,785 INFO] 33024 iteration USE_EMA: False, train/sup_loss: 0.0010, train/unsup_loss: 0.5396, train/contrastive_loss: 0.1281, train/ortho_loss: 0.0665, train/total_loss: 0.6476, train/util_ratio: 0.9062, train/run_time: 0.1708, lr: 0.0005, train/prefetch_time: 0.0073 
+[2026-03-11 01:55:32,696 INFO] 33280 iteration USE_EMA: False, train/sup_loss: 0.0035, train/unsup_loss: 0.2883, train/contrastive_loss: 0.0934, train/ortho_loss: 0.0673, train/total_loss: 0.3640, train/util_ratio: 0.8750, train/run_time: 0.1703, lr: 0.0005, train/prefetch_time: 0.0045 
+[2026-03-11 01:56:24,486 INFO] 33536 iteration USE_EMA: False, train/sup_loss: 0.0049, train/unsup_loss: 0.3748, train/contrastive_loss: 0.1177, train/ortho_loss: 0.0680, train/total_loss: 0.4761, train/util_ratio: 0.9375, train/run_time: 0.1700, lr: 0.0005, train/prefetch_time: 0.0045 
+[2026-03-11 01:57:15,290 INFO] validating...
+[2026-03-11 01:57:22,325 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.99 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.66 ... 0.   0.19 0.  ]
+ ...
+ [0.   0.   0.   ... 0.97 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.12 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.9 ]]
+[2026-03-11 01:57:23,400 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 01:57:23,401 INFO] 33792 iteration, USE_EMA: False, train/sup_loss: 0.000328, train/unsup_loss: 0.372684, train/contrastive_loss: 0.114789, train/ortho_loss: 0.066995, train/total_loss: 0.466678, train/util_ratio: 0.875000, train/run_time: 0.170874, eval/loss: 1.487976, eval/top-1-acc: 0.771200, eval/balanced_acc: 0.771200, eval/precision: 0.771581, eval/recall: 0.771200, eval/F1: 0.758086, lr: 0.000460, train/prefetch_time: 0.004248 BEST_EVAL_ACC: 0.7729, at 32768 iters
+[2026-03-11 01:58:14,941 INFO] 34048 iteration USE_EMA: False, train/sup_loss: 0.0196, train/unsup_loss: 0.2843, train/contrastive_loss: 0.0311, train/ortho_loss: 0.0669, train/total_loss: 0.3137, train/util_ratio: 0.9062, train/run_time: 0.1699, lr: 0.0005, train/prefetch_time: 0.0056 
+[2026-03-11 01:59:05,433 INFO] 34304 iteration USE_EMA: False, train/sup_loss: 0.0004, train/unsup_loss: 0.2681, train/contrastive_loss: 0.0529, train/ortho_loss: 0.0674, train/total_loss: 0.3007, train/util_ratio: 0.9688, train/run_time: 0.1702, lr: 0.0005, train/prefetch_time: 0.0057 
+[2026-03-11 01:59:57,084 INFO] 34560 iteration USE_EMA: False, train/sup_loss: 0.0002, train/unsup_loss: 0.8153, train/contrastive_loss: 0.1969, train/ortho_loss: 0.0671, train/total_loss: 0.9918, train/util_ratio: 0.9375, train/run_time: 0.1711, lr: 0.0005, train/prefetch_time: 0.0043 
+[2026-03-11 02:00:48,382 INFO] validating...
+[2026-03-11 02:00:55,576 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.98 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.61 ... 0.   0.01 0.  ]
+ ...
+ [0.   0.   0.   ... 0.98 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.01 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.91]]
+[2026-03-11 02:00:56,661 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 02:00:56,662 INFO] 34816 iteration, USE_EMA: False, train/sup_loss: 0.000549, train/unsup_loss: 0.487827, train/contrastive_loss: 0.095379, train/ortho_loss: 0.066775, train/total_loss: 0.563344, train/util_ratio: 0.906250, train/run_time: 0.170348, eval/loss: 1.474086, eval/top-1-acc: 0.772100, eval/balanced_acc: 0.772100, eval/precision: 0.774970, eval/recall: 0.772100, eval/F1: 0.758979, lr: 0.000457, train/prefetch_time: 0.004555 BEST_EVAL_ACC: 0.7729, at 32768 iters
+[2026-03-11 02:01:49,015 INFO] 35072 iteration USE_EMA: False, train/sup_loss: 0.0004, train/unsup_loss: 0.5432, train/contrastive_loss: 0.1444, train/ortho_loss: 0.0675, train/total_loss: 0.6678, train/util_ratio: 0.9688, train/run_time: 0.1706, lr: 0.0005, train/prefetch_time: 0.0051 
+[2026-03-11 02:02:39,692 INFO] 35328 iteration USE_EMA: False, train/sup_loss: 0.0003, train/unsup_loss: 0.5119, train/contrastive_loss: 0.1462, train/ortho_loss: 0.0666, train/total_loss: 0.6370, train/util_ratio: 0.9062, train/run_time: 0.1724, lr: 0.0005, train/prefetch_time: 0.0083 
+[2026-03-11 02:03:31,979 INFO] 35584 iteration USE_EMA: False, train/sup_loss: 0.0006, train/unsup_loss: 0.3645, train/contrastive_loss: 0.0871, train/ortho_loss: 0.0657, train/total_loss: 0.4319, train/util_ratio: 0.8750, train/run_time: 0.1698, lr: 0.0005, train/prefetch_time: 0.0062 
+[2026-03-11 02:04:22,550 INFO] validating...
+[2026-03-11 02:04:29,544 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.98 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.7  ... 0.   0.05 0.  ]
+ ...
+ [0.   0.   0.   ... 0.93 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.03 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.9 ]]
+[2026-03-11 02:04:30,496 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 02:04:30,497 INFO] 35840 iteration, USE_EMA: False, train/sup_loss: 0.000927, train/unsup_loss: 0.480473, train/contrastive_loss: 0.113987, train/ortho_loss: 0.066455, train/total_loss: 0.575184, train/util_ratio: 0.968750, train/run_time: 0.169652, eval/loss: 1.460950, eval/top-1-acc: 0.771200, eval/balanced_acc: 0.771200, eval/precision: 0.780670, eval/recall: 0.771200, eval/F1: 0.761771, lr: 0.000454, train/prefetch_time: 0.003905 BEST_EVAL_ACC: 0.7729, at 32768 iters
+[2026-03-11 02:05:22,007 INFO] 36096 iteration USE_EMA: False, train/sup_loss: 0.0008, train/unsup_loss: 0.5619, train/contrastive_loss: 0.1332, train/ortho_loss: 0.0665, train/total_loss: 0.6752, train/util_ratio: 0.9375, train/run_time: 0.1692, lr: 0.0005, train/prefetch_time: 0.0041 
+[2026-03-11 02:06:12,472 INFO] 36352 iteration USE_EMA: False, train/sup_loss: 0.0022, train/unsup_loss: 0.6821, train/contrastive_loss: 0.1382, train/ortho_loss: 0.0663, train/total_loss: 0.8024, train/util_ratio: 0.9688, train/run_time: 0.1697, lr: 0.0005, train/prefetch_time: 0.0059 
+[2026-03-11 02:07:04,253 INFO] 36608 iteration USE_EMA: False, train/sup_loss: 0.0002, train/unsup_loss: 0.1955, train/contrastive_loss: 0.0494, train/ortho_loss: 0.0665, train/total_loss: 0.2233, train/util_ratio: 0.7500, train/run_time: 0.1696, lr: 0.0005, train/prefetch_time: 0.0058 
+[2026-03-11 02:07:54,901 INFO] validating...
+[2026-03-11 02:08:01,827 INFO] confusion matrix:
+[[0.98 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.98 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.73 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.97 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.   0.  ]
+ [0.   0.   0.   ... 0.   0.   0.81]]
+[2026-03-11 02:08:02,907 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 02:08:03,879 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/model_best.pth
+[2026-03-11 02:08:03,880 INFO] 36864 iteration, USE_EMA: False, train/sup_loss: 0.000492, train/unsup_loss: 0.525983, train/contrastive_loss: 0.076588, train/ortho_loss: 0.065977, train/total_loss: 0.583103, train/util_ratio: 1.000000, train/run_time: 0.169829, eval/loss: 1.519037, eval/top-1-acc: 0.773800, eval/balanced_acc: 0.773800, eval/precision: 0.772824, eval/recall: 0.773800, eval/F1: 0.761093, lr: 0.000451, train/prefetch_time: 0.003813 BEST_EVAL_ACC: 0.7738, at 36864 iters
+[2026-03-11 02:08:55,008 INFO] 37120 iteration USE_EMA: False, train/sup_loss: 0.0007, train/unsup_loss: 0.5896, train/contrastive_loss: 0.1265, train/ortho_loss: 0.0662, train/total_loss: 0.6956, train/util_ratio: 0.9375, train/run_time: 0.1704, lr: 0.0004, train/prefetch_time: 0.0043 
+[2026-03-11 02:09:45,500 INFO] 37376 iteration USE_EMA: False, train/sup_loss: 0.0002, train/unsup_loss: 0.4671, train/contrastive_loss: 0.1185, train/ortho_loss: 0.0663, train/total_loss: 0.5649, train/util_ratio: 0.9062, train/run_time: 0.1696, lr: 0.0004, train/prefetch_time: 0.0055 
+[2026-03-11 02:10:36,986 INFO] 37632 iteration USE_EMA: False, train/sup_loss: 0.0003, train/unsup_loss: 0.3037, train/contrastive_loss: 0.1008, train/ortho_loss: 0.0658, train/total_loss: 0.3839, train/util_ratio: 0.9062, train/run_time: 0.1701, lr: 0.0004, train/prefetch_time: 0.0043 
+[2026-03-11 02:11:27,347 INFO] validating...
+[2026-03-11 02:11:34,266 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.86 ... 0.   0.03 0.  ]
+ ...
+ [0.   0.   0.   ... 0.97 0.   0.  ]
+ [0.   0.   0.03 ... 0.   0.28 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.87]]
+[2026-03-11 02:11:35,277 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 02:11:36,219 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/model_best.pth
+[2026-03-11 02:11:36,220 INFO] 37888 iteration, USE_EMA: False, train/sup_loss: 0.001089, train/unsup_loss: 0.562392, train/contrastive_loss: 0.095534, train/ortho_loss: 0.066775, train/total_loss: 0.638364, train/util_ratio: 0.906250, train/run_time: 0.170056, eval/loss: 1.382894, eval/top-1-acc: 0.783100, eval/balanced_acc: 0.783100, eval/precision: 0.782009, eval/recall: 0.783100, eval/F1: 0.772759, lr: 0.000447, train/prefetch_time: 0.003635 BEST_EVAL_ACC: 0.7831, at 37888 iters
+[2026-03-11 02:12:28,222 INFO] 38144 iteration USE_EMA: False, train/sup_loss: 0.0006, train/unsup_loss: 0.3841, train/contrastive_loss: 0.1245, train/ortho_loss: 0.0666, train/total_loss: 0.4881, train/util_ratio: 0.9062, train/run_time: 0.1703, lr: 0.0004, train/prefetch_time: 0.0078 
+[2026-03-11 02:13:19,186 INFO] 38400 iteration USE_EMA: False, train/sup_loss: 0.0010, train/unsup_loss: 0.5437, train/contrastive_loss: 0.1254, train/ortho_loss: 0.0658, train/total_loss: 0.6497, train/util_ratio: 0.9062, train/run_time: 0.1696, lr: 0.0004, train/prefetch_time: 0.0039 
+[2026-03-11 02:14:10,539 INFO] 38656 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.5224, train/contrastive_loss: 0.1316, train/ortho_loss: 0.0660, train/total_loss: 0.6338, train/util_ratio: 1.0000, train/run_time: 0.1705, lr: 0.0004, train/prefetch_time: 0.0044 
+[2026-03-11 02:15:01,198 INFO] validating...
+[2026-03-11 02:15:08,144 INFO] confusion matrix:
+[[1.   0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.72 ... 0.   0.08 0.  ]
+ ...
+ [0.   0.   0.   ... 0.98 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.25 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.91]]
+[2026-03-11 02:15:09,087 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 02:15:10,037 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/model_best.pth
+[2026-03-11 02:15:10,038 INFO] 38912 iteration, USE_EMA: False, train/sup_loss: 0.000312, train/unsup_loss: 0.386332, train/contrastive_loss: 0.102883, train/ortho_loss: 0.066589, train/total_loss: 0.468641, train/util_ratio: 0.906250, train/run_time: 0.169804, eval/loss: 1.298637, eval/top-1-acc: 0.792800, eval/balanced_acc: 0.792800, eval/precision: 0.793847, eval/recall: 0.792800, eval/F1: 0.784575, lr: 0.000444, train/prefetch_time: 0.003586 BEST_EVAL_ACC: 0.7928, at 38912 iters
+[2026-03-11 02:16:01,480 INFO] 39168 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.4716, train/contrastive_loss: 0.1259, train/ortho_loss: 0.0663, train/total_loss: 0.5766, train/util_ratio: 0.9062, train/run_time: 0.1697, lr: 0.0004, train/prefetch_time: 0.0045 
+[2026-03-11 02:16:52,002 INFO] 39424 iteration USE_EMA: False, train/sup_loss: 0.0010, train/unsup_loss: 0.2308, train/contrastive_loss: 0.0717, train/ortho_loss: 0.0664, train/total_loss: 0.2831, train/util_ratio: 0.9375, train/run_time: 0.1698, lr: 0.0004, train/prefetch_time: 0.0041 
+[2026-03-11 02:17:43,839 INFO] 39680 iteration USE_EMA: False, train/sup_loss: 0.0136, train/unsup_loss: 0.1943, train/contrastive_loss: 0.0599, train/ortho_loss: 0.0658, train/total_loss: 0.2475, train/util_ratio: 0.9375, train/run_time: 0.1697, lr: 0.0004, train/prefetch_time: 0.0047 
+[2026-03-11 02:18:34,522 INFO] validating...
+[2026-03-11 02:18:41,759 INFO] confusion matrix:
+[[0.98 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.88 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.98 0.   0.  ]
+ [0.   0.   0.03 ... 0.   0.13 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.91]]
+[2026-03-11 02:18:42,831 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 02:18:43,907 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/model_best.pth
+[2026-03-11 02:18:43,909 INFO] 39936 iteration, USE_EMA: False, train/sup_loss: 0.003195, train/unsup_loss: 0.434045, train/contrastive_loss: 0.117274, train/ortho_loss: 0.065546, train/total_loss: 0.534562, train/util_ratio: 1.000000, train/run_time: 0.170216, eval/loss: 1.260348, eval/top-1-acc: 0.794000, eval/balanced_acc: 0.794000, eval/precision: 0.795004, eval/recall: 0.794000, eval/F1: 0.788815, lr: 0.000441, train/prefetch_time: 0.005904 BEST_EVAL_ACC: 0.7940, at 39936 iters
+[2026-03-11 02:19:35,349 INFO] 40192 iteration USE_EMA: False, train/sup_loss: 0.0004, train/unsup_loss: 0.4863, train/contrastive_loss: 0.1356, train/ortho_loss: 0.0654, train/total_loss: 0.6006, train/util_ratio: 0.8750, train/run_time: 0.1699, lr: 0.0004, train/prefetch_time: 0.0046 
+[2026-03-11 02:20:25,837 INFO] 40448 iteration USE_EMA: False, train/sup_loss: 0.0011, train/unsup_loss: 0.5309, train/contrastive_loss: 0.1265, train/ortho_loss: 0.0656, train/total_loss: 0.6385, train/util_ratio: 0.9688, train/run_time: 0.1704, lr: 0.0004, train/prefetch_time: 0.0042 
+[2026-03-11 02:21:16,951 INFO] 40704 iteration USE_EMA: False, train/sup_loss: 0.0026, train/unsup_loss: 0.3603, train/contrastive_loss: 0.0810, train/ortho_loss: 0.0662, train/total_loss: 0.4234, train/util_ratio: 0.9062, train/run_time: 0.1695, lr: 0.0004, train/prefetch_time: 0.0051 
+[2026-03-11 02:22:07,542 INFO] validating...
+[2026-03-11 02:22:14,783 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.96 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.79 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.97 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.11 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.9 ]]
+[2026-03-11 02:22:15,895 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 02:22:17,016 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/model_best.pth
+[2026-03-11 02:22:17,017 INFO] 40960 iteration, USE_EMA: False, train/sup_loss: 0.000505, train/unsup_loss: 0.344737, train/contrastive_loss: 0.065534, train/ortho_loss: 0.066019, train/total_loss: 0.390597, train/util_ratio: 0.968750, train/run_time: 0.171181, eval/loss: 1.266190, eval/top-1-acc: 0.797100, eval/balanced_acc: 0.797100, eval/precision: 0.799170, eval/recall: 0.797100, eval/F1: 0.790113, lr: 0.000437, train/prefetch_time: 0.005382 BEST_EVAL_ACC: 0.7971, at 40960 iters
+[2026-03-11 02:23:08,763 INFO] 41216 iteration USE_EMA: False, train/sup_loss: 0.0002, train/unsup_loss: 0.8117, train/contrastive_loss: 0.1481, train/ortho_loss: 0.0664, train/total_loss: 0.9386, train/util_ratio: 0.9688, train/run_time: 0.1703, lr: 0.0004, train/prefetch_time: 0.0045 
+[2026-03-11 02:23:59,355 INFO] 41472 iteration USE_EMA: False, train/sup_loss: 0.0006, train/unsup_loss: 0.4535, train/contrastive_loss: 0.0962, train/ortho_loss: 0.0656, train/total_loss: 0.5296, train/util_ratio: 0.8750, train/run_time: 0.1709, lr: 0.0004, train/prefetch_time: 0.0038 
+[2026-03-11 02:24:50,666 INFO] 41728 iteration USE_EMA: False, train/sup_loss: 0.0010, train/unsup_loss: 0.3944, train/contrastive_loss: 0.0713, train/ortho_loss: 0.0668, train/total_loss: 0.4458, train/util_ratio: 0.8438, train/run_time: 0.1698, lr: 0.0004, train/prefetch_time: 0.0054 
+[2026-03-11 02:25:41,404 INFO] validating...
+[2026-03-11 02:25:48,188 INFO] confusion matrix:
+[[1.   0.   0.   ... 0.   0.   0.  ]
+ [0.   0.98 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.81 ... 0.   0.02 0.  ]
+ ...
+ [0.   0.   0.   ... 0.96 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.15 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.86]]
+[2026-03-11 02:25:48,972 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 02:25:48,973 INFO] 41984 iteration, USE_EMA: False, train/sup_loss: 0.000183, train/unsup_loss: 0.658810, train/contrastive_loss: 0.158675, train/ortho_loss: 0.066670, train/total_loss: 0.797023, train/util_ratio: 1.000000, train/run_time: 0.170308, eval/loss: 1.291164, eval/top-1-acc: 0.789700, eval/balanced_acc: 0.789700, eval/precision: 0.787558, eval/recall: 0.789700, eval/F1: 0.781075, lr: 0.000434, train/prefetch_time: 0.004123 BEST_EVAL_ACC: 0.7971, at 40960 iters
+[2026-03-11 02:26:40,618 INFO] 42240 iteration USE_EMA: False, train/sup_loss: 0.0218, train/unsup_loss: 0.5096, train/contrastive_loss: 0.1108, train/ortho_loss: 0.0663, train/total_loss: 0.6213, train/util_ratio: 0.9062, train/run_time: 0.1709, lr: 0.0004, train/prefetch_time: 0.0045 
+[2026-03-11 02:27:31,176 INFO] 42496 iteration USE_EMA: False, train/sup_loss: 0.0006, train/unsup_loss: 0.3171, train/contrastive_loss: 0.0830, train/ortho_loss: 0.0660, train/total_loss: 0.3797, train/util_ratio: 0.9688, train/run_time: 0.1711, lr: 0.0004, train/prefetch_time: 0.0039 
+[2026-03-11 02:28:23,468 INFO] 42752 iteration USE_EMA: False, train/sup_loss: 0.0019, train/unsup_loss: 0.4079, train/contrastive_loss: 0.0867, train/ortho_loss: 0.0652, train/total_loss: 0.4758, train/util_ratio: 0.9375, train/run_time: 0.1695, lr: 0.0004, train/prefetch_time: 0.0045 
+[2026-03-11 02:29:14,381 INFO] validating...
+[2026-03-11 02:29:21,476 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.96 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.84 ... 0.   0.08 0.  ]
+ ...
+ [0.   0.   0.   ... 0.97 0.   0.  ]
+ [0.   0.   0.05 ... 0.   0.34 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.78]]
+[2026-03-11 02:29:22,271 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 02:29:22,272 INFO] 43008 iteration, USE_EMA: False, train/sup_loss: 0.007822, train/unsup_loss: 0.493769, train/contrastive_loss: 0.142022, train/ortho_loss: 0.064797, train/total_loss: 0.623442, train/util_ratio: 1.000000, train/run_time: 0.171153, eval/loss: 1.469103, eval/top-1-acc: 0.781400, eval/balanced_acc: 0.781400, eval/precision: 0.793213, eval/recall: 0.781400, eval/F1: 0.774189, lr: 0.000430, train/prefetch_time: 0.005634 BEST_EVAL_ACC: 0.7971, at 40960 iters
+[2026-03-11 02:30:13,837 INFO] 43264 iteration USE_EMA: False, train/sup_loss: 0.0007, train/unsup_loss: 0.4019, train/contrastive_loss: 0.0867, train/ortho_loss: 0.0660, train/total_loss: 0.4685, train/util_ratio: 0.9375, train/run_time: 0.1695, lr: 0.0004, train/prefetch_time: 0.0044 
+[2026-03-11 02:31:04,624 INFO] 43520 iteration USE_EMA: False, train/sup_loss: 0.0003, train/unsup_loss: 0.1920, train/contrastive_loss: 0.0576, train/ortho_loss: 0.0653, train/total_loss: 0.2290, train/util_ratio: 0.9375, train/run_time: 0.1695, lr: 0.0004, train/prefetch_time: 0.0040 
+[2026-03-11 02:31:57,290 INFO] 43776 iteration USE_EMA: False, train/sup_loss: 0.0016, train/unsup_loss: 0.3605, train/contrastive_loss: 0.0991, train/ortho_loss: 0.0663, train/total_loss: 0.4406, train/util_ratio: 0.9375, train/run_time: 0.1691, lr: 0.0004, train/prefetch_time: 0.0042 
+[2026-03-11 02:32:48,085 INFO] validating...
+[2026-03-11 02:32:55,336 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.87 ... 0.   0.01 0.  ]
+ ...
+ [0.   0.   0.   ... 0.98 0.   0.  ]
+ [0.   0.   0.02 ... 0.   0.15 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.92]]
+[2026-03-11 02:32:56,524 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 02:32:56,525 INFO] 44032 iteration, USE_EMA: False, train/sup_loss: 0.000122, train/unsup_loss: 0.338591, train/contrastive_loss: 0.096729, train/ortho_loss: 0.065392, train/total_loss: 0.415030, train/util_ratio: 1.000000, train/run_time: 0.172859, eval/loss: 1.303612, eval/top-1-acc: 0.793100, eval/balanced_acc: 0.793100, eval/precision: 0.790089, eval/recall: 0.793100, eval/F1: 0.785055, lr: 0.000426, train/prefetch_time: 0.004325 BEST_EVAL_ACC: 0.7971, at 40960 iters
+[2026-03-11 02:33:48,677 INFO] 44288 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.4088, train/contrastive_loss: 0.0708, train/ortho_loss: 0.0657, train/total_loss: 0.4598, train/util_ratio: 0.9062, train/run_time: 0.1699, lr: 0.0004, train/prefetch_time: 0.0044 
+[2026-03-11 02:34:39,855 INFO] 44544 iteration USE_EMA: False, train/sup_loss: 0.0031, train/unsup_loss: 0.1907, train/contrastive_loss: 0.0814, train/ortho_loss: 0.0648, train/total_loss: 0.2545, train/util_ratio: 0.9062, train/run_time: 0.1699, lr: 0.0004, train/prefetch_time: 0.0039 
+[2026-03-11 02:35:31,944 INFO] 44800 iteration USE_EMA: False, train/sup_loss: 0.0253, train/unsup_loss: 0.3157, train/contrastive_loss: 0.0667, train/ortho_loss: 0.0646, train/total_loss: 0.3873, train/util_ratio: 0.9688, train/run_time: 0.1706, lr: 0.0004, train/prefetch_time: 0.0050 
+[2026-03-11 02:36:23,332 INFO] validating...
+[2026-03-11 02:36:30,392 INFO] confusion matrix:
+[[0.98 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.98 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.69 ... 0.   0.02 0.  ]
+ ...
+ [0.   0.   0.   ... 0.97 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.21 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.94]]
+[2026-03-11 02:36:31,380 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 02:36:31,381 INFO] 45056 iteration, USE_EMA: False, train/sup_loss: 0.000134, train/unsup_loss: 0.492815, train/contrastive_loss: 0.102748, train/ortho_loss: 0.066111, train/total_loss: 0.575046, train/util_ratio: 0.968750, train/run_time: 0.170724, eval/loss: 1.342066, eval/top-1-acc: 0.789400, eval/balanced_acc: 0.789400, eval/precision: 0.793044, eval/recall: 0.789400, eval/F1: 0.783553, lr: 0.000422, train/prefetch_time: 0.003848 BEST_EVAL_ACC: 0.7971, at 40960 iters
+[2026-03-11 02:37:23,819 INFO] 45312 iteration USE_EMA: False, train/sup_loss: 0.0002, train/unsup_loss: 0.2266, train/contrastive_loss: 0.0946, train/ortho_loss: 0.0659, train/total_loss: 0.3005, train/util_ratio: 0.9062, train/run_time: 0.1720, lr: 0.0004, train/prefetch_time: 0.0070 
+[2026-03-11 02:38:15,443 INFO] 45568 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.2494, train/contrastive_loss: 0.0696, train/ortho_loss: 0.0649, train/total_loss: 0.2985, train/util_ratio: 0.9375, train/run_time: 0.1703, lr: 0.0004, train/prefetch_time: 0.0041 
+[2026-03-11 02:39:08,506 INFO] 45824 iteration USE_EMA: False, train/sup_loss: 0.0005, train/unsup_loss: 0.5136, train/contrastive_loss: 0.1483, train/ortho_loss: 0.0651, train/total_loss: 0.6413, train/util_ratio: 0.9062, train/run_time: 0.1705, lr: 0.0004, train/prefetch_time: 0.0062 
+[2026-03-11 02:40:00,047 INFO] validating...
+[2026-03-11 02:40:07,051 INFO] confusion matrix:
+[[0.98 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.96 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.7  ... 0.   0.01 0.  ]
+ ...
+ [0.   0.   0.   ... 0.98 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.11 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.85]]
+[2026-03-11 02:40:07,832 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 02:40:07,833 INFO] 46080 iteration, USE_EMA: False, train/sup_loss: 0.000478, train/unsup_loss: 0.228149, train/contrastive_loss: 0.083294, train/ortho_loss: 0.064627, train/total_loss: 0.290795, train/util_ratio: 0.875000, train/run_time: 0.170758, eval/loss: 1.294206, eval/top-1-acc: 0.792200, eval/balanced_acc: 0.792200, eval/precision: 0.796114, eval/recall: 0.792200, eval/F1: 0.787509, lr: 0.000419, train/prefetch_time: 0.005264 BEST_EVAL_ACC: 0.7971, at 40960 iters
+[2026-03-11 02:40:59,945 INFO] 46336 iteration USE_EMA: False, train/sup_loss: 0.0010, train/unsup_loss: 0.5209, train/contrastive_loss: 0.0837, train/ortho_loss: 0.0653, train/total_loss: 0.5855, train/util_ratio: 0.9062, train/run_time: 0.1693, lr: 0.0004, train/prefetch_time: 0.0045 
+[2026-03-11 02:41:50,938 INFO] 46592 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.9543, train/contrastive_loss: 0.2007, train/ortho_loss: 0.0656, train/total_loss: 1.1349, train/util_ratio: 1.0000, train/run_time: 0.1704, lr: 0.0004, train/prefetch_time: 0.0055 
+[2026-03-11 02:42:42,676 INFO] 46848 iteration USE_EMA: False, train/sup_loss: 0.0003, train/unsup_loss: 0.2086, train/contrastive_loss: 0.0321, train/ortho_loss: 0.0653, train/total_loss: 0.2206, train/util_ratio: 0.9062, train/run_time: 0.1700, lr: 0.0004, train/prefetch_time: 0.0054 
+[2026-03-11 02:43:34,059 INFO] validating...
+[2026-03-11 02:43:40,891 INFO] confusion matrix:
+[[0.95 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.96 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.83 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.95 0.   0.  ]
+ [0.   0.   0.02 ... 0.   0.11 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.94]]
+[2026-03-11 02:43:41,671 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 02:43:41,672 INFO] 47104 iteration, USE_EMA: False, train/sup_loss: 0.001143, train/unsup_loss: 0.212823, train/contrastive_loss: 0.046052, train/ortho_loss: 0.065130, train/total_loss: 0.238908, train/util_ratio: 0.843750, train/run_time: 0.169938, eval/loss: 1.375789, eval/top-1-acc: 0.793500, eval/balanced_acc: 0.793500, eval/precision: 0.796511, eval/recall: 0.793500, eval/F1: 0.786398, lr: 0.000415, train/prefetch_time: 0.004110 BEST_EVAL_ACC: 0.7971, at 40960 iters
+[2026-03-11 02:44:33,153 INFO] 47360 iteration USE_EMA: False, train/sup_loss: 0.0003, train/unsup_loss: 0.7426, train/contrastive_loss: 0.1379, train/ortho_loss: 0.0649, train/total_loss: 0.8604, train/util_ratio: 0.9375, train/run_time: 0.1694, lr: 0.0004, train/prefetch_time: 0.0045 
+[2026-03-11 02:45:23,890 INFO] 47616 iteration USE_EMA: False, train/sup_loss: 0.0006, train/unsup_loss: 0.1807, train/contrastive_loss: 0.0553, train/ortho_loss: 0.0641, train/total_loss: 0.2160, train/util_ratio: 0.8750, train/run_time: 0.1690, lr: 0.0004, train/prefetch_time: 0.0039 
+[2026-03-11 02:46:15,141 INFO] 47872 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.5418, train/contrastive_loss: 0.1227, train/ortho_loss: 0.0654, train/total_loss: 0.6444, train/util_ratio: 0.9688, train/run_time: 0.1695, lr: 0.0004, train/prefetch_time: 0.0044 
+[2026-03-11 02:47:06,406 INFO] validating...
+[2026-03-11 02:47:13,557 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.82 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.97 0.   0.  ]
+ [0.   0.   0.02 ... 0.   0.13 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.87]]
+[2026-03-11 02:47:14,684 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 02:47:14,685 INFO] 48128 iteration, USE_EMA: False, train/sup_loss: 0.000158, train/unsup_loss: 0.453586, train/contrastive_loss: 0.098804, train/ortho_loss: 0.064431, train/total_loss: 0.531423, train/util_ratio: 0.875000, train/run_time: 0.168782, eval/loss: 1.376930, eval/top-1-acc: 0.794200, eval/balanced_acc: 0.794200, eval/precision: 0.796660, eval/recall: 0.794200, eval/F1: 0.789627, lr: 0.000410, train/prefetch_time: 0.003930 BEST_EVAL_ACC: 0.7971, at 40960 iters
+[2026-03-11 02:48:07,475 INFO] 48384 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.6912, train/contrastive_loss: 0.1328, train/ortho_loss: 0.0641, train/total_loss: 0.8038, train/util_ratio: 0.9375, train/run_time: 0.1711, lr: 0.0004, train/prefetch_time: 0.0044 
+[2026-03-11 02:48:59,004 INFO] 48640 iteration USE_EMA: False, train/sup_loss: 0.0002, train/unsup_loss: 0.3917, train/contrastive_loss: 0.1058, train/ortho_loss: 0.0642, train/total_loss: 0.4764, train/util_ratio: 0.9062, train/run_time: 0.1721, lr: 0.0004, train/prefetch_time: 0.0060 
+[2026-03-11 02:49:51,459 INFO] 48896 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.2710, train/contrastive_loss: 0.0659, train/ortho_loss: 0.0639, train/total_loss: 0.3170, train/util_ratio: 1.0000, train/run_time: 0.1729, lr: 0.0004, train/prefetch_time: 0.0065 
+[2026-03-11 02:50:42,562 INFO] validating...
+[2026-03-11 02:50:49,467 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.59 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.93 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.1  0.  ]
+ [0.   0.   0.   ... 0.   0.   0.94]]
+[2026-03-11 02:50:50,240 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 02:50:50,241 INFO] 49152 iteration, USE_EMA: False, train/sup_loss: 0.036594, train/unsup_loss: 0.253221, train/contrastive_loss: 0.087665, train/ortho_loss: 0.064164, train/total_loss: 0.355637, train/util_ratio: 0.750000, train/run_time: 0.170002, eval/loss: 1.374796, eval/top-1-acc: 0.790800, eval/balanced_acc: 0.790800, eval/precision: 0.793419, eval/recall: 0.790800, eval/F1: 0.787510, lr: 0.000406, train/prefetch_time: 0.004216 BEST_EVAL_ACC: 0.7971, at 40960 iters
+[2026-03-11 02:51:42,196 INFO] 49408 iteration USE_EMA: False, train/sup_loss: 0.0005, train/unsup_loss: 0.2542, train/contrastive_loss: 0.0975, train/ortho_loss: 0.0645, train/total_loss: 0.3307, train/util_ratio: 0.7812, train/run_time: 0.1691, lr: 0.0004, train/prefetch_time: 0.0044 
+[2026-03-11 02:52:33,050 INFO] 49664 iteration USE_EMA: False, train/sup_loss: 0.0006, train/unsup_loss: 0.3244, train/contrastive_loss: 0.0700, train/ortho_loss: 0.0643, train/total_loss: 0.3748, train/util_ratio: 0.9688, train/run_time: 0.1704, lr: 0.0004, train/prefetch_time: 0.0041 
+[2026-03-11 02:53:24,661 INFO] 49920 iteration USE_EMA: False, train/sup_loss: 0.0004, train/unsup_loss: 0.4204, train/contrastive_loss: 0.1314, train/ortho_loss: 0.0640, train/total_loss: 0.5308, train/util_ratio: 0.9062, train/run_time: 0.1691, lr: 0.0004, train/prefetch_time: 0.0043 
+[2026-03-11 02:54:14,946 INFO] validating...
+[2026-03-11 02:54:21,804 INFO] confusion matrix:
+[[0.97 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.98 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.82 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.99 0.   0.  ]
+ [0.   0.   0.03 ... 0.   0.17 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.92]]
+[2026-03-11 02:54:22,758 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 02:54:22,759 INFO] 50176 iteration, USE_EMA: False, train/sup_loss: 0.000099, train/unsup_loss: 0.187559, train/contrastive_loss: 0.056378, train/ortho_loss: 0.064474, train/total_loss: 0.223153, train/util_ratio: 0.937500, train/run_time: 0.169864, eval/loss: 1.298563, eval/top-1-acc: 0.793900, eval/balanced_acc: 0.793900, eval/precision: 0.795930, eval/recall: 0.793900, eval/F1: 0.790925, lr: 0.000402, train/prefetch_time: 0.004004 BEST_EVAL_ACC: 0.7971, at 40960 iters
+[2026-03-11 02:55:14,430 INFO] 50432 iteration USE_EMA: False, train/sup_loss: 0.0002, train/unsup_loss: 0.2458, train/contrastive_loss: 0.0411, train/ortho_loss: 0.0639, train/total_loss: 0.2660, train/util_ratio: 0.9062, train/run_time: 0.1715, lr: 0.0004, train/prefetch_time: 0.0064 
+[2026-03-11 02:56:05,097 INFO] 50688 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.4038, train/contrastive_loss: 0.0789, train/ortho_loss: 0.0638, train/total_loss: 0.4621, train/util_ratio: 0.9062, train/run_time: 0.1696, lr: 0.0004, train/prefetch_time: 0.0042 
+[2026-03-11 02:56:56,623 INFO] 50944 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.2761, train/contrastive_loss: 0.0746, train/ortho_loss: 0.0642, train/total_loss: 0.3294, train/util_ratio: 0.8750, train/run_time: 0.1704, lr: 0.0004, train/prefetch_time: 0.0047 
+[2026-03-11 02:57:47,699 INFO] validating...
+[2026-03-11 02:57:54,982 INFO] confusion matrix:
+[[1.   0.   0.   ... 0.   0.   0.  ]
+ [0.   0.96 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.76 ... 0.   0.01 0.  ]
+ ...
+ [0.   0.   0.   ... 0.95 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.13 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.93]]
+[2026-03-11 02:57:56,261 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 02:57:56,263 INFO] 51200 iteration, USE_EMA: False, train/sup_loss: 0.000178, train/unsup_loss: 0.179744, train/contrastive_loss: 0.059426, train/ortho_loss: 0.063984, train/total_loss: 0.218916, train/util_ratio: 1.000000, train/run_time: 0.173264, eval/loss: 1.390657, eval/top-1-acc: 0.795300, eval/balanced_acc: 0.795300, eval/precision: 0.795322, eval/recall: 0.795300, eval/F1: 0.789796, lr: 0.000398, train/prefetch_time: 0.005787 BEST_EVAL_ACC: 0.7971, at 40960 iters
+[2026-03-11 02:58:48,046 INFO] 51456 iteration USE_EMA: False, train/sup_loss: 0.0002, train/unsup_loss: 0.1354, train/contrastive_loss: 0.0385, train/ortho_loss: 0.0643, train/total_loss: 0.1535, train/util_ratio: 0.9688, train/run_time: 0.1693, lr: 0.0004, train/prefetch_time: 0.0051 
+[2026-03-11 02:59:39,062 INFO] 51712 iteration USE_EMA: False, train/sup_loss: 0.0003, train/unsup_loss: 0.6179, train/contrastive_loss: 0.1382, train/ortho_loss: 0.0644, train/total_loss: 0.7357, train/util_ratio: 0.9062, train/run_time: 0.1703, lr: 0.0004, train/prefetch_time: 0.0046 
+[2026-03-11 03:00:31,088 INFO] 51968 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.2670, train/contrastive_loss: 0.0550, train/ortho_loss: 0.0642, train/total_loss: 0.3017, train/util_ratio: 1.0000, train/run_time: 0.1697, lr: 0.0004, train/prefetch_time: 0.0041 
+[2026-03-11 03:01:22,967 INFO] validating...
+[2026-03-11 03:01:29,942 INFO] confusion matrix:
+[[0.97 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.96 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.75 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.93 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.12 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.95]]
+[2026-03-11 03:01:30,967 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 03:01:30,969 INFO] 52224 iteration, USE_EMA: False, train/sup_loss: 0.000929, train/unsup_loss: 0.422934, train/contrastive_loss: 0.095108, train/ortho_loss: 0.063593, train/total_loss: 0.497829, train/util_ratio: 0.843750, train/run_time: 0.169146, eval/loss: 1.365126, eval/top-1-acc: 0.795800, eval/balanced_acc: 0.795800, eval/precision: 0.792141, eval/recall: 0.795800, eval/F1: 0.789994, lr: 0.000393, train/prefetch_time: 0.003930 BEST_EVAL_ACC: 0.7971, at 40960 iters
+[2026-03-11 03:02:23,034 INFO] 52480 iteration USE_EMA: False, train/sup_loss: 0.0175, train/unsup_loss: 0.5990, train/contrastive_loss: 0.1466, train/ortho_loss: 0.0637, train/total_loss: 0.7434, train/util_ratio: 1.0000, train/run_time: 0.1690, lr: 0.0004, train/prefetch_time: 0.0043 
+[2026-03-11 03:03:13,551 INFO] 52736 iteration USE_EMA: False, train/sup_loss: 0.0003, train/unsup_loss: 0.5768, train/contrastive_loss: 0.0946, train/ortho_loss: 0.0643, train/total_loss: 0.6513, train/util_ratio: 0.9375, train/run_time: 0.1701, lr: 0.0004, train/prefetch_time: 0.0041 
+[2026-03-11 03:04:04,969 INFO] 52992 iteration USE_EMA: False, train/sup_loss: 0.0000, train/unsup_loss: 0.4776, train/contrastive_loss: 0.1524, train/ortho_loss: 0.0639, train/total_loss: 0.6091, train/util_ratio: 0.9688, train/run_time: 0.1696, lr: 0.0004, train/prefetch_time: 0.0044 
+[2026-03-11 03:04:55,636 INFO] validating...
+[2026-03-11 03:05:02,758 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.96 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.85 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.97 0.   0.  ]
+ [0.   0.   0.02 ... 0.   0.11 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.93]]
+[2026-03-11 03:05:03,797 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 03:05:03,798 INFO] 53248 iteration, USE_EMA: False, train/sup_loss: 0.000083, train/unsup_loss: 0.485287, train/contrastive_loss: 0.112814, train/ortho_loss: 0.063677, train/total_loss: 0.577510, train/util_ratio: 0.906250, train/run_time: 0.170447, eval/loss: 1.398703, eval/top-1-acc: 0.794200, eval/balanced_acc: 0.794200, eval/precision: 0.794689, eval/recall: 0.794200, eval/F1: 0.789126, lr: 0.000389, train/prefetch_time: 0.004798 BEST_EVAL_ACC: 0.7971, at 40960 iters
+[2026-03-11 03:05:55,592 INFO] 53504 iteration USE_EMA: False, train/sup_loss: 0.0032, train/unsup_loss: 0.1744, train/contrastive_loss: 0.0712, train/ortho_loss: 0.0643, train/total_loss: 0.2286, train/util_ratio: 1.0000, train/run_time: 0.1703, lr: 0.0004, train/prefetch_time: 0.0048 
+[2026-03-11 03:06:46,161 INFO] 53760 iteration USE_EMA: False, train/sup_loss: 0.0002, train/unsup_loss: 0.2349, train/contrastive_loss: 0.0290, train/ortho_loss: 0.0647, train/total_loss: 0.2433, train/util_ratio: 0.9375, train/run_time: 0.1696, lr: 0.0004, train/prefetch_time: 0.0039 
+[2026-03-11 03:07:38,671 INFO] 54016 iteration USE_EMA: False, train/sup_loss: 0.0002, train/unsup_loss: 0.4802, train/contrastive_loss: 0.0982, train/ortho_loss: 0.0641, train/total_loss: 0.5583, train/util_ratio: 1.0000, train/run_time: 0.1695, lr: 0.0004, train/prefetch_time: 0.0044 
+[2026-03-11 03:08:29,804 INFO] validating...
+[2026-03-11 03:08:36,792 INFO] confusion matrix:
+[[0.98 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.63 ... 0.   0.01 0.  ]
+ ...
+ [0.   0.   0.   ... 0.96 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.13 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.97]]
+[2026-03-11 03:08:37,779 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 03:08:37,780 INFO] 54272 iteration, USE_EMA: False, train/sup_loss: 0.000084, train/unsup_loss: 0.430047, train/contrastive_loss: 0.112487, train/ortho_loss: 0.064396, train/total_loss: 0.521502, train/util_ratio: 0.937500, train/run_time: 0.169968, eval/loss: 1.385508, eval/top-1-acc: 0.795200, eval/balanced_acc: 0.795200, eval/precision: 0.798693, eval/recall: 0.795200, eval/F1: 0.792526, lr: 0.000384, train/prefetch_time: 0.003943 BEST_EVAL_ACC: 0.7971, at 40960 iters
+[2026-03-11 03:09:29,204 INFO] 54528 iteration USE_EMA: False, train/sup_loss: 0.0002, train/unsup_loss: 0.5873, train/contrastive_loss: 0.1123, train/ortho_loss: 0.0641, train/total_loss: 0.6782, train/util_ratio: 0.8750, train/run_time: 0.1692, lr: 0.0004, train/prefetch_time: 0.0044 
+[2026-03-11 03:10:19,838 INFO] 54784 iteration USE_EMA: False, train/sup_loss: 0.0038, train/unsup_loss: 0.3224, train/contrastive_loss: 0.1287, train/ortho_loss: 0.0634, train/total_loss: 0.4340, train/util_ratio: 1.0000, train/run_time: 0.1698, lr: 0.0004, train/prefetch_time: 0.0037 
+[2026-03-11 03:11:11,889 INFO] 55040 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.1671, train/contrastive_loss: 0.0318, train/ortho_loss: 0.0635, train/total_loss: 0.1794, train/util_ratio: 1.0000, train/run_time: 0.1702, lr: 0.0004, train/prefetch_time: 0.0046 
+[2026-03-11 03:12:02,997 INFO] validating...
+[2026-03-11 03:12:09,894 INFO] confusion matrix:
+[[1.   0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.75 ... 0.   0.03 0.  ]
+ ...
+ [0.   0.   0.   ... 0.96 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.14 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.9 ]]
+[2026-03-11 03:12:10,855 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 03:12:10,856 INFO] 55296 iteration, USE_EMA: False, train/sup_loss: 0.000061, train/unsup_loss: 0.197073, train/contrastive_loss: 0.058544, train/ortho_loss: 0.063674, train/total_loss: 0.234554, train/util_ratio: 0.937500, train/run_time: 0.169207, eval/loss: 1.419260, eval/top-1-acc: 0.793400, eval/balanced_acc: 0.793400, eval/precision: 0.797071, eval/recall: 0.793400, eval/F1: 0.790053, lr: 0.000380, train/prefetch_time: 0.003708 BEST_EVAL_ACC: 0.7971, at 40960 iters
+[2026-03-11 03:13:02,841 INFO] 55552 iteration USE_EMA: False, train/sup_loss: 0.0000, train/unsup_loss: 0.4886, train/contrastive_loss: 0.0484, train/ortho_loss: 0.0634, train/total_loss: 0.5166, train/util_ratio: 0.8750, train/run_time: 0.1683, lr: 0.0004, train/prefetch_time: 0.0041 
+[2026-03-11 03:13:53,522 INFO] 55808 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.4695, train/contrastive_loss: 0.0527, train/ortho_loss: 0.0634, train/total_loss: 0.5012, train/util_ratio: 0.8438, train/run_time: 0.1693, lr: 0.0004, train/prefetch_time: 0.0041 
+[2026-03-11 03:14:45,359 INFO] 56064 iteration USE_EMA: False, train/sup_loss: 0.0002, train/unsup_loss: 0.5046, train/contrastive_loss: 0.1403, train/ortho_loss: 0.0633, train/total_loss: 0.6240, train/util_ratio: 0.9375, train/run_time: 0.1704, lr: 0.0004, train/prefetch_time: 0.0056 
+[2026-03-11 03:15:36,827 INFO] validating...
+[2026-03-11 03:15:44,198 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.79 ... 0.   0.04 0.  ]
+ ...
+ [0.   0.   0.   ... 0.96 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.18 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.9 ]]
+[2026-03-11 03:15:44,962 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 03:15:44,963 INFO] 56320 iteration, USE_EMA: False, train/sup_loss: 0.000266, train/unsup_loss: 0.520826, train/contrastive_loss: 0.105056, train/ortho_loss: 0.063040, train/total_loss: 0.605228, train/util_ratio: 0.906250, train/run_time: 0.177678, eval/loss: 1.427317, eval/top-1-acc: 0.795200, eval/balanced_acc: 0.795200, eval/precision: 0.798700, eval/recall: 0.795200, eval/F1: 0.792872, lr: 0.000375, train/prefetch_time: 0.006426 BEST_EVAL_ACC: 0.7971, at 40960 iters
+[2026-03-11 03:16:37,151 INFO] 56576 iteration USE_EMA: False, train/sup_loss: 0.0019, train/unsup_loss: 0.5682, train/contrastive_loss: 0.0719, train/ortho_loss: 0.0634, train/total_loss: 0.6217, train/util_ratio: 0.9375, train/run_time: 0.1662, lr: 0.0004, train/prefetch_time: 0.0043 
+[2026-03-11 03:17:27,928 INFO] 56832 iteration USE_EMA: False, train/sup_loss: 0.0004, train/unsup_loss: 0.2602, train/contrastive_loss: 0.0574, train/ortho_loss: 0.0634, train/total_loss: 0.2980, train/util_ratio: 1.0000, train/run_time: 0.1696, lr: 0.0004, train/prefetch_time: 0.0036 
+[2026-03-11 03:18:19,750 INFO] 57088 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.5050, train/contrastive_loss: 0.1244, train/ortho_loss: 0.0633, train/total_loss: 0.6087, train/util_ratio: 1.0000, train/run_time: 0.1697, lr: 0.0004, train/prefetch_time: 0.0043 
+[2026-03-11 03:19:10,450 INFO] validating...
+[2026-03-11 03:19:17,467 INFO] confusion matrix:
+[[0.96 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.99 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.75 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.97 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.05 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.91]]
+[2026-03-11 03:19:18,435 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 03:19:18,437 INFO] 57344 iteration, USE_EMA: False, train/sup_loss: 0.000181, train/unsup_loss: 0.063641, train/contrastive_loss: 0.016253, train/ortho_loss: 0.063135, train/total_loss: 0.059183, train/util_ratio: 0.906250, train/run_time: 0.169286, eval/loss: 1.423494, eval/top-1-acc: 0.793500, eval/balanced_acc: 0.793500, eval/precision: 0.793256, eval/recall: 0.793500, eval/F1: 0.788018, lr: 0.000370, train/prefetch_time: 0.003811 BEST_EVAL_ACC: 0.7971, at 40960 iters
+[2026-03-11 03:20:09,858 INFO] 57600 iteration USE_EMA: False, train/sup_loss: 0.0003, train/unsup_loss: 0.1298, train/contrastive_loss: 0.0526, train/ortho_loss: 0.0636, train/total_loss: 0.1618, train/util_ratio: 0.9375, train/run_time: 0.1701, lr: 0.0004, train/prefetch_time: 0.0047 
+[2026-03-11 03:21:01,146 INFO] 57856 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.0267, train/contrastive_loss: 0.0131, train/ortho_loss: 0.0640, train/total_loss: 0.0182, train/util_ratio: 0.8125, train/run_time: 0.1691, lr: 0.0004, train/prefetch_time: 0.0041 
+[2026-03-11 03:21:52,657 INFO] 58112 iteration USE_EMA: False, train/sup_loss: 0.0003, train/unsup_loss: 0.3589, train/contrastive_loss: 0.0615, train/ortho_loss: 0.0632, train/total_loss: 0.4002, train/util_ratio: 0.9375, train/run_time: 0.1735, lr: 0.0004, train/prefetch_time: 0.0110 
+[2026-03-11 03:22:43,372 INFO] validating...
+[2026-03-11 03:22:50,552 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.73 ... 0.   0.05 0.  ]
+ ...
+ [0.   0.   0.   ... 0.96 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.2  0.  ]
+ [0.   0.   0.   ... 0.   0.   0.89]]
+[2026-03-11 03:22:51,806 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 03:22:51,807 INFO] 58368 iteration, USE_EMA: False, train/sup_loss: 0.000266, train/unsup_loss: 0.353448, train/contrastive_loss: 0.085014, train/ortho_loss: 0.063251, train/total_loss: 0.417588, train/util_ratio: 0.843750, train/run_time: 0.170261, eval/loss: 1.400633, eval/top-1-acc: 0.794400, eval/balanced_acc: 0.794400, eval/precision: 0.796975, eval/recall: 0.794400, eval/F1: 0.791597, lr: 0.000365, train/prefetch_time: 0.003942 BEST_EVAL_ACC: 0.7971, at 40960 iters
+[2026-03-11 03:23:43,880 INFO] 58624 iteration USE_EMA: False, train/sup_loss: 0.0010, train/unsup_loss: 0.4388, train/contrastive_loss: 0.1039, train/ortho_loss: 0.0632, train/total_loss: 0.5232, train/util_ratio: 0.9688, train/run_time: 0.1703, lr: 0.0004, train/prefetch_time: 0.0050 
+[2026-03-11 03:24:34,280 INFO] 58880 iteration USE_EMA: False, train/sup_loss: 0.0005, train/unsup_loss: 0.3044, train/contrastive_loss: 0.1099, train/ortho_loss: 0.0630, train/total_loss: 0.3930, train/util_ratio: 0.8125, train/run_time: 0.1693, lr: 0.0004, train/prefetch_time: 0.0038 
+[2026-03-11 03:25:26,211 INFO] 59136 iteration USE_EMA: False, train/sup_loss: 0.0002, train/unsup_loss: 0.1448, train/contrastive_loss: 0.0658, train/ortho_loss: 0.0627, train/total_loss: 0.1892, train/util_ratio: 0.9062, train/run_time: 0.1704, lr: 0.0004, train/prefetch_time: 0.0041 
+[2026-03-11 03:26:17,280 INFO] validating...
+[2026-03-11 03:26:24,647 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.98 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.73 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.96 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.13 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.92]]
+[2026-03-11 03:26:25,919 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 03:26:25,920 INFO] 59392 iteration, USE_EMA: False, train/sup_loss: 0.000643, train/unsup_loss: 0.632761, train/contrastive_loss: 0.126825, train/ortho_loss: 0.062926, train/total_loss: 0.739558, train/util_ratio: 0.937500, train/run_time: 0.169576, eval/loss: 1.424554, eval/top-1-acc: 0.792800, eval/balanced_acc: 0.792800, eval/precision: 0.794738, eval/recall: 0.792800, eval/F1: 0.788725, lr: 0.000360, train/prefetch_time: 0.004109 BEST_EVAL_ACC: 0.7971, at 40960 iters
+[2026-03-11 03:27:17,737 INFO] 59648 iteration USE_EMA: False, train/sup_loss: 0.0018, train/unsup_loss: 0.2867, train/contrastive_loss: 0.0828, train/ortho_loss: 0.0632, train/total_loss: 0.3504, train/util_ratio: 0.9375, train/run_time: 0.1693, lr: 0.0004, train/prefetch_time: 0.0043 
+[2026-03-11 03:28:08,155 INFO] 59904 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.3826, train/contrastive_loss: 0.0914, train/ortho_loss: 0.0627, train/total_loss: 0.4526, train/util_ratio: 0.8750, train/run_time: 0.1718, lr: 0.0004, train/prefetch_time: 0.0042 
+[2026-03-11 03:29:00,162 INFO] 60160 iteration USE_EMA: False, train/sup_loss: 0.0025, train/unsup_loss: 0.3519, train/contrastive_loss: 0.0740, train/ortho_loss: 0.0635, train/total_loss: 0.4068, train/util_ratio: 0.8750, train/run_time: 0.1689, lr: 0.0004, train/prefetch_time: 0.0042 
+[2026-03-11 03:29:50,853 INFO] validating...
+[2026-03-11 03:29:57,604 INFO] confusion matrix:
+[[1.   0.   0.   ... 0.   0.   0.  ]
+ [0.   0.96 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.79 ... 0.   0.01 0.  ]
+ ...
+ [0.   0.   0.   ... 0.95 0.   0.  ]
+ [0.   0.   0.03 ... 0.   0.15 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.91]]
+[2026-03-11 03:29:58,384 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 03:29:58,385 INFO] 60416 iteration, USE_EMA: False, train/sup_loss: 0.002103, train/unsup_loss: 0.150883, train/contrastive_loss: 0.035998, train/ortho_loss: 0.062912, train/total_loss: 0.168769, train/util_ratio: 1.000000, train/run_time: 0.171596, eval/loss: 1.330184, eval/top-1-acc: 0.791800, eval/balanced_acc: 0.791800, eval/precision: 0.795679, eval/recall: 0.791800, eval/F1: 0.788918, lr: 0.000355, train/prefetch_time: 0.003655 BEST_EVAL_ACC: 0.7971, at 40960 iters
+[2026-03-11 03:30:49,675 INFO] 60672 iteration USE_EMA: False, train/sup_loss: 0.0002, train/unsup_loss: 0.3328, train/contrastive_loss: 0.0532, train/ortho_loss: 0.0630, train/total_loss: 0.3655, train/util_ratio: 0.9375, train/run_time: 0.1715, lr: 0.0004, train/prefetch_time: 0.0040 
+[2026-03-11 03:31:39,781 INFO] 60928 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.4501, train/contrastive_loss: 0.0983, train/ortho_loss: 0.0623, train/total_loss: 0.5280, train/util_ratio: 0.9688, train/run_time: 0.1691, lr: 0.0004, train/prefetch_time: 0.0039 
+[2026-03-11 03:32:31,381 INFO] 61184 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.7127, train/contrastive_loss: 0.1899, train/ortho_loss: 0.0618, train/total_loss: 0.8820, train/util_ratio: 1.0000, train/run_time: 0.1700, lr: 0.0004, train/prefetch_time: 0.0043 
+[2026-03-11 03:33:21,765 INFO] validating...
+[2026-03-11 03:33:28,838 INFO] confusion matrix:
+[[0.97 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.96 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.8  ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.97 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.11 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.9 ]]
+[2026-03-11 03:33:29,812 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 03:33:29,814 INFO] 61440 iteration, USE_EMA: False, train/sup_loss: 0.000058, train/unsup_loss: 0.436462, train/contrastive_loss: 0.096267, train/ortho_loss: 0.062638, train/total_loss: 0.512087, train/util_ratio: 0.968750, train/run_time: 0.169300, eval/loss: 1.333070, eval/top-1-acc: 0.794900, eval/balanced_acc: 0.794900, eval/precision: 0.793044, eval/recall: 0.794900, eval/F1: 0.790695, lr: 0.000350, train/prefetch_time: 0.004116 BEST_EVAL_ACC: 0.7971, at 40960 iters
+[2026-03-11 03:34:21,207 INFO] 61696 iteration USE_EMA: False, train/sup_loss: 0.0018, train/unsup_loss: 0.6945, train/contrastive_loss: 0.1341, train/ortho_loss: 0.0632, train/total_loss: 0.8100, train/util_ratio: 0.9062, train/run_time: 0.1696, lr: 0.0003, train/prefetch_time: 0.0047 
+[2026-03-11 03:35:11,428 INFO] 61952 iteration USE_EMA: False, train/sup_loss: 0.0073, train/unsup_loss: 0.2006, train/contrastive_loss: 0.0466, train/ortho_loss: 0.0630, train/total_loss: 0.2340, train/util_ratio: 0.9688, train/run_time: 0.1700, lr: 0.0003, train/prefetch_time: 0.0043 
+[2026-03-11 03:36:03,775 INFO] 62208 iteration USE_EMA: False, train/sup_loss: 0.0007, train/unsup_loss: 0.3347, train/contrastive_loss: 0.0609, train/ortho_loss: 0.0628, train/total_loss: 0.3755, train/util_ratio: 0.9062, train/run_time: 0.1706, lr: 0.0003, train/prefetch_time: 0.0064 
+[2026-03-11 03:36:54,703 INFO] validating...
+[2026-03-11 03:37:01,741 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.67 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.96 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.11 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.85]]
+[2026-03-11 03:37:02,703 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 03:37:03,707 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/model_best.pth
+[2026-03-11 03:37:03,709 INFO] 62464 iteration, USE_EMA: False, train/sup_loss: 0.000206, train/unsup_loss: 0.577887, train/contrastive_loss: 0.121743, train/ortho_loss: 0.062721, train/total_loss: 0.678678, train/util_ratio: 0.937500, train/run_time: 0.169705, eval/loss: 1.398346, eval/top-1-acc: 0.797800, eval/balanced_acc: 0.797800, eval/precision: 0.804752, eval/recall: 0.797800, eval/F1: 0.796937, lr: 0.000345, train/prefetch_time: 0.004186 BEST_EVAL_ACC: 0.7978, at 62464 iters
+[2026-03-11 03:37:55,129 INFO] 62720 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.1052, train/contrastive_loss: 0.0196, train/ortho_loss: 0.0627, train/total_loss: 0.1040, train/util_ratio: 0.9375, train/run_time: 0.1702, lr: 0.0003, train/prefetch_time: 0.0044 
+[2026-03-11 03:38:46,611 INFO] 62976 iteration USE_EMA: False, train/sup_loss: 0.0004, train/unsup_loss: 0.1391, train/contrastive_loss: 0.0440, train/ortho_loss: 0.0621, train/total_loss: 0.1631, train/util_ratio: 0.9062, train/run_time: 0.1712, lr: 0.0003, train/prefetch_time: 0.0059 
+[2026-03-11 03:39:39,133 INFO] 63232 iteration USE_EMA: False, train/sup_loss: 0.0000, train/unsup_loss: 0.2782, train/contrastive_loss: 0.0671, train/ortho_loss: 0.0626, train/total_loss: 0.3239, train/util_ratio: 0.8438, train/run_time: 0.1704, lr: 0.0003, train/prefetch_time: 0.0044 
+[2026-03-11 03:40:30,731 INFO] validating...
+[2026-03-11 03:40:37,604 INFO] confusion matrix:
+[[1.   0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.77 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.96 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.13 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.89]]
+[2026-03-11 03:40:38,390 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 03:40:38,391 INFO] 63488 iteration, USE_EMA: False, train/sup_loss: 0.000078, train/unsup_loss: 0.120214, train/contrastive_loss: 0.020716, train/ortho_loss: 0.063141, train/total_loss: 0.120106, train/util_ratio: 0.906250, train/run_time: 0.169881, eval/loss: 1.340015, eval/top-1-acc: 0.795700, eval/balanced_acc: 0.795700, eval/precision: 0.799300, eval/recall: 0.795700, eval/F1: 0.793627, lr: 0.000339, train/prefetch_time: 0.004145 BEST_EVAL_ACC: 0.7978, at 62464 iters
+[2026-03-11 03:41:30,282 INFO] 63744 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.2964, train/contrastive_loss: 0.0917, train/ortho_loss: 0.0629, train/total_loss: 0.3655, train/util_ratio: 0.7812, train/run_time: 0.1661, lr: 0.0003, train/prefetch_time: 0.0044 
+[2026-03-11 03:42:20,660 INFO] 64000 iteration USE_EMA: False, train/sup_loss: 0.0002, train/unsup_loss: 0.6392, train/contrastive_loss: 0.1596, train/ortho_loss: 0.0625, train/total_loss: 0.7783, train/util_ratio: 0.9062, train/run_time: 0.1697, lr: 0.0003, train/prefetch_time: 0.0040 
+[2026-03-11 03:43:12,268 INFO] 64256 iteration USE_EMA: False, train/sup_loss: 0.0003, train/unsup_loss: 0.1216, train/contrastive_loss: 0.0269, train/ortho_loss: 0.0627, train/total_loss: 0.1281, train/util_ratio: 0.9062, train/run_time: 0.1696, lr: 0.0003, train/prefetch_time: 0.0045 
+[2026-03-11 03:44:03,641 INFO] validating...
+[2026-03-11 03:44:11,112 INFO] confusion matrix:
+[[0.98 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.74 ... 0.   0.01 0.  ]
+ ...
+ [0.   0.   0.   ... 0.95 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.14 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.86]]
+[2026-03-11 03:44:12,285 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 03:44:12,287 INFO] 64512 iteration, USE_EMA: False, train/sup_loss: 0.000106, train/unsup_loss: 0.565362, train/contrastive_loss: 0.079045, train/ortho_loss: 0.062576, train/total_loss: 0.624296, train/util_ratio: 0.906250, train/run_time: 0.171338, eval/loss: 1.423680, eval/top-1-acc: 0.794800, eval/balanced_acc: 0.794800, eval/precision: 0.796070, eval/recall: 0.794800, eval/F1: 0.791090, lr: 0.000334, train/prefetch_time: 0.005695 BEST_EVAL_ACC: 0.7978, at 62464 iters
+[2026-03-11 03:45:04,883 INFO] 64768 iteration USE_EMA: False, train/sup_loss: 0.0003, train/unsup_loss: 0.2051, train/contrastive_loss: 0.0505, train/ortho_loss: 0.0618, train/total_loss: 0.2354, train/util_ratio: 0.9062, train/run_time: 0.1696, lr: 0.0003, train/prefetch_time: 0.0053 
+[2026-03-11 03:45:55,950 INFO] 65024 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.2405, train/contrastive_loss: 0.0592, train/ortho_loss: 0.0624, train/total_loss: 0.2787, train/util_ratio: 0.8750, train/run_time: 0.1698, lr: 0.0003, train/prefetch_time: 0.0040 
+[2026-03-11 03:46:47,731 INFO] 65280 iteration USE_EMA: False, train/sup_loss: 0.0025, train/unsup_loss: 0.2558, train/contrastive_loss: 0.0359, train/ortho_loss: 0.0626, train/total_loss: 0.2736, train/util_ratio: 0.9062, train/run_time: 0.1694, lr: 0.0003, train/prefetch_time: 0.0058 
+[2026-03-11 03:47:38,248 INFO] validating...
+[2026-03-11 03:47:45,020 INFO] confusion matrix:
+[[0.97 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.96 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.81 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.96 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.14 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.92]]
+[2026-03-11 03:47:45,765 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 03:47:45,766 INFO] 65536 iteration, USE_EMA: False, train/sup_loss: 0.001332, train/unsup_loss: 0.492265, train/contrastive_loss: 0.127076, train/ortho_loss: 0.062417, train/total_loss: 0.599532, train/util_ratio: 0.843750, train/run_time: 0.169729, eval/loss: 1.411468, eval/top-1-acc: 0.797700, eval/balanced_acc: 0.797700, eval/precision: 0.800505, eval/recall: 0.797700, eval/F1: 0.795904, lr: 0.000329, train/prefetch_time: 0.004445 BEST_EVAL_ACC: 0.7978, at 62464 iters
+[2026-03-11 03:48:36,873 INFO] 65792 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.1604, train/contrastive_loss: 0.0409, train/ortho_loss: 0.0627, train/total_loss: 0.1798, train/util_ratio: 0.8438, train/run_time: 0.1716, lr: 0.0003, train/prefetch_time: 0.0067 
+[2026-03-11 03:49:27,487 INFO] 66048 iteration USE_EMA: False, train/sup_loss: 0.0116, train/unsup_loss: 0.2317, train/contrastive_loss: 0.0433, train/ortho_loss: 0.0631, train/total_loss: 0.2657, train/util_ratio: 0.8438, train/run_time: 0.1688, lr: 0.0003, train/prefetch_time: 0.0053 
+[2026-03-11 03:50:18,584 INFO] 66304 iteration USE_EMA: False, train/sup_loss: 0.0002, train/unsup_loss: 0.4736, train/contrastive_loss: 0.0927, train/ortho_loss: 0.0633, train/total_loss: 0.5458, train/util_ratio: 0.9375, train/run_time: 0.1694, lr: 0.0003, train/prefetch_time: 0.0052 
+[2026-03-11 03:51:09,126 INFO] validating...
+[2026-03-11 03:51:16,219 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.98 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.8  ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.96 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.14 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.88]]
+[2026-03-11 03:51:17,529 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 03:51:17,529 INFO] 66560 iteration, USE_EMA: False, train/sup_loss: 0.000071, train/unsup_loss: 0.401332, train/contrastive_loss: 0.075647, train/ortho_loss: 0.062767, train/total_loss: 0.456849, train/util_ratio: 0.968750, train/run_time: 0.170213, eval/loss: 1.419329, eval/top-1-acc: 0.793400, eval/balanced_acc: 0.793400, eval/precision: 0.796605, eval/recall: 0.793400, eval/F1: 0.790203, lr: 0.000323, train/prefetch_time: 0.004043 BEST_EVAL_ACC: 0.7978, at 62464 iters
+[2026-03-11 03:52:09,190 INFO] 66816 iteration USE_EMA: False, train/sup_loss: 0.0003, train/unsup_loss: 0.5521, train/contrastive_loss: 0.1068, train/ortho_loss: 0.0633, train/total_loss: 0.6392, train/util_ratio: 0.9688, train/run_time: 0.1707, lr: 0.0003, train/prefetch_time: 0.0062 
+[2026-03-11 03:52:59,639 INFO] 67072 iteration USE_EMA: False, train/sup_loss: 0.0003, train/unsup_loss: 0.3688, train/contrastive_loss: 0.0803, train/ortho_loss: 0.0626, train/total_loss: 0.4284, train/util_ratio: 0.9062, train/run_time: 0.1692, lr: 0.0003, train/prefetch_time: 0.0039 
+[2026-03-11 03:53:51,132 INFO] 67328 iteration USE_EMA: False, train/sup_loss: 0.0013, train/unsup_loss: 0.2475, train/contrastive_loss: 0.0566, train/ortho_loss: 0.0625, train/total_loss: 0.2847, train/util_ratio: 0.9375, train/run_time: 0.1721, lr: 0.0003, train/prefetch_time: 0.0097 
+[2026-03-11 03:54:41,770 INFO] validating...
+[2026-03-11 03:54:48,554 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.79 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.96 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.14 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.91]]
+[2026-03-11 03:54:49,302 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 03:54:50,061 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/model_best.pth
+[2026-03-11 03:54:50,061 INFO] 67584 iteration, USE_EMA: False, train/sup_loss: 0.000747, train/unsup_loss: 0.487755, train/contrastive_loss: 0.133133, train/ortho_loss: 0.061997, train/total_loss: 0.601189, train/util_ratio: 0.968750, train/run_time: 0.170880, eval/loss: 1.345662, eval/top-1-acc: 0.800300, eval/balanced_acc: 0.800300, eval/precision: 0.799774, eval/recall: 0.800300, eval/F1: 0.797208, lr: 0.000318, train/prefetch_time: 0.005802 BEST_EVAL_ACC: 0.8003, at 67584 iters
+[2026-03-11 03:55:41,435 INFO] 67840 iteration USE_EMA: False, train/sup_loss: 0.0050, train/unsup_loss: 0.1815, train/contrastive_loss: 0.0298, train/ortho_loss: 0.0623, train/total_loss: 0.1959, train/util_ratio: 0.8750, train/run_time: 0.1691, lr: 0.0003, train/prefetch_time: 0.0058 
+[2026-03-11 03:56:31,989 INFO] 68096 iteration USE_EMA: False, train/sup_loss: 0.0006, train/unsup_loss: 0.4925, train/contrastive_loss: 0.0951, train/ortho_loss: 0.0622, train/total_loss: 0.5669, train/util_ratio: 0.9375, train/run_time: 0.1695, lr: 0.0003, train/prefetch_time: 0.0053 
+[2026-03-11 03:57:23,689 INFO] 68352 iteration USE_EMA: False, train/sup_loss: 0.0028, train/unsup_loss: 0.3113, train/contrastive_loss: 0.0765, train/ortho_loss: 0.0618, train/total_loss: 0.3711, train/util_ratio: 0.9688, train/run_time: 0.1697, lr: 0.0003, train/prefetch_time: 0.0050 
+[2026-03-11 03:58:14,246 INFO] validating...
+[2026-03-11 03:58:21,349 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.85 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.96 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.14 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.93]]
+[2026-03-11 03:58:22,423 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 03:58:22,424 INFO] 68608 iteration, USE_EMA: False, train/sup_loss: 0.000561, train/unsup_loss: 0.420226, train/contrastive_loss: 0.091291, train/ortho_loss: 0.061976, train/total_loss: 0.490931, train/util_ratio: 0.875000, train/run_time: 0.169272, eval/loss: 1.418790, eval/top-1-acc: 0.796900, eval/balanced_acc: 0.796900, eval/precision: 0.799526, eval/recall: 0.796900, eval/F1: 0.793837, lr: 0.000312, train/prefetch_time: 0.005045 BEST_EVAL_ACC: 0.8003, at 67584 iters
+[2026-03-11 03:59:13,646 INFO] 68864 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.7182, train/contrastive_loss: 0.1611, train/ortho_loss: 0.0619, train/total_loss: 0.8586, train/util_ratio: 0.9062, train/run_time: 0.1708, lr: 0.0003, train/prefetch_time: 0.0089 
+[2026-03-11 04:00:03,934 INFO] 69120 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.5346, train/contrastive_loss: 0.1544, train/ortho_loss: 0.0623, train/total_loss: 0.6683, train/util_ratio: 0.9688, train/run_time: 0.1701, lr: 0.0003, train/prefetch_time: 0.0056 
+[2026-03-11 04:00:54,901 INFO] 69376 iteration USE_EMA: False, train/sup_loss: 0.0002, train/unsup_loss: 0.2852, train/contrastive_loss: 0.0793, train/ortho_loss: 0.0627, train/total_loss: 0.3442, train/util_ratio: 0.9688, train/run_time: 0.1696, lr: 0.0003, train/prefetch_time: 0.0052 
+[2026-03-11 04:01:45,052 INFO] validating...
+[2026-03-11 04:01:51,935 INFO] confusion matrix:
+[[0.96 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.82 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.96 0.   0.  ]
+ [0.   0.   0.02 ... 0.   0.12 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.9 ]]
+[2026-03-11 04:01:52,860 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 04:01:52,861 INFO] 69632 iteration, USE_EMA: False, train/sup_loss: 0.001004, train/unsup_loss: 0.477650, train/contrastive_loss: 0.128057, train/ortho_loss: 0.062254, train/total_loss: 0.586714, train/util_ratio: 1.000000, train/run_time: 0.169220, eval/loss: 1.431961, eval/top-1-acc: 0.794600, eval/balanced_acc: 0.794600, eval/precision: 0.795684, eval/recall: 0.794600, eval/F1: 0.791392, lr: 0.000306, train/prefetch_time: 0.005289 BEST_EVAL_ACC: 0.8003, at 67584 iters
+[2026-03-11 04:02:43,841 INFO] 69888 iteration USE_EMA: False, train/sup_loss: 0.0000, train/unsup_loss: 0.2308, train/contrastive_loss: 0.0803, train/ortho_loss: 0.0622, train/total_loss: 0.2905, train/util_ratio: 0.8750, train/run_time: 0.1714, lr: 0.0003, train/prefetch_time: 0.0083 
+[2026-03-11 04:03:34,432 INFO] 70144 iteration USE_EMA: False, train/sup_loss: 0.0000, train/unsup_loss: 0.2577, train/contrastive_loss: 0.0807, train/ortho_loss: 0.0628, train/total_loss: 0.3178, train/util_ratio: 0.9688, train/run_time: 0.1687, lr: 0.0003, train/prefetch_time: 0.0060 
+[2026-03-11 04:04:25,451 INFO] 70400 iteration USE_EMA: False, train/sup_loss: 0.0015, train/unsup_loss: 0.5484, train/contrastive_loss: 0.1154, train/ortho_loss: 0.0624, train/total_loss: 0.6446, train/util_ratio: 0.9688, train/run_time: 0.1698, lr: 0.0003, train/prefetch_time: 0.0045 
+[2026-03-11 04:05:15,821 INFO] validating...
+[2026-03-11 04:05:22,603 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.72 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.96 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.13 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.93]]
+[2026-03-11 04:05:23,338 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 04:05:23,338 INFO] 70656 iteration, USE_EMA: False, train/sup_loss: 0.000027, train/unsup_loss: 0.189431, train/contrastive_loss: 0.025884, train/ortho_loss: 0.061684, train/total_loss: 0.195127, train/util_ratio: 1.000000, train/run_time: 0.169037, eval/loss: 1.428825, eval/top-1-acc: 0.797000, eval/balanced_acc: 0.797000, eval/precision: 0.797801, eval/recall: 0.797000, eval/F1: 0.794735, lr: 0.000301, train/prefetch_time: 0.004707 BEST_EVAL_ACC: 0.8003, at 67584 iters
+[2026-03-11 04:06:14,801 INFO] 70912 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.3230, train/contrastive_loss: 0.0405, train/ortho_loss: 0.0615, train/total_loss: 0.3431, train/util_ratio: 0.9375, train/run_time: 0.1689, lr: 0.0003, train/prefetch_time: 0.0054 
+[2026-03-11 04:07:05,211 INFO] 71168 iteration USE_EMA: False, train/sup_loss: 0.0004, train/unsup_loss: 0.3331, train/contrastive_loss: 0.0973, train/ortho_loss: 0.0611, train/total_loss: 0.4104, train/util_ratio: 0.9375, train/run_time: 0.1690, lr: 0.0003, train/prefetch_time: 0.0054 
+[2026-03-11 04:07:56,156 INFO] 71424 iteration USE_EMA: False, train/sup_loss: 0.0004, train/unsup_loss: 0.1326, train/contrastive_loss: 0.0357, train/ortho_loss: 0.0614, train/total_loss: 0.1478, train/util_ratio: 1.0000, train/run_time: 0.1674, lr: 0.0003, train/prefetch_time: 0.0061 
+[2026-03-11 04:08:46,455 INFO] validating...
+[2026-03-11 04:08:53,293 INFO] confusion matrix:
+[[0.98 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.75 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.94 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.13 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.89]]
+[2026-03-11 04:08:54,784 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 04:08:54,785 INFO] 71680 iteration, USE_EMA: False, train/sup_loss: 0.000630, train/unsup_loss: 0.451909, train/contrastive_loss: 0.077467, train/ortho_loss: 0.061799, train/total_loss: 0.509567, train/util_ratio: 0.968750, train/run_time: 0.169363, eval/loss: 1.439337, eval/top-1-acc: 0.796800, eval/balanced_acc: 0.796800, eval/precision: 0.797609, eval/recall: 0.796800, eval/F1: 0.794388, lr: 0.000295, train/prefetch_time: 0.004984 BEST_EVAL_ACC: 0.8003, at 67584 iters
+[2026-03-11 04:09:46,059 INFO] 71936 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.3190, train/contrastive_loss: 0.0413, train/ortho_loss: 0.0615, train/total_loss: 0.3397, train/util_ratio: 0.9062, train/run_time: 0.1687, lr: 0.0003, train/prefetch_time: 0.0058 
+[2026-03-11 04:10:36,135 INFO] 72192 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.2860, train/contrastive_loss: 0.0845, train/ortho_loss: 0.0611, train/total_loss: 0.3496, train/util_ratio: 0.9375, train/run_time: 0.1688, lr: 0.0003, train/prefetch_time: 0.0057 
+[2026-03-11 04:11:27,668 INFO] 72448 iteration USE_EMA: False, train/sup_loss: 0.0000, train/unsup_loss: 0.2216, train/contrastive_loss: 0.0706, train/ortho_loss: 0.0612, train/total_loss: 0.2725, train/util_ratio: 1.0000, train/run_time: 0.1695, lr: 0.0003, train/prefetch_time: 0.0036 
+[2026-03-11 04:12:17,853 INFO] validating...
+[2026-03-11 04:12:24,668 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.83 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.97 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.14 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.93]]
+[2026-03-11 04:12:25,424 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 04:12:25,424 INFO] 72704 iteration, USE_EMA: False, train/sup_loss: 0.000084, train/unsup_loss: 0.236672, train/contrastive_loss: 0.071773, train/ortho_loss: 0.061153, train/total_loss: 0.287823, train/util_ratio: 0.937500, train/run_time: 0.170238, eval/loss: 1.369072, eval/top-1-acc: 0.798900, eval/balanced_acc: 0.798900, eval/precision: 0.798982, eval/recall: 0.798900, eval/F1: 0.795865, lr: 0.000289, train/prefetch_time: 0.005448 BEST_EVAL_ACC: 0.8003, at 67584 iters
+[2026-03-11 04:13:16,231 INFO] 72960 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.4980, train/contrastive_loss: 0.0811, train/ortho_loss: 0.0612, train/total_loss: 0.5586, train/util_ratio: 0.9062, train/run_time: 0.1686, lr: 0.0003, train/prefetch_time: 0.0059 
+[2026-03-11 04:14:06,436 INFO] 73216 iteration USE_EMA: False, train/sup_loss: 0.0155, train/unsup_loss: 0.3582, train/contrastive_loss: 0.0924, train/ortho_loss: 0.0612, train/total_loss: 0.4461, train/util_ratio: 0.9688, train/run_time: 0.1691, lr: 0.0003, train/prefetch_time: 0.0055 
+[2026-03-11 04:14:57,421 INFO] 73472 iteration USE_EMA: False, train/sup_loss: 0.0013, train/unsup_loss: 0.3002, train/contrastive_loss: 0.0522, train/ortho_loss: 0.0614, train/total_loss: 0.3319, train/util_ratio: 0.9375, train/run_time: 0.1688, lr: 0.0003, train/prefetch_time: 0.0038 
+[2026-03-11 04:15:47,545 INFO] validating...
+[2026-03-11 04:15:54,794 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.76 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.96 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.12 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.92]]
+[2026-03-11 04:15:55,851 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 04:15:56,900 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/model_best.pth
+[2026-03-11 04:15:56,901 INFO] 73728 iteration, USE_EMA: False, train/sup_loss: 0.000183, train/unsup_loss: 0.384003, train/contrastive_loss: 0.100007, train/ortho_loss: 0.061364, train/total_loss: 0.462564, train/util_ratio: 0.843750, train/run_time: 0.168757, eval/loss: 1.354741, eval/top-1-acc: 0.802100, eval/balanced_acc: 0.802100, eval/precision: 0.802461, eval/recall: 0.802100, eval/F1: 0.799667, lr: 0.000283, train/prefetch_time: 0.003909 BEST_EVAL_ACC: 0.8021, at 73728 iters
+[2026-03-11 04:16:48,128 INFO] 73984 iteration USE_EMA: False, train/sup_loss: 0.0003, train/unsup_loss: 0.2291, train/contrastive_loss: 0.0669, train/ortho_loss: 0.0616, train/total_loss: 0.2756, train/util_ratio: 0.9062, train/run_time: 0.1686, lr: 0.0003, train/prefetch_time: 0.0052 
+[2026-03-11 04:17:38,129 INFO] 74240 iteration USE_EMA: False, train/sup_loss: 0.0011, train/unsup_loss: 0.5184, train/contrastive_loss: 0.1172, train/ortho_loss: 0.0611, train/total_loss: 0.6165, train/util_ratio: 1.0000, train/run_time: 0.1693, lr: 0.0003, train/prefetch_time: 0.0048 
+[2026-03-11 04:18:29,444 INFO] 74496 iteration USE_EMA: False, train/sup_loss: 0.0043, train/unsup_loss: 0.5069, train/contrastive_loss: 0.1455, train/ortho_loss: 0.0612, train/total_loss: 0.6358, train/util_ratio: 0.9375, train/run_time: 0.1689, lr: 0.0003, train/prefetch_time: 0.0057 
+[2026-03-11 04:19:19,959 INFO] validating...
+[2026-03-11 04:19:26,850 INFO] confusion matrix:
+[[1.   0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.75 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.97 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.12 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.92]]
+[2026-03-11 04:19:27,597 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 04:19:28,349 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/model_best.pth
+[2026-03-11 04:19:28,349 INFO] 74752 iteration, USE_EMA: False, train/sup_loss: 0.003603, train/unsup_loss: 0.291278, train/contrastive_loss: 0.072943, train/ortho_loss: 0.061310, train/total_loss: 0.347385, train/util_ratio: 0.968750, train/run_time: 0.168918, eval/loss: 1.336555, eval/top-1-acc: 0.803600, eval/balanced_acc: 0.803600, eval/precision: 0.803252, eval/recall: 0.803600, eval/F1: 0.800801, lr: 0.000277, train/prefetch_time: 0.005422 BEST_EVAL_ACC: 0.8036, at 74752 iters
+[2026-03-11 04:20:19,254 INFO] 75008 iteration USE_EMA: False, train/sup_loss: 0.0007, train/unsup_loss: 0.5573, train/contrastive_loss: 0.1256, train/ortho_loss: 0.0613, train/total_loss: 0.6629, train/util_ratio: 0.9375, train/run_time: 0.1685, lr: 0.0003, train/prefetch_time: 0.0059 
+[2026-03-11 04:21:09,732 INFO] 75264 iteration USE_EMA: False, train/sup_loss: 0.0003, train/unsup_loss: 0.1946, train/contrastive_loss: 0.0699, train/ortho_loss: 0.0613, train/total_loss: 0.2451, train/util_ratio: 0.9688, train/run_time: 0.1689, lr: 0.0003, train/prefetch_time: 0.0051 
+[2026-03-11 04:22:01,087 INFO] 75520 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.1354, train/contrastive_loss: 0.0352, train/ortho_loss: 0.0612, train/total_loss: 0.1498, train/util_ratio: 0.9375, train/run_time: 0.1692, lr: 0.0003, train/prefetch_time: 0.0058 
+[2026-03-11 04:22:51,610 INFO] validating...
+[2026-03-11 04:22:58,510 INFO] confusion matrix:
+[[1.   0.   0.   ... 0.   0.   0.  ]
+ [0.   0.96 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.79 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.96 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.13 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.92]]
+[2026-03-11 04:22:59,575 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 04:22:59,576 INFO] 75776 iteration, USE_EMA: False, train/sup_loss: 0.000016, train/unsup_loss: 0.195920, train/contrastive_loss: 0.033076, train/ortho_loss: 0.061130, train/total_loss: 0.207626, train/util_ratio: 0.968750, train/run_time: 0.168714, eval/loss: 1.389144, eval/top-1-acc: 0.801700, eval/balanced_acc: 0.801700, eval/precision: 0.802544, eval/recall: 0.801700, eval/F1: 0.798852, lr: 0.000271, train/prefetch_time: 0.005030 BEST_EVAL_ACC: 0.8036, at 74752 iters
+[2026-03-11 04:23:50,548 INFO] 76032 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.2751, train/contrastive_loss: 0.0557, train/ortho_loss: 0.0613, train/total_loss: 0.3098, train/util_ratio: 0.9062, train/run_time: 0.1690, lr: 0.0003, train/prefetch_time: 0.0054 
+[2026-03-11 04:24:40,781 INFO] 76288 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.6021, train/contrastive_loss: 0.1500, train/ortho_loss: 0.0612, train/total_loss: 0.7317, train/util_ratio: 0.9688, train/run_time: 0.1688, lr: 0.0003, train/prefetch_time: 0.0064 
+[2026-03-11 04:25:31,845 INFO] 76544 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.3148, train/contrastive_loss: 0.0779, train/ortho_loss: 0.0608, train/total_loss: 0.3721, train/util_ratio: 0.9688, train/run_time: 0.1687, lr: 0.0003, train/prefetch_time: 0.0056 
+[2026-03-11 04:26:22,149 INFO] validating...
+[2026-03-11 04:26:29,201 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.76 ... 0.   0.01 0.  ]
+ ...
+ [0.   0.   0.   ... 0.97 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.13 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.9 ]]
+[2026-03-11 04:26:29,959 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 04:26:29,960 INFO] 76800 iteration, USE_EMA: False, train/sup_loss: 0.000058, train/unsup_loss: 0.151065, train/contrastive_loss: 0.033830, train/ortho_loss: 0.061755, train/total_loss: 0.164023, train/util_ratio: 0.906250, train/run_time: 0.168531, eval/loss: 1.377123, eval/top-1-acc: 0.802100, eval/balanced_acc: 0.802100, eval/precision: 0.802735, eval/recall: 0.802100, eval/F1: 0.799379, lr: 0.000265, train/prefetch_time: 0.005701 BEST_EVAL_ACC: 0.8036, at 74752 iters
+[2026-03-11 04:27:20,954 INFO] 77056 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.6178, train/contrastive_loss: 0.1716, train/ortho_loss: 0.0611, train/total_loss: 0.7687, train/util_ratio: 0.9062, train/run_time: 0.1692, lr: 0.0003, train/prefetch_time: 0.0049 
+[2026-03-11 04:28:11,091 INFO] 77312 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.2686, train/contrastive_loss: 0.0808, train/ortho_loss: 0.0609, train/total_loss: 0.3284, train/util_ratio: 1.0000, train/run_time: 0.1687, lr: 0.0003, train/prefetch_time: 0.0052 
+[2026-03-11 04:29:02,603 INFO] 77568 iteration USE_EMA: False, train/sup_loss: 0.0002, train/unsup_loss: 0.3537, train/contrastive_loss: 0.0611, train/ortho_loss: 0.0614, train/total_loss: 0.3946, train/util_ratio: 0.9688, train/run_time: 0.1688, lr: 0.0003, train/prefetch_time: 0.0058 
+[2026-03-11 04:29:53,251 INFO] validating...
+[2026-03-11 04:30:00,318 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.79 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.97 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.11 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.9 ]]
+[2026-03-11 04:30:01,375 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 04:30:01,376 INFO] 77824 iteration, USE_EMA: False, train/sup_loss: 0.000087, train/unsup_loss: 0.242159, train/contrastive_loss: 0.076641, train/ortho_loss: 0.061245, train/total_loss: 0.297977, train/util_ratio: 0.906250, train/run_time: 0.169494, eval/loss: 1.379298, eval/top-1-acc: 0.800600, eval/balanced_acc: 0.800600, eval/precision: 0.801310, eval/recall: 0.800600, eval/F1: 0.798227, lr: 0.000259, train/prefetch_time: 0.007158 BEST_EVAL_ACC: 0.8036, at 74752 iters
+[2026-03-11 04:30:51,996 INFO] 78080 iteration USE_EMA: False, train/sup_loss: 0.0000, train/unsup_loss: 0.2139, train/contrastive_loss: 0.0510, train/ortho_loss: 0.0612, train/total_loss: 0.2435, train/util_ratio: 0.9062, train/run_time: 0.1688, lr: 0.0003, train/prefetch_time: 0.0050 
+[2026-03-11 04:31:41,978 INFO] 78336 iteration USE_EMA: False, train/sup_loss: 0.0000, train/unsup_loss: 0.5718, train/contrastive_loss: 0.1220, train/ortho_loss: 0.0609, train/total_loss: 0.6734, train/util_ratio: 0.9375, train/run_time: 0.1701, lr: 0.0003, train/prefetch_time: 0.0061 
+[2026-03-11 04:32:33,129 INFO] 78592 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.0884, train/contrastive_loss: 0.0320, train/ortho_loss: 0.0611, train/total_loss: 0.1003, train/util_ratio: 0.9062, train/run_time: 0.1685, lr: 0.0003, train/prefetch_time: 0.0047 
+[2026-03-11 04:33:23,599 INFO] validating...
+[2026-03-11 04:33:30,774 INFO] confusion matrix:
+[[0.98 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.79 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.97 0.   0.  ]
+ [0.   0.   0.02 ... 0.   0.12 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.9 ]]
+[2026-03-11 04:33:31,524 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 04:33:31,525 INFO] 78848 iteration, USE_EMA: False, train/sup_loss: 0.000276, train/unsup_loss: 0.447460, train/contrastive_loss: 0.073989, train/ortho_loss: 0.061186, train/total_loss: 0.501258, train/util_ratio: 0.906250, train/run_time: 0.170512, eval/loss: 1.371093, eval/top-1-acc: 0.803200, eval/balanced_acc: 0.803200, eval/precision: 0.804410, eval/recall: 0.803200, eval/F1: 0.800687, lr: 0.000252, train/prefetch_time: 0.005667 BEST_EVAL_ACC: 0.8036, at 74752 iters
+[2026-03-11 04:34:22,754 INFO] 79104 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.2959, train/contrastive_loss: 0.0504, train/ortho_loss: 0.0608, train/total_loss: 0.3257, train/util_ratio: 0.9688, train/run_time: 0.1689, lr: 0.0003, train/prefetch_time: 0.0039 
+[2026-03-11 04:35:13,042 INFO] 79360 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.5120, train/contrastive_loss: 0.1050, train/ortho_loss: 0.0603, train/total_loss: 0.5967, train/util_ratio: 0.9062, train/run_time: 0.1686, lr: 0.0002, train/prefetch_time: 0.0044 
+[2026-03-11 04:36:04,382 INFO] 79616 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.3617, train/contrastive_loss: 0.0481, train/ortho_loss: 0.0604, train/total_loss: 0.3893, train/util_ratio: 0.9375, train/run_time: 0.1690, lr: 0.0002, train/prefetch_time: 0.0058 
+[2026-03-11 04:36:54,682 INFO] validating...
+[2026-03-11 04:37:01,634 INFO] confusion matrix:
+[[0.97 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.76 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.97 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.13 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.9 ]]
+[2026-03-11 04:37:02,699 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 04:37:02,700 INFO] 79872 iteration, USE_EMA: False, train/sup_loss: 0.000067, train/unsup_loss: 0.257774, train/contrastive_loss: 0.082245, train/ortho_loss: 0.060191, train/total_loss: 0.319372, train/util_ratio: 1.000000, train/run_time: 0.168933, eval/loss: 1.393828, eval/top-1-acc: 0.798900, eval/balanced_acc: 0.798900, eval/precision: 0.800415, eval/recall: 0.798900, eval/F1: 0.797108, lr: 0.000246, train/prefetch_time: 0.005744 BEST_EVAL_ACC: 0.8036, at 74752 iters
+[2026-03-11 04:37:53,846 INFO] 80128 iteration USE_EMA: False, train/sup_loss: 0.0002, train/unsup_loss: 0.2894, train/contrastive_loss: 0.0606, train/ortho_loss: 0.0609, train/total_loss: 0.3305, train/util_ratio: 0.9375, train/run_time: 0.1703, lr: 0.0002, train/prefetch_time: 0.0050 
+[2026-03-11 04:38:43,980 INFO] 80384 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.5981, train/contrastive_loss: 0.1201, train/ortho_loss: 0.0606, train/total_loss: 0.6981, train/util_ratio: 0.9688, train/run_time: 0.1699, lr: 0.0002, train/prefetch_time: 0.0054 
+[2026-03-11 04:39:34,174 INFO] 80640 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.3366, train/contrastive_loss: 0.0915, train/ortho_loss: 0.0604, train/total_loss: 0.4072, train/util_ratio: 0.9688, train/run_time: 0.1636, lr: 0.0002, train/prefetch_time: 0.0039 
+[2026-03-11 04:40:21,137 INFO] validating...
+[2026-03-11 04:40:28,132 INFO] confusion matrix:
+[[0.98 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.75 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.97 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.12 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.9 ]]
+[2026-03-11 04:40:29,242 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 04:40:29,243 INFO] 80896 iteration, USE_EMA: False, train/sup_loss: 0.000055, train/unsup_loss: 0.373357, train/contrastive_loss: 0.037796, train/ortho_loss: 0.060676, train/total_loss: 0.390279, train/util_ratio: 0.937500, train/run_time: 0.167734, eval/loss: 1.415254, eval/top-1-acc: 0.801400, eval/balanced_acc: 0.801400, eval/precision: 0.803025, eval/recall: 0.801400, eval/F1: 0.799644, lr: 0.000240, train/prefetch_time: 0.003816 BEST_EVAL_ACC: 0.8036, at 74752 iters
+[2026-03-11 04:41:20,155 INFO] 81152 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.5718, train/contrastive_loss: 0.1146, train/ortho_loss: 0.0607, train/total_loss: 0.6663, train/util_ratio: 0.9688, train/run_time: 0.1691, lr: 0.0002, train/prefetch_time: 0.0041 
+[2026-03-11 04:42:10,339 INFO] 81408 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.4942, train/contrastive_loss: 0.0573, train/ortho_loss: 0.0607, train/total_loss: 0.5312, train/util_ratio: 0.9688, train/run_time: 0.1688, lr: 0.0002, train/prefetch_time: 0.0052 
+[2026-03-11 04:43:01,444 INFO] 81664 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.1855, train/contrastive_loss: 0.0284, train/ortho_loss: 0.0605, train/total_loss: 0.1934, train/util_ratio: 0.9688, train/run_time: 0.1688, lr: 0.0002, train/prefetch_time: 0.0059 
+[2026-03-11 04:43:52,018 INFO] validating...
+[2026-03-11 04:43:58,928 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.77 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.97 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.13 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.9 ]]
+[2026-03-11 04:43:59,702 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 04:43:59,703 INFO] 81920 iteration, USE_EMA: False, train/sup_loss: 0.000091, train/unsup_loss: 0.171856, train/contrastive_loss: 0.042469, train/ortho_loss: 0.060766, train/total_loss: 0.193738, train/util_ratio: 1.000000, train/run_time: 0.169463, eval/loss: 1.411202, eval/top-1-acc: 0.799200, eval/balanced_acc: 0.799200, eval/precision: 0.800832, eval/recall: 0.799200, eval/F1: 0.797139, lr: 0.000233, train/prefetch_time: 0.005364 BEST_EVAL_ACC: 0.8036, at 74752 iters
+[2026-03-11 04:44:50,670 INFO] 82176 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.0814, train/contrastive_loss: 0.0377, train/ortho_loss: 0.0611, train/total_loss: 0.0976, train/util_ratio: 0.9375, train/run_time: 0.1686, lr: 0.0002, train/prefetch_time: 0.0061 
+[2026-03-11 04:45:41,033 INFO] 82432 iteration USE_EMA: False, train/sup_loss: 0.0012, train/unsup_loss: 0.4429, train/contrastive_loss: 0.0653, train/ortho_loss: 0.0606, train/total_loss: 0.4888, train/util_ratio: 0.9062, train/run_time: 0.1689, lr: 0.0002, train/prefetch_time: 0.0052 
+[2026-03-11 04:46:32,176 INFO] 82688 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.1522, train/contrastive_loss: 0.0309, train/ortho_loss: 0.0606, train/total_loss: 0.1620, train/util_ratio: 0.7812, train/run_time: 0.1710, lr: 0.0002, train/prefetch_time: 0.0071 
+[2026-03-11 04:47:22,110 INFO] validating...
+[2026-03-11 04:47:28,984 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.71 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.97 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.14 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.9 ]]
+[2026-03-11 04:47:29,772 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 04:47:29,773 INFO] 82944 iteration, USE_EMA: False, train/sup_loss: 0.000042, train/unsup_loss: 0.504055, train/contrastive_loss: 0.102979, train/ortho_loss: 0.060548, train/total_loss: 0.586395, train/util_ratio: 0.968750, train/run_time: 0.168687, eval/loss: 1.405140, eval/top-1-acc: 0.801500, eval/balanced_acc: 0.801500, eval/precision: 0.802336, eval/recall: 0.801500, eval/F1: 0.799294, lr: 0.000227, train/prefetch_time: 0.005364 BEST_EVAL_ACC: 0.8036, at 74752 iters
+[2026-03-11 04:48:20,747 INFO] 83200 iteration USE_EMA: False, train/sup_loss: 0.0012, train/unsup_loss: 0.2523, train/contrastive_loss: 0.0778, train/ortho_loss: 0.0605, train/total_loss: 0.3104, train/util_ratio: 1.0000, train/run_time: 0.1694, lr: 0.0002, train/prefetch_time: 0.0047 
+[2026-03-11 04:49:10,782 INFO] 83456 iteration USE_EMA: False, train/sup_loss: 0.0005, train/unsup_loss: 0.3534, train/contrastive_loss: 0.1200, train/ortho_loss: 0.0600, train/total_loss: 0.4539, train/util_ratio: 0.9375, train/run_time: 0.1686, lr: 0.0002, train/prefetch_time: 0.0054 
+[2026-03-11 04:50:01,674 INFO] 83712 iteration USE_EMA: False, train/sup_loss: 0.0021, train/unsup_loss: 0.4118, train/contrastive_loss: 0.1067, train/ortho_loss: 0.0601, train/total_loss: 0.4999, train/util_ratio: 0.9375, train/run_time: 0.1686, lr: 0.0002, train/prefetch_time: 0.0055 
+[2026-03-11 04:50:52,045 INFO] validating...
+[2026-03-11 04:50:58,969 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.99 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.79 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.97 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.13 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.89]]
+[2026-03-11 04:50:59,759 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 04:50:59,761 INFO] 83968 iteration, USE_EMA: False, train/sup_loss: 0.000075, train/unsup_loss: 0.332543, train/contrastive_loss: 0.101095, train/ortho_loss: 0.059856, train/total_loss: 0.413013, train/util_ratio: 0.937500, train/run_time: 0.169079, eval/loss: 1.421885, eval/top-1-acc: 0.799600, eval/balanced_acc: 0.799600, eval/precision: 0.800254, eval/recall: 0.799600, eval/F1: 0.797689, lr: 0.000221, train/prefetch_time: 0.005143 BEST_EVAL_ACC: 0.8036, at 74752 iters
+[2026-03-11 04:51:50,703 INFO] 84224 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.4044, train/contrastive_loss: 0.0996, train/ortho_loss: 0.0604, train/total_loss: 0.4830, train/util_ratio: 0.9375, train/run_time: 0.1688, lr: 0.0002, train/prefetch_time: 0.0059 
+[2026-03-11 04:52:40,752 INFO] 84480 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.2057, train/contrastive_loss: 0.0454, train/ortho_loss: 0.0601, train/total_loss: 0.2308, train/util_ratio: 0.9062, train/run_time: 0.1689, lr: 0.0002, train/prefetch_time: 0.0056 
+[2026-03-11 04:53:32,483 INFO] 84736 iteration USE_EMA: False, train/sup_loss: 0.0002, train/unsup_loss: 0.2324, train/contrastive_loss: 0.0614, train/ortho_loss: 0.0602, train/total_loss: 0.2737, train/util_ratio: 0.9062, train/run_time: 0.1710, lr: 0.0002, train/prefetch_time: 0.0042 
+[2026-03-11 04:54:22,797 INFO] validating...
+[2026-03-11 04:54:29,854 INFO] confusion matrix:
+[[0.98 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.7  ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.97 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.13 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.91]]
+[2026-03-11 04:54:30,910 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 04:54:30,912 INFO] 84992 iteration, USE_EMA: False, train/sup_loss: 0.000317, train/unsup_loss: 0.460441, train/contrastive_loss: 0.083668, train/ortho_loss: 0.060119, train/total_loss: 0.523725, train/util_ratio: 0.937500, train/run_time: 0.168927, eval/loss: 1.473702, eval/top-1-acc: 0.801000, eval/balanced_acc: 0.801000, eval/precision: 0.801703, eval/recall: 0.801000, eval/F1: 0.798211, lr: 0.000214, train/prefetch_time: 0.004656 BEST_EVAL_ACC: 0.8036, at 74752 iters
+[2026-03-11 04:55:21,967 INFO] 85248 iteration USE_EMA: False, train/sup_loss: 0.0022, train/unsup_loss: 0.2186, train/contrastive_loss: 0.0477, train/ortho_loss: 0.0600, train/total_loss: 0.2487, train/util_ratio: 0.9688, train/run_time: 0.1693, lr: 0.0002, train/prefetch_time: 0.0059 
+[2026-03-11 04:56:12,556 INFO] 85504 iteration USE_EMA: False, train/sup_loss: 0.0006, train/unsup_loss: 0.4889, train/contrastive_loss: 0.0939, train/ortho_loss: 0.0603, train/total_loss: 0.5634, train/util_ratio: 0.9688, train/run_time: 0.1690, lr: 0.0002, train/prefetch_time: 0.0052 
+[2026-03-11 04:57:03,694 INFO] 85760 iteration USE_EMA: False, train/sup_loss: 0.0000, train/unsup_loss: 0.2437, train/contrastive_loss: 0.0387, train/ortho_loss: 0.0602, train/total_loss: 0.2620, train/util_ratio: 0.9375, train/run_time: 0.1692, lr: 0.0002, train/prefetch_time: 0.0058 
+[2026-03-11 04:57:54,300 INFO] validating...
+[2026-03-11 04:58:01,471 INFO] confusion matrix:
+[[1.   0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.76 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.97 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.13 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.9 ]]
+[2026-03-11 04:58:02,668 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 04:58:02,669 INFO] 86016 iteration, USE_EMA: False, train/sup_loss: 0.000049, train/unsup_loss: 0.442852, train/contrastive_loss: 0.072729, train/ortho_loss: 0.059996, train/total_loss: 0.494916, train/util_ratio: 1.000000, train/run_time: 0.170633, eval/loss: 1.455916, eval/top-1-acc: 0.800200, eval/balanced_acc: 0.800200, eval/precision: 0.800069, eval/recall: 0.800200, eval/F1: 0.797043, lr: 0.000207, train/prefetch_time: 0.006596 BEST_EVAL_ACC: 0.8036, at 74752 iters
+[2026-03-11 04:58:53,875 INFO] 86272 iteration USE_EMA: False, train/sup_loss: 0.0002, train/unsup_loss: 0.1597, train/contrastive_loss: 0.0448, train/ortho_loss: 0.0599, train/total_loss: 0.1840, train/util_ratio: 0.9375, train/run_time: 0.1689, lr: 0.0002, train/prefetch_time: 0.0056 
+[2026-03-11 04:59:44,007 INFO] 86528 iteration USE_EMA: False, train/sup_loss: 0.0002, train/unsup_loss: 0.3544, train/contrastive_loss: 0.0677, train/ortho_loss: 0.0600, train/total_loss: 0.4023, train/util_ratio: 0.9688, train/run_time: 0.1688, lr: 0.0002, train/prefetch_time: 0.0053 
+[2026-03-11 05:00:35,097 INFO] 86784 iteration USE_EMA: False, train/sup_loss: 0.0000, train/unsup_loss: 0.3034, train/contrastive_loss: 0.0642, train/ortho_loss: 0.0603, train/total_loss: 0.3464, train/util_ratio: 0.9062, train/run_time: 0.1690, lr: 0.0002, train/prefetch_time: 0.0060 
+[2026-03-11 05:01:25,889 INFO] validating...
+[2026-03-11 05:01:32,673 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.8  ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.97 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.14 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.9 ]]
+[2026-03-11 05:01:33,427 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 05:01:33,428 INFO] 87040 iteration, USE_EMA: False, train/sup_loss: 0.000164, train/unsup_loss: 0.055307, train/contrastive_loss: 0.009004, train/ortho_loss: 0.060267, train/total_loss: 0.044715, train/util_ratio: 1.000000, train/run_time: 0.169645, eval/loss: 1.405135, eval/top-1-acc: 0.801500, eval/balanced_acc: 0.801500, eval/precision: 0.801693, eval/recall: 0.801500, eval/F1: 0.799081, lr: 0.000201, train/prefetch_time: 0.005363 BEST_EVAL_ACC: 0.8036, at 74752 iters
+[2026-03-11 05:02:24,264 INFO] 87296 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.4867, train/contrastive_loss: 0.1281, train/ortho_loss: 0.0600, train/total_loss: 0.5946, train/util_ratio: 0.9375, train/run_time: 0.1672, lr: 0.0002, train/prefetch_time: 0.0063 
+[2026-03-11 05:03:14,659 INFO] 87552 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.4765, train/contrastive_loss: 0.0770, train/ortho_loss: 0.0602, train/total_loss: 0.5327, train/util_ratio: 0.9062, train/run_time: 0.1691, lr: 0.0002, train/prefetch_time: 0.0051 
+[2026-03-11 05:04:05,819 INFO] 87808 iteration USE_EMA: False, train/sup_loss: 0.0005, train/unsup_loss: 0.2312, train/contrastive_loss: 0.0955, train/ortho_loss: 0.0600, train/total_loss: 0.3061, train/util_ratio: 0.9375, train/run_time: 0.1688, lr: 0.0002, train/prefetch_time: 0.0061 
+[2026-03-11 05:04:55,895 INFO] validating...
+[2026-03-11 05:05:02,909 INFO] confusion matrix:
+[[1.   0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.72 ... 0.   0.01 0.  ]
+ ...
+ [0.   0.   0.   ... 0.96 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.14 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.89]]
+[2026-03-11 05:05:03,662 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 05:05:03,663 INFO] 88064 iteration, USE_EMA: False, train/sup_loss: 0.000102, train/unsup_loss: 0.357415, train/contrastive_loss: 0.056286, train/ortho_loss: 0.060015, train/total_loss: 0.392640, train/util_ratio: 0.906250, train/run_time: 0.171046, eval/loss: 1.425070, eval/top-1-acc: 0.799600, eval/balanced_acc: 0.799600, eval/precision: 0.800249, eval/recall: 0.799600, eval/F1: 0.797002, lr: 0.000194, train/prefetch_time: 0.005987 BEST_EVAL_ACC: 0.8036, at 74752 iters
+[2026-03-11 05:05:55,199 INFO] 88320 iteration USE_EMA: False, train/sup_loss: 0.0000, train/unsup_loss: 0.5280, train/contrastive_loss: 0.1249, train/ortho_loss: 0.0600, train/total_loss: 0.6320, train/util_ratio: 0.9688, train/run_time: 0.1710, lr: 0.0002, train/prefetch_time: 0.0067 
+[2026-03-11 05:06:45,404 INFO] 88576 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.0222, train/contrastive_loss: 0.0175, train/ortho_loss: 0.0598, train/total_loss: 0.0190, train/util_ratio: 0.9375, train/run_time: 0.1685, lr: 0.0002, train/prefetch_time: 0.0052 
+[2026-03-11 05:07:36,499 INFO] 88832 iteration USE_EMA: False, train/sup_loss: 0.0002, train/unsup_loss: 0.1383, train/contrastive_loss: 0.0167, train/ortho_loss: 0.0598, train/total_loss: 0.1348, train/util_ratio: 1.0000, train/run_time: 0.1708, lr: 0.0002, train/prefetch_time: 0.0043 
+[2026-03-11 05:08:26,930 INFO] validating...
+[2026-03-11 05:08:34,069 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.78 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.96 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.13 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.9 ]]
+[2026-03-11 05:08:35,364 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 05:08:36,514 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/model_best.pth
+[2026-03-11 05:08:36,516 INFO] 89088 iteration, USE_EMA: False, train/sup_loss: 0.000897, train/unsup_loss: 0.416658, train/contrastive_loss: 0.103400, train/ortho_loss: 0.059832, train/total_loss: 0.499779, train/util_ratio: 0.968750, train/run_time: 0.169132, eval/loss: 1.394619, eval/top-1-acc: 0.806200, eval/balanced_acc: 0.806200, eval/precision: 0.806057, eval/recall: 0.806200, eval/F1: 0.803547, lr: 0.000188, train/prefetch_time: 0.003889 BEST_EVAL_ACC: 0.8062, at 89088 iters
+[2026-03-11 05:09:27,758 INFO] 89344 iteration USE_EMA: False, train/sup_loss: 0.0000, train/unsup_loss: 0.1500, train/contrastive_loss: 0.0360, train/ortho_loss: 0.0601, train/total_loss: 0.1658, train/util_ratio: 0.9375, train/run_time: 0.1686, lr: 0.0002, train/prefetch_time: 0.0057 
+[2026-03-11 05:10:17,642 INFO] 89600 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.2414, train/contrastive_loss: 0.0483, train/ortho_loss: 0.0607, train/total_loss: 0.2690, train/util_ratio: 0.9688, train/run_time: 0.1681, lr: 0.0002, train/prefetch_time: 0.0035 
+[2026-03-11 05:11:08,718 INFO] 89856 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.1465, train/contrastive_loss: 0.0171, train/ortho_loss: 0.0603, train/total_loss: 0.1437, train/util_ratio: 1.0000, train/run_time: 0.1693, lr: 0.0002, train/prefetch_time: 0.0057 
+[2026-03-11 05:11:59,145 INFO] validating...
+[2026-03-11 05:12:05,849 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.75 ... 0.   0.01 0.  ]
+ ...
+ [0.   0.   0.   ... 0.97 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.14 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.9 ]]
+[2026-03-11 05:12:06,586 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 05:12:06,587 INFO] 90112 iteration, USE_EMA: False, train/sup_loss: 0.000074, train/unsup_loss: 0.070008, train/contrastive_loss: 0.015058, train/ortho_loss: 0.059990, train/total_loss: 0.064219, train/util_ratio: 0.906250, train/run_time: 0.168865, eval/loss: 1.394915, eval/top-1-acc: 0.804900, eval/balanced_acc: 0.804900, eval/precision: 0.806737, eval/recall: 0.804900, eval/F1: 0.803488, lr: 0.000181, train/prefetch_time: 0.004411 BEST_EVAL_ACC: 0.8062, at 89088 iters
+[2026-03-11 05:12:57,594 INFO] 90368 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.4189, train/contrastive_loss: 0.0822, train/ortho_loss: 0.0600, train/total_loss: 0.4807, train/util_ratio: 1.0000, train/run_time: 0.1690, lr: 0.0002, train/prefetch_time: 0.0059 
+[2026-03-11 05:13:47,999 INFO] 90624 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.0497, train/contrastive_loss: 0.0288, train/ortho_loss: 0.0600, train/total_loss: 0.0572, train/util_ratio: 0.8750, train/run_time: 0.1694, lr: 0.0002, train/prefetch_time: 0.0056 
+[2026-03-11 05:14:38,815 INFO] 90880 iteration USE_EMA: False, train/sup_loss: 0.0132, train/unsup_loss: 0.5625, train/contrastive_loss: 0.1037, train/ortho_loss: 0.0598, train/total_loss: 0.6594, train/util_ratio: 0.9688, train/run_time: 0.1700, lr: 0.0002, train/prefetch_time: 0.0063 
+[2026-03-11 05:15:29,109 INFO] validating...
+[2026-03-11 05:15:36,120 INFO] confusion matrix:
+[[1.   0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.75 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.96 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.14 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.92]]
+[2026-03-11 05:15:37,188 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 05:15:37,189 INFO] 91136 iteration, USE_EMA: False, train/sup_loss: 0.000061, train/unsup_loss: 0.503799, train/contrastive_loss: 0.126201, train/ortho_loss: 0.059683, train/total_loss: 0.607941, train/util_ratio: 0.843750, train/run_time: 0.168934, eval/loss: 1.405753, eval/top-1-acc: 0.804800, eval/balanced_acc: 0.804800, eval/precision: 0.807789, eval/recall: 0.804800, eval/F1: 0.803419, lr: 0.000174, train/prefetch_time: 0.006718 BEST_EVAL_ACC: 0.8062, at 89088 iters
+[2026-03-11 05:16:27,832 INFO] 91392 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.5833, train/contrastive_loss: 0.1250, train/ortho_loss: 0.0598, train/total_loss: 0.6879, train/util_ratio: 0.9062, train/run_time: 0.1688, lr: 0.0002, train/prefetch_time: 0.0057 
+[2026-03-11 05:17:17,417 INFO] 91648 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.1077, train/contrastive_loss: 0.0456, train/ortho_loss: 0.0597, train/total_loss: 0.1332, train/util_ratio: 0.9062, train/run_time: 0.1685, lr: 0.0002, train/prefetch_time: 0.0037 
+[2026-03-11 05:18:08,554 INFO] 91904 iteration USE_EMA: False, train/sup_loss: 0.0046, train/unsup_loss: 0.1596, train/contrastive_loss: 0.0196, train/ortho_loss: 0.0598, train/total_loss: 0.1641, train/util_ratio: 0.9375, train/run_time: 0.1688, lr: 0.0002, train/prefetch_time: 0.0058 
+[2026-03-11 05:18:58,888 INFO] validating...
+[2026-03-11 05:19:06,051 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.79 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.96 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.13 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.9 ]]
+[2026-03-11 05:19:06,801 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 05:19:06,801 INFO] 92160 iteration, USE_EMA: False, train/sup_loss: 0.000014, train/unsup_loss: 0.625906, train/contrastive_loss: 0.127083, train/ortho_loss: 0.059329, train/total_loss: 0.733221, train/util_ratio: 1.000000, train/run_time: 0.170419, eval/loss: 1.371417, eval/top-1-acc: 0.803700, eval/balanced_acc: 0.803700, eval/precision: 0.804608, eval/recall: 0.803700, eval/F1: 0.801638, lr: 0.000167, train/prefetch_time: 0.005971 BEST_EVAL_ACC: 0.8062, at 89088 iters
+[2026-03-11 05:19:57,686 INFO] 92416 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.2023, train/contrastive_loss: 0.0592, train/ortho_loss: 0.0593, train/total_loss: 0.2415, train/util_ratio: 1.0000, train/run_time: 0.1697, lr: 0.0002, train/prefetch_time: 0.0045 
+[2026-03-11 05:20:48,322 INFO] 92672 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.1148, train/contrastive_loss: 0.0412, train/ortho_loss: 0.0596, train/total_loss: 0.1357, train/util_ratio: 0.9688, train/run_time: 0.1690, lr: 0.0002, train/prefetch_time: 0.0049 
+[2026-03-11 05:21:39,548 INFO] 92928 iteration USE_EMA: False, train/sup_loss: 0.0009, train/unsup_loss: 0.5358, train/contrastive_loss: 0.0891, train/ortho_loss: 0.0597, train/total_loss: 0.6051, train/util_ratio: 0.9375, train/run_time: 0.1688, lr: 0.0002, train/prefetch_time: 0.0058 
+[2026-03-11 05:22:29,917 INFO] validating...
+[2026-03-11 05:22:36,844 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.82 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.97 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.13 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.9 ]]
+[2026-03-11 05:22:38,089 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 05:22:38,090 INFO] 93184 iteration, USE_EMA: False, train/sup_loss: 0.000093, train/unsup_loss: 0.131146, train/contrastive_loss: 0.029188, train/ortho_loss: 0.059731, train/total_loss: 0.140419, train/util_ratio: 0.968750, train/run_time: 0.170095, eval/loss: 1.392802, eval/top-1-acc: 0.802200, eval/balanced_acc: 0.802200, eval/precision: 0.803279, eval/recall: 0.802200, eval/F1: 0.800138, lr: 0.000160, train/prefetch_time: 0.006377 BEST_EVAL_ACC: 0.8062, at 89088 iters
+[2026-03-11 05:23:29,208 INFO] 93440 iteration USE_EMA: False, train/sup_loss: 0.0002, train/unsup_loss: 0.4281, train/contrastive_loss: 0.1148, train/ortho_loss: 0.0596, train/total_loss: 0.5228, train/util_ratio: 1.0000, train/run_time: 0.1693, lr: 0.0002, train/prefetch_time: 0.0042 
+[2026-03-11 05:24:19,197 INFO] 93696 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.3509, train/contrastive_loss: 0.0752, train/ortho_loss: 0.0594, train/total_loss: 0.4060, train/util_ratio: 0.9688, train/run_time: 0.1690, lr: 0.0002, train/prefetch_time: 0.0053 
+[2026-03-11 05:25:10,101 INFO] 93952 iteration USE_EMA: False, train/sup_loss: 0.0016, train/unsup_loss: 0.0641, train/contrastive_loss: 0.0106, train/ortho_loss: 0.0597, train/total_loss: 0.0561, train/util_ratio: 0.9375, train/run_time: 0.1691, lr: 0.0002, train/prefetch_time: 0.0058 
+[2026-03-11 05:26:00,393 INFO] validating...
+[2026-03-11 05:26:07,096 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.75 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.97 0.   0.  ]
+ [0.   0.   0.   ... 0.   0.13 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.9 ]]
+[2026-03-11 05:26:07,833 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 05:26:07,834 INFO] 94208 iteration, USE_EMA: False, train/sup_loss: 0.000040, train/unsup_loss: 0.210904, train/contrastive_loss: 0.060937, train/ortho_loss: 0.059689, train/total_loss: 0.250697, train/util_ratio: 0.968750, train/run_time: 0.169781, eval/loss: 1.426347, eval/top-1-acc: 0.802900, eval/balanced_acc: 0.802900, eval/precision: 0.803569, eval/recall: 0.802900, eval/F1: 0.800650, lr: 0.000154, train/prefetch_time: 0.005539 BEST_EVAL_ACC: 0.8062, at 89088 iters
+[2026-03-11 05:26:58,429 INFO] 94464 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.0936, train/contrastive_loss: 0.0165, train/ortho_loss: 0.0596, train/total_loss: 0.0887, train/util_ratio: 0.8125, train/run_time: 0.1685, lr: 0.0002, train/prefetch_time: 0.0056 
+[2026-03-11 05:27:48,752 INFO] 94720 iteration USE_EMA: False, train/sup_loss: 0.0014, train/unsup_loss: 0.2733, train/contrastive_loss: 0.0411, train/ortho_loss: 0.0599, train/total_loss: 0.2953, train/util_ratio: 1.0000, train/run_time: 0.1694, lr: 0.0002, train/prefetch_time: 0.0052 
+[2026-03-11 05:28:40,295 INFO] 94976 iteration USE_EMA: False, train/sup_loss: 0.0008, train/unsup_loss: 0.2813, train/contrastive_loss: 0.0770, train/ortho_loss: 0.0600, train/total_loss: 0.3375, train/util_ratio: 0.8438, train/run_time: 0.1700, lr: 0.0001, train/prefetch_time: 0.0064 
+[2026-03-11 05:29:31,014 INFO] validating...
+[2026-03-11 05:29:37,840 INFO] confusion matrix:
+[[0.98 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.76 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.96 0.   0.  ]
+ [0.   0.   0.   ... 0.   0.12 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.89]]
+[2026-03-11 05:29:38,611 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 05:29:38,611 INFO] 95232 iteration, USE_EMA: False, train/sup_loss: 0.000109, train/unsup_loss: 0.888781, train/contrastive_loss: 0.223118, train/ortho_loss: 0.059526, train/total_loss: 1.091510, train/util_ratio: 0.843750, train/run_time: 0.168492, eval/loss: 1.434342, eval/top-1-acc: 0.803500, eval/balanced_acc: 0.803500, eval/precision: 0.804600, eval/recall: 0.803500, eval/F1: 0.801109, lr: 0.000147, train/prefetch_time: 0.005644 BEST_EVAL_ACC: 0.8062, at 89088 iters
+[2026-03-11 05:30:29,346 INFO] 95488 iteration USE_EMA: False, train/sup_loss: 0.0000, train/unsup_loss: 0.0737, train/contrastive_loss: 0.0232, train/ortho_loss: 0.0592, train/total_loss: 0.0754, train/util_ratio: 0.8125, train/run_time: 0.1699, lr: 0.0001, train/prefetch_time: 0.0088 
+[2026-03-11 05:31:19,431 INFO] 95744 iteration USE_EMA: False, train/sup_loss: 0.0000, train/unsup_loss: 0.3630, train/contrastive_loss: 0.0798, train/ortho_loss: 0.0594, train/total_loss: 0.4217, train/util_ratio: 0.9062, train/run_time: 0.1685, lr: 0.0001, train/prefetch_time: 0.0052 
+[2026-03-11 05:32:10,374 INFO] 96000 iteration USE_EMA: False, train/sup_loss: 0.0003, train/unsup_loss: 0.1488, train/contrastive_loss: 0.0461, train/ortho_loss: 0.0595, train/total_loss: 0.1747, train/util_ratio: 0.9062, train/run_time: 0.1692, lr: 0.0001, train/prefetch_time: 0.0054 
+[2026-03-11 05:33:00,714 INFO] validating...
+[2026-03-11 05:33:07,758 INFO] confusion matrix:
+[[1.   0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.71 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.96 0.   0.  ]
+ [0.   0.   0.   ... 0.   0.14 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.9 ]]
+[2026-03-11 05:33:08,856 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 05:33:08,857 INFO] 96256 iteration, USE_EMA: False, train/sup_loss: 0.000019, train/unsup_loss: 0.243821, train/contrastive_loss: 0.061925, train/ortho_loss: 0.059429, train/total_loss: 0.285761, train/util_ratio: 0.937500, train/run_time: 0.169154, eval/loss: 1.438862, eval/top-1-acc: 0.803000, eval/balanced_acc: 0.803000, eval/precision: 0.802996, eval/recall: 0.803000, eval/F1: 0.800712, lr: 0.000140, train/prefetch_time: 0.005508 BEST_EVAL_ACC: 0.8062, at 89088 iters
+[2026-03-11 05:34:00,118 INFO] 96512 iteration USE_EMA: False, train/sup_loss: 0.0000, train/unsup_loss: 0.0803, train/contrastive_loss: 0.0365, train/ortho_loss: 0.0597, train/total_loss: 0.0959, train/util_ratio: 0.8750, train/run_time: 0.1689, lr: 0.0001, train/prefetch_time: 0.0055 
+[2026-03-11 05:34:50,580 INFO] 96768 iteration USE_EMA: False, train/sup_loss: 0.0000, train/unsup_loss: 0.2335, train/contrastive_loss: 0.0756, train/ortho_loss: 0.0596, train/total_loss: 0.2889, train/util_ratio: 1.0000, train/run_time: 0.1697, lr: 0.0001, train/prefetch_time: 0.0047 
+[2026-03-11 05:35:41,847 INFO] 97024 iteration USE_EMA: False, train/sup_loss: 0.0000, train/unsup_loss: 0.5758, train/contrastive_loss: 0.1487, train/ortho_loss: 0.0597, train/total_loss: 0.7033, train/util_ratio: 0.9062, train/run_time: 0.1693, lr: 0.0001, train/prefetch_time: 0.0066 
+[2026-03-11 05:36:32,558 INFO] validating...
+[2026-03-11 05:36:39,485 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.71 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.96 0.   0.  ]
+ [0.   0.   0.   ... 0.   0.12 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.89]]
+[2026-03-11 05:36:40,248 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 05:36:40,249 INFO] 97280 iteration, USE_EMA: False, train/sup_loss: 0.003927, train/unsup_loss: 0.386013, train/contrastive_loss: 0.096195, train/ortho_loss: 0.059683, train/total_loss: 0.465210, train/util_ratio: 0.937500, train/run_time: 0.168885, eval/loss: 1.440395, eval/top-1-acc: 0.802400, eval/balanced_acc: 0.802400, eval/precision: 0.803287, eval/recall: 0.802400, eval/F1: 0.800663, lr: 0.000133, train/prefetch_time: 0.005660 BEST_EVAL_ACC: 0.8062, at 89088 iters
+[2026-03-11 05:37:31,599 INFO] 97536 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.3707, train/contrastive_loss: 0.0908, train/ortho_loss: 0.0597, train/total_loss: 0.4406, train/util_ratio: 0.9688, train/run_time: 0.1688, lr: 0.0001, train/prefetch_time: 0.0058 
+[2026-03-11 05:38:21,981 INFO] 97792 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.5012, train/contrastive_loss: 0.1069, train/ortho_loss: 0.0597, train/total_loss: 0.5872, train/util_ratio: 0.9688, train/run_time: 0.1692, lr: 0.0001, train/prefetch_time: 0.0038 
+[2026-03-11 05:39:12,957 INFO] 98048 iteration USE_EMA: False, train/sup_loss: 0.0000, train/unsup_loss: 0.0173, train/contrastive_loss: 0.0119, train/ortho_loss: 0.0598, train/total_loss: 0.0094, train/util_ratio: 0.9375, train/run_time: 0.1690, lr: 0.0001, train/prefetch_time: 0.0052 
+[2026-03-11 05:40:03,301 INFO] validating...
+[2026-03-11 05:40:10,279 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.74 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.97 0.   0.  ]
+ [0.   0.   0.   ... 0.   0.14 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.89]]
+[2026-03-11 05:40:11,347 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 05:40:11,348 INFO] 98304 iteration, USE_EMA: False, train/sup_loss: 0.000041, train/unsup_loss: 0.155182, train/contrastive_loss: 0.027124, train/ortho_loss: 0.059658, train/total_loss: 0.162340, train/util_ratio: 1.000000, train/run_time: 0.169010, eval/loss: 1.424997, eval/top-1-acc: 0.801200, eval/balanced_acc: 0.801200, eval/precision: 0.802018, eval/recall: 0.801200, eval/F1: 0.799261, lr: 0.000126, train/prefetch_time: 0.005448 BEST_EVAL_ACC: 0.8062, at 89088 iters
+[2026-03-11 05:41:02,654 INFO] 98560 iteration USE_EMA: False, train/sup_loss: 0.0108, train/unsup_loss: 0.0695, train/contrastive_loss: 0.0317, train/ortho_loss: 0.0597, train/total_loss: 0.0915, train/util_ratio: 0.9375, train/run_time: 0.1702, lr: 0.0001, train/prefetch_time: 0.0075 
+[2026-03-11 05:41:52,985 INFO] 98816 iteration USE_EMA: False, train/sup_loss: 0.0000, train/unsup_loss: 0.1929, train/contrastive_loss: 0.0598, train/ortho_loss: 0.0596, train/total_loss: 0.2323, train/util_ratio: 0.9688, train/run_time: 0.1695, lr: 0.0001, train/prefetch_time: 0.0057 
+[2026-03-11 05:42:44,475 INFO] 99072 iteration USE_EMA: False, train/sup_loss: 0.0002, train/unsup_loss: 0.2704, train/contrastive_loss: 0.0771, train/ortho_loss: 0.0596, train/total_loss: 0.3272, train/util_ratio: 0.9375, train/run_time: 0.1699, lr: 0.0001, train/prefetch_time: 0.0055 
+[2026-03-11 05:43:34,985 INFO] validating...
+[2026-03-11 05:43:41,926 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.78 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.96 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.14 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.88]]
+[2026-03-11 05:43:42,671 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 05:43:42,671 INFO] 99328 iteration, USE_EMA: False, train/sup_loss: 0.000029, train/unsup_loss: 0.221473, train/contrastive_loss: 0.059748, train/ortho_loss: 0.059525, train/total_loss: 0.261001, train/util_ratio: 0.968750, train/run_time: 0.165267, eval/loss: 1.444540, eval/top-1-acc: 0.802800, eval/balanced_acc: 0.802800, eval/precision: 0.803891, eval/recall: 0.802800, eval/F1: 0.800981, lr: 0.000119, train/prefetch_time: 0.005738 BEST_EVAL_ACC: 0.8062, at 89088 iters
+[2026-03-11 05:44:34,099 INFO] 99584 iteration USE_EMA: False, train/sup_loss: 0.0000, train/unsup_loss: 0.2821, train/contrastive_loss: 0.0632, train/ortho_loss: 0.0596, train/total_loss: 0.3246, train/util_ratio: 0.9688, train/run_time: 0.1712, lr: 0.0001, train/prefetch_time: 0.0059 
+[2026-03-11 05:45:24,492 INFO] 99840 iteration USE_EMA: False, train/sup_loss: 0.0003, train/unsup_loss: 0.4881, train/contrastive_loss: 0.0861, train/ortho_loss: 0.0596, train/total_loss: 0.5541, train/util_ratio: 0.9375, train/run_time: 0.1686, lr: 0.0001, train/prefetch_time: 0.0058 
+[2026-03-11 05:46:15,692 INFO] 100096 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.5669, train/contrastive_loss: 0.0968, train/ortho_loss: 0.0597, train/total_loss: 0.6428, train/util_ratio: 0.9688, train/run_time: 0.1691, lr: 0.0001, train/prefetch_time: 0.0059 
+[2026-03-11 05:47:05,957 INFO] validating...
+[2026-03-11 05:47:12,944 INFO] confusion matrix:
+[[0.98 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.81 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.97 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.14 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.88]]
+[2026-03-11 05:47:13,880 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 05:47:13,880 INFO] 100352 iteration, USE_EMA: False, train/sup_loss: 0.000217, train/unsup_loss: 0.244264, train/contrastive_loss: 0.066926, train/ortho_loss: 0.059694, train/total_loss: 0.290239, train/util_ratio: 0.937500, train/run_time: 0.169423, eval/loss: 1.447199, eval/top-1-acc: 0.803800, eval/balanced_acc: 0.803800, eval/precision: 0.804012, eval/recall: 0.803800, eval/F1: 0.801465, lr: 0.000112, train/prefetch_time: 0.005732 BEST_EVAL_ACC: 0.8062, at 89088 iters
+[2026-03-11 05:48:04,997 INFO] 100608 iteration USE_EMA: False, train/sup_loss: 0.0014, train/unsup_loss: 0.1109, train/contrastive_loss: 0.0370, train/ortho_loss: 0.0598, train/total_loss: 0.1285, train/util_ratio: 0.9062, train/run_time: 0.1697, lr: 0.0001, train/prefetch_time: 0.0066 
+[2026-03-11 05:48:55,069 INFO] 100864 iteration USE_EMA: False, train/sup_loss: 0.0000, train/unsup_loss: 0.2259, train/contrastive_loss: 0.0817, train/ortho_loss: 0.0598, train/total_loss: 0.2869, train/util_ratio: 1.0000, train/run_time: 0.1692, lr: 0.0001, train/prefetch_time: 0.0057 
+[2026-03-11 05:49:45,815 INFO] 101120 iteration USE_EMA: False, train/sup_loss: 0.0000, train/unsup_loss: 0.2224, train/contrastive_loss: 0.0653, train/ortho_loss: 0.0596, train/total_loss: 0.2675, train/util_ratio: 0.9375, train/run_time: 0.1691, lr: 0.0001, train/prefetch_time: 0.0064 
+[2026-03-11 05:50:35,969 INFO] validating...
+[2026-03-11 05:50:42,737 INFO] confusion matrix:
+[[0.99 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.78 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.97 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.12 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.9 ]]
+[2026-03-11 05:50:43,474 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 05:50:43,474 INFO] 101376 iteration, USE_EMA: False, train/sup_loss: 0.000027, train/unsup_loss: 0.227327, train/contrastive_loss: 0.043801, train/ortho_loss: 0.059501, train/total_loss: 0.250692, train/util_ratio: 0.937500, train/run_time: 0.168864, eval/loss: 1.437019, eval/top-1-acc: 0.801800, eval/balanced_acc: 0.801800, eval/precision: 0.802231, eval/recall: 0.801800, eval/F1: 0.799695, lr: 0.000105, train/prefetch_time: 0.005104 BEST_EVAL_ACC: 0.8062, at 89088 iters
+[2026-03-11 05:51:34,545 INFO] 101632 iteration USE_EMA: False, train/sup_loss: 0.0000, train/unsup_loss: 0.4632, train/contrastive_loss: 0.1139, train/ortho_loss: 0.0595, train/total_loss: 0.5569, train/util_ratio: 0.9375, train/run_time: 0.1684, lr: 0.0001, train/prefetch_time: 0.0056 
+[2026-03-11 05:52:24,737 INFO] 101888 iteration USE_EMA: False, train/sup_loss: 0.0001, train/unsup_loss: 0.1228, train/contrastive_loss: 0.0421, train/ortho_loss: 0.0594, train/total_loss: 0.1440, train/util_ratio: 1.0000, train/run_time: 0.1689, lr: 0.0001, train/prefetch_time: 0.0042 
+[2026-03-11 05:53:16,440 INFO] 102144 iteration USE_EMA: False, train/sup_loss: 0.0000, train/unsup_loss: 0.0932, train/contrastive_loss: 0.0291, train/ortho_loss: 0.0592, train/total_loss: 0.1014, train/util_ratio: 0.9688, train/run_time: 0.1715, lr: 0.0001, train/prefetch_time: 0.0088 
+[2026-03-11 05:54:06,519 INFO] validating...
+[2026-03-11 05:54:13,508 INFO] confusion matrix:
+[[0.98 0.   0.   ... 0.   0.   0.  ]
+ [0.   0.97 0.   ... 0.   0.   0.  ]
+ [0.   0.   0.77 ... 0.   0.   0.  ]
+ ...
+ [0.   0.   0.   ... 0.97 0.   0.  ]
+ [0.   0.   0.01 ... 0.   0.14 0.  ]
+ [0.   0.   0.   ... 0.   0.   0.91]]
+[2026-03-11 05:54:14,591 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 05:54:14,592 INFO] 102400 iteration, USE_EMA: False, train/sup_loss: 0.000834, train/unsup_loss: 0.264160, train/contrastive_loss: 0.059778, train/ortho_loss: 0.059219, train/total_loss: 0.304274, train/util_ratio: 0.968750, train/run_time: 0.169075, eval/loss: 1.462388, eval/top-1-acc: 0.804900, eval/balanced_acc: 0.804900, eval/precision: 0.805678, eval/recall: 0.804900, eval/F1: 0.802827, lr: 0.000098, train/prefetch_time: 0.005724 BEST_EVAL_ACC: 0.8062, at 89088 iters
+[2026-03-11 05:54:15,843 INFO] model saved: ./saved_models/usb_cv/textmatch_cifar100_200_0_labelname_mlp/latest_model.pth
+[2026-03-11 05:54:15,844 INFO] Model result - eval/best_acc : 0.8062
+[2026-03-11 05:54:15,844 INFO] Model result - eval/best_it : 89087
