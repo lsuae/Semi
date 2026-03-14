@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* Global styling: “粉雾海” soft-glass theme */
+
+:root {
+    color-scheme: light;
+
+    --sb-bg: linear-gradient(180deg, #E0E7FF 0%, #FDF2F8 100%);
+    --sb-glass: rgba(255, 255, 255, 0.9);
+    --sb-glass-border: rgba(195, 177, 225, 0.0);
+    --sb-shadow: 0 20px 80px rgba(0, 0, 0, 0.05);
+
+    --sb-accent: #C3B1E1;
+    --sb-mint: #B2E2D2;
+    --sb-coral: #F8C8DC;
+
+    --sb-text: #475569;
+    --sb-text-2: rgba(71, 85, 105, 0.72);
+    --sb-text-3: rgba(71, 85, 105, 0.55);
+
+    --el-text-color-primary: var(--sb-text);
+    --el-text-color-regular: var(--sb-text);
+    --el-text-color-secondary: var(--sb-text-2);
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", ui-sans-serif, system-ui, -apple-system,
+        Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    background: var(--sb-bg);
+    color: var(--sb-text);
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#app {
+    min-height: 100%;
+}
+
+/* Shared layout helpers */
+.page {
+    padding: 40px;
+}
+
+@media (max-width: 768px) {
+    .page {
+        padding: 16px;
+    }
+}
+
+/* Glassmorphism cards (no solid border, subtle blur) */
+.el-card {
+    border-radius: 28px;
+    border: none;
+    background: var(--sb-glass);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: var(--sb-shadow);
+}
+
+.el-card__header {
+    padding: 14px 16px;
+    border-bottom: none;
+}
+
+.el-card__body {
+    padding: 16px;
+}
+
+/* Compact, precise typography */
+.title,
+.topbar-title,
+.panel-title {
+    letter-spacing: 0.4px;
+}
+
+/* Dataset switch as segmented control */
+.dataset-switch {
+    position: relative;
+    background: rgba(30, 41, 59, 0.05);
+    padding: 4px;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0;
+    border: none !important;
+    overflow: visible;
+    box-shadow: none !important;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    --seg-left: 0px;
+    --seg-width: 0px;
+}
+
+/* Sliding indicator (follows selected item) */
+.dataset-switch::before {
+    content: "";
+    position: absolute;
+    left: var(--seg-left, 0px);
+    width: var(--seg-width, 0px);
+    top: 4px;
+    bottom: 4px;
+    border-radius: 999px;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: left 350ms cubic-bezier(0.4, 0, 0.2, 1), width 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: left, width;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.dataset-switch .el-radio-button__inner {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    color: #64748b;
+    font-weight: 500;
+    padding: 12px 24px;
+    transition: color 0.3s ease;
+    border-radius: 999px;
+    position: relative;
+    z-index: 2;
+    background-image: none !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Remove Element Plus separators/borders inside radio buttons */
+.dataset-switch .el-radio-button {
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+
+
+.dataset-switch .el-radio-button__inner::before,
+.dataset-switch .el-radio-button__inner::after {
+    display: none !important;
+}
+
+.dataset-switch .el-radio-button__inner:focus,
+.dataset-switch .el-radio-button__inner:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Kill click-time flash / inset lines */
+.dataset-switch .el-radio-button__inner:active,
+.dataset-switch .el-radio-button.is-active .el-radio-button__inner {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    transform: none !important;
+}
+
+/* Kill browser focus ring applied via the original input */
+.dataset-switch .el-radio-button__original-radio:focus+.el-radio-button__inner,
+.dataset-switch .el-radio-button__original-radio:focus-visible+.el-radio-button__inner {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Kill Element Plus focus ring applied via the original input */
+.dataset-switch .el-radio-button__original-radio:focus+.el-radio-button__inner,
+.dataset-switch .el-radio-button__original-radio:focus-visible+.el-radio-button__inner {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: transparent !important;
+}
+
+/* Kill active/checked border artifacts some themes add */
+.dataset-switch .el-radio-button.is-active .el-radio-button__inner {
+    color: #1e293b !important;
+    z-index: 1;
+    font-weight: 700;
+}
+
+.dataset-switch .el-radio-button__inner:hover {
+    color: #1e293b;
+}
+
+/* Micro-interactions */
+.el-button {
+    transition: transform 160ms ease, box-shadow 160ms ease, filter 160ms ease;
+}
+
+.el-button:hover {
+    transform: translateY(-1px) scale(1.02);
+    box-shadow: 0 10px 40px rgba(165, 180, 252, 0.16);
+}
+
+/* Reusable glass surface helper */
+.glass-card {
+    background: var(--sb-glass);
+    border: 1px solid var(--sb-glass-border);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: var(--sb-shadow);
+}
+
+/* Page transition used when switching datasets */
+.panel-swap-enter-active,
+.panel-swap-leave-active {
+    transition: opacity 220ms ease, transform 220ms ease;
+}
+
+.panel-swap-enter-from,
+.panel-swap-leave-to {
+    opacity: 0;
+    transform: translateY(8px);
+}
+
+/* Ensure helper/tip texts stay readable */
+.el-upload__tip,
+.el-form-item__label,
+.el-text,
+.el-alert__description {
+    font-size: 14px;
+    color: rgba(71, 85, 105, 0.55);
+}
